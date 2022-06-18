@@ -11,7 +11,7 @@ server = app.server
 
 app.layout = html.Div([
     html.H4('Bogotá'),
-    html.P("Selecciona una opción:"),
+    html.P("Selecciona una de las opciones:"),
     dcc.RadioItems(
         id='map_option',
         options={
