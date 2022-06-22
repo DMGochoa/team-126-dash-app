@@ -4,8 +4,10 @@ import pandas as pd
 import plotly.express as px
 import json
 import plotly.graph_objects as go
+import dash_bootstrap_components as dbc
+import styles
 
-app = Dash(__name__)
+app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 server = app.server
 
@@ -14,8 +16,23 @@ df = pd.read_csv("./data-cleaned/scattermap_points.csv")
 with open("./data-cleaned/poligonos-localidades-min.json") as response:
     bogota_geojson = json.load(response)
 
+sidebar = html.Div(
+    [
+        dbc.Button("Primary", color="primary", className="me-1"),
+        dbc.Nav(
+            [
+                dbc.NavLink("Home", href="/", active="exact"),
+                dbc.NavLink("Page 1", href="/page-1", active="exact"),
+                dbc.NavLink("Page 2", href="/page-2", active="exact"),
+            ],
+            vertical=True,
+            pills=True,
+        )
+    ],
+    style=styles.SIDEBAR_STYLE
+)
 
-app.layout = html.Div([
+content = html.Div([
     html.H4('Bogotá'),
     html.P("Selecciona una de las opciones:"),
     dcc.Checklist(id='localidad',
@@ -31,7 +48,9 @@ app.layout = html.Div([
                   inline=True
                   ),
     dcc.Graph(id="choropleth-map"),
-])
+], style=styles.CONTENT_STYLE)
+
+app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
 
 
 @app.callback(
