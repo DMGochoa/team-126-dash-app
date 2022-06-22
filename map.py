@@ -9,55 +9,56 @@ app = Dash(__name__)
 
 server = app.server
 
+# Load data
+df = pd.read_csv("./data-cleaned/scattermap_points.csv")
+with open("./data-cleaned/poligonos-localidades-min.json") as response:
+    bogota_geojson = json.load(response)
+
+
 app.layout = html.Div([
     html.H4('Bogotá'),
     html.P("Selecciona una de las opciones:"),
-    dcc.RadioItems(
-        id='map_option',
-        options={
-            "localidad": "Localidad",
-            "puntos_wifi_count": "Puntos WiFi (Heatmap)"
-        },
-        value="localidad",
-        inline=True
-    ),
-    dcc.Checklist(
-        ['New York City', 'Montréal', 'San Francisco'],
-        ['new_york_city', 'montreal'],
-        inline=True
-    ),
+    dcc.Checklist(id='localidad',
+                  options=[{'label': str(b), 'value': b}
+                           for b in sorted(df['localidad'].unique())],
+                  value=[b for b in sorted(df['localidad'].unique())],
+                  inline=True
+                  ),
+    dcc.Checklist(id='type',
+                  options=[{'label': str(b), 'value': b}
+                           for b in sorted(df['type'].unique())],
+                  value=[b for b in sorted(df['type'].unique())],
+                  inline=True
+                  ),
     dcc.Graph(id="choropleth-map"),
 ])
 
 
 @app.callback(
     Output("choropleth-map", "figure"),
-    Input("map_option", "value"))
-def display_choropleth(map_option):
-    # Load geojson and csv
-    wifi_hotspots = pd.read_csv("./data/wifi-hotspots-per-location-fake.csv")
-    bogota_malls = pd.read_csv(
-        "https://raw.githubusercontent.com/andrescuco/team-126-dash-app/master/data/bogota_malls.csv")
-
-    with open("./data-cleaned/poligonos-localidades-v2.geojson") as response:
-        bogota_geojson = json.load(response)
+    [Input("localidad", "value"),
+     Input("type", "value")])
+def display_choropleth(chosen_localidad, chosen_type):
+    filtered_df = df[(df['localidad'].isin(chosen_localidad))
+                     & (df['type'].isin(chosen_type))]
 
     # Map choropleth map exactly how you would do it on a jupyter notebook
-    fig = px.choropleth_mapbox(wifi_hotspots, geojson=bogota_geojson, color=map_option,
+    fig = px.choropleth_mapbox(filtered_df, geojson=bogota_geojson, color="localidad",
                                locations="localidad", featureidkey="properties.Nombre de la localidad",
-                               color_continuous_scale=px.colors.sequential.Inferno,
-                               center={"lat": 4.3000000, "lon": -74.2000000},
-                               mapbox_style="carto-positron", zoom=8,
-                               opacity=0.5)
+                               color_discrete_sequence=['blue'],
+                               center={"lat": 4.5500000, "lon": -74.1000000},
+                               mapbox_style="carto-positron", zoom=9,
+                               opacity=0.1)
 
-    fig.add_scattermapbox(lat=bogota_malls["longitude"],
-                          lon=bogota_malls["latitude"],
-                          marker=dict(
-                              size=12, color='rgb(235, 0, 100)')  # , opacity=0),
-                          #marker_line=dict(width=2, color='DarkSlateGrey')
+    fig.add_scattermapbox(lat=filtered_df['latitude'],
+                          lon=filtered_df['longitude'],
+                          marker=dict(color=filtered_df['color']),
+                          hovertext=filtered_df['localidad']
                           )
 
     fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
+    fig.update_layout(uirevision='foo')
+    fig.update_layout(showlegend=False)
     return fig
 
 
