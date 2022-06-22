@@ -39,7 +39,7 @@ def display_choropleth(map_option):
     bogota_malls = pd.read_csv(
         "https://raw.githubusercontent.com/andrescuco/team-126-dash-app/master/data/bogota_malls.csv")
 
-    with open("./data/poligonos-localidades-v2.geojson") as response:
+    with open("./data-cleaned/poligonos-localidades-v2.geojson") as response:
         bogota_geojson = json.load(response)
 
     # Map choropleth map exactly how you would do it on a jupyter notebook
