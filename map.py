@@ -1,15 +1,20 @@
 from dash import Dash, dcc, html, Input, Output
-from urllib.request import urlopen
 import pandas as pd
 import plotly.express as px
 import json
-import plotly.graph_objects as go
 import dash_bootstrap_components as dbc
-import styles
+
+# Components
+from components.content import content
+from components.content import main_view
+from components.sidebar import sidebar
+from components.jumbotron import jumbotron
 
 app = Dash(__name__, external_stylesheets=[
-           dbc.themes.BOOTSTRAP, 'styles.css'], suppress_callback_exceptions=True)
-app.title="Turismo Bogotá"
+           dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
+
+app.title = "Turismo Bogotá"
+
 server = app.server
 
 # Load data
@@ -17,85 +22,15 @@ df = pd.read_csv("./data-cleaned/scattermap_points.csv")
 with open("./data-cleaned/poligonos-localidades-min.json") as response:
     bogota_geojson = json.load(response)
 
-sidebar = html.Div(
-    [
-        html.H2("Sidebar", className="display-4"),
-        html.Hr(),
-        html.P(
-            "A simple sidebar layout with navigation links", className="lead"
-        ),
-        dbc.Nav(
-            [
-                dbc.NavLink("Tú perfil de turista",
-                            href="/", active="exact"),
-                dbc.NavLink("Info. general", href="/page-1", active="exact"),
-                dbc.NavLink("Sobre nosotros", href="/page-2", active="exact"),
-            ],
-            vertical=True,
-            pills=True,
-        )
-    ],
-    style=styles.SIDEBAR_STYLE
-)
-
-right_column = html.Div(
-    [
-        dcc.Checklist(id='type',
-                      options=[{'label': str(b), 'value': b}
-                               for b in sorted(df['type'].unique())],
-                      value=[b for b in sorted(df['type'].unique())],
-                      inline=True
-                      ),
-        dcc.Dropdown(id='localidad',
-                     options=[{'label': str(b), 'value': b}
-                              for b in sorted(df['localidad'].unique())],
-                     value=[b for b in sorted(df['localidad'].unique())],
-                     multi=True
-                     ),
-        dcc.Graph(id="choropleth-map"),
-    ]
-)
-
-card = dbc.Card(
-    dbc.CardBody(
-        [
-            html.H4("Title", className="card-title"),
-            html.P(
-                "Some quick example text to build on the card title and make "
-                "up the bulk of the card's content.",
-                className="card-text",
-            ),
-        ]
-    ),
-    color="dark",
-    outline=True
-)
-
-table = dbc.Table.from_dataframe(df, striped=True, bordered=True, hover=True)
-
-left_column = html.Div([
-    dbc.Row([card])  # , table])
-])
-
-main_view = html.Div([
-    html.H4('Bogotá'),
-    html.P("Selecciona una de las opciones:"),
-    dbc.Row([
-        dbc.Col(left_column, md=4),
-        dbc.Col(right_column, md=8)
-    ])
-])
-
-content = html.Div(id="page-content", style=styles.CONTENT_STYLE)
-
 app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
 
 
-@ app.callback(
+# Build interactive map
+@app.callback(
     Output("choropleth-map", "figure"),
     [Input("localidad", "value"),
      Input("type", "value")])
-def display_choropleth(chosen_localidad, chosen_type):
+def display_map(chosen_localidad, chosen_type):
     filtered_df = df[(df['localidad'].isin(chosen_localidad))
                      & (df['type'].isin(chosen_type))]
 
@@ -120,8 +55,6 @@ def display_choropleth(chosen_localidad, chosen_type):
 
 
 # Display different content based on the url
-
-
 @app.callback(Output("page-content", "children"), [Input("url", "pathname")])
 def render_page_content(pathname):
     if pathname == "/":
@@ -131,13 +64,7 @@ def render_page_content(pathname):
     elif pathname == "/page-2":
         return html.P("Oh cool, this is page 2!")
     # If the user tries to reach a different page, return a 404 message
-    return dbc.Jumbotron(
-        [
-            html.H1("404: Not found", className="text-danger"),
-            html.Hr(),
-            html.P(f"The pathname {pathname} was not recognised..."),
-        ]
-    )
+    return jumbotron
 
 
 if __name__ == '__main__':
