@@ -18,12 +18,17 @@ with open("./data-cleaned/poligonos-localidades-min.json") as response:
 
 sidebar = html.Div(
     [
-        dbc.Button("Primary", color="primary", className="me-1"),
+        html.H2("Sidebar", className="display-4"),
+        html.Hr(),
+        html.P(
+            "A simple sidebar layout with navigation links", className="lead"
+        ),
         dbc.Nav(
             [
-                dbc.NavLink("Home", href="/", active="exact"),
-                dbc.NavLink("Page 1", href="/page-1", active="exact"),
-                dbc.NavLink("Page 2", href="/page-2", active="exact"),
+                dbc.NavLink("Tú perfil de turista",
+                            href="/", active="exact"),
+                dbc.NavLink("Info. general", href="/page-1", active="exact"),
+                dbc.NavLink("Sobre nosotros", href="/page-2", active="exact"),
             ],
             vertical=True,
             pills=True,
@@ -35,18 +40,18 @@ sidebar = html.Div(
 content = html.Div([
     html.H4('Bogotá'),
     html.P("Selecciona una de las opciones:"),
-    dcc.Checklist(id='localidad',
-                  options=[{'label': str(b), 'value': b}
-                           for b in sorted(df['localidad'].unique())],
-                  value=[b for b in sorted(df['localidad'].unique())],
-                  inline=True
-                  ),
     dcc.Checklist(id='type',
                   options=[{'label': str(b), 'value': b}
                            for b in sorted(df['type'].unique())],
                   value=[b for b in sorted(df['type'].unique())],
                   inline=True
                   ),
+    dcc.Dropdown(id='localidad',
+                 options=[{'label': str(b), 'value': b}
+                          for b in sorted(df['localidad'].unique())],
+                 value=[b for b in sorted(df['localidad'].unique())],
+                 multi=True
+                 ),
     dcc.Graph(id="choropleth-map"),
 ], style=styles.CONTENT_STYLE)
 
