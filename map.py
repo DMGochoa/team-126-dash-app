@@ -7,7 +7,8 @@ import plotly.graph_objects as go
 import dash_bootstrap_components as dbc
 import styles
 
-app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = Dash(__name__, external_stylesheets=[
+           dbc.themes.BOOTSTRAP, 'styles.css'], suppress_callback_exceptions=True)
 
 server = app.server
 
@@ -37,28 +38,60 @@ sidebar = html.Div(
     style=styles.SIDEBAR_STYLE
 )
 
-content = html.Div([
+right_column = html.Div(
+    [
+        dcc.Checklist(id='type',
+                      options=[{'label': str(b), 'value': b}
+                               for b in sorted(df['type'].unique())],
+                      value=[b for b in sorted(df['type'].unique())],
+                      inline=True
+                      ),
+        dcc.Dropdown(id='localidad',
+                     options=[{'label': str(b), 'value': b}
+                              for b in sorted(df['localidad'].unique())],
+                     value=[b for b in sorted(df['localidad'].unique())],
+                     multi=True
+                     ),
+        dcc.Graph(id="choropleth-map"),
+    ]
+)
+
+card = dbc.Card(
+    dbc.CardBody(
+        [
+            html.H4("Title", className="card-title"),
+            html.P(
+                "Some quick example text to build on the card title and make "
+                "up the bulk of the card's content.",
+                className="card-text",
+            ),
+        ]
+    ),
+    color="dark",
+    outline=True
+)
+
+table = dbc.Table.from_dataframe(df, striped=True, bordered=True, hover=True)
+
+left_column = html.Div([
+    dbc.Row([card])  # , table])
+])
+
+main_view = html.Div([
     html.H4('Bogotá'),
     html.P("Selecciona una de las opciones:"),
-    dcc.Checklist(id='type',
-                  options=[{'label': str(b), 'value': b}
-                           for b in sorted(df['type'].unique())],
-                  value=[b for b in sorted(df['type'].unique())],
-                  inline=True
-                  ),
-    dcc.Dropdown(id='localidad',
-                 options=[{'label': str(b), 'value': b}
-                          for b in sorted(df['localidad'].unique())],
-                 value=[b for b in sorted(df['localidad'].unique())],
-                 multi=True
-                 ),
-    dcc.Graph(id="choropleth-map"),
-], style=styles.CONTENT_STYLE)
+    dbc.Row([
+        dbc.Col(left_column, md=4),
+        dbc.Col(right_column, md=8)
+    ])
+])
+
+content = html.Div(id="page-content", style=styles.CONTENT_STYLE)
 
 app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
 
 
-@app.callback(
+@ app.callback(
     Output("choropleth-map", "figure"),
     [Input("localidad", "value"),
      Input("type", "value")])
@@ -84,6 +117,27 @@ def display_choropleth(chosen_localidad, chosen_type):
     fig.update_layout(uirevision='foo')
     fig.update_layout(showlegend=False)
     return fig
+
+
+# Display different content based on the url
+
+
+@app.callback(Output("page-content", "children"), [Input("url", "pathname")])
+def render_page_content(pathname):
+    if pathname == "/":
+        return main_view
+    elif pathname == "/page-1":
+        return html.P("This is the content of page 1. Yay!")
+    elif pathname == "/page-2":
+        return html.P("Oh cool, this is page 2!")
+    # If the user tries to reach a different page, return a 404 message
+    return dbc.Jumbotron(
+        [
+            html.H1("404: Not found", className="text-danger"),
+            html.Hr(),
+            html.P(f"The pathname {pathname} was not recognised..."),
+        ]
+    )
 
 
 if __name__ == '__main__':
