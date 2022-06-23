@@ -9,7 +9,7 @@ import styles
 
 app = Dash(__name__, external_stylesheets=[
            dbc.themes.BOOTSTRAP, 'styles.css'], suppress_callback_exceptions=True)
-
+app.title="Turismo Bogotá"
 server = app.server
 
 # Load data
