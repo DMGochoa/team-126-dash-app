@@ -95,6 +95,8 @@ def render_page_content(pathname):
         return main_view
     elif pathname == "/page-1":
         return html.P("Acá va el formulario para clasificar con el modelo")
+    elif pathname == "/delincuencia":
+        return html.P("Acá puede ir información y KPI's sobre delincuencia")
     elif pathname == "/page-2":
         return html.P("Oh cool, this is page 2!")
     # If the user tries to reach a different page, return a 404 message

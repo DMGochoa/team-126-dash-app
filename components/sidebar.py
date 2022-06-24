@@ -24,6 +24,8 @@ sidebar = html.Div(
                             href="/", active="exact"),
                 dbc.NavLink("Tú perfil de turista",
                             href="/page-1", active="exact"),
+                dbc.NavLink("Delitos en Bogotá",
+                            href="/delincuencia", active="exact"),
                 dbc.NavLink("Sobre nosotros", href="/page-2", active="exact"),
             ],
             vertical=True,
