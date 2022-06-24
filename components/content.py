@@ -30,20 +30,20 @@ map_controls = html.Div([
                         "make up the bulk of the card's content.",
                         className="card-text",
                     ),
-                    dbc.Button("Go somewhere", color="primary"),
+                    dcc.Checklist(id='all_localidades_checkbox',
+                                  options={"on": " Ver todas las localidades"},
+                                  value=["on"],
+                                  style={"margin-bottom": "1rem"}
+                                  ),
+                    dcc.Dropdown(id='localidad',
+                                 options=[{'label': str(b), 'value': b}
+                                          for b in sorted(df['localidad'].unique())],
+                                 placeholder="Selecciona una localidad",
+                                 style={"display": "none"}
+                                 ),
                 ]
             ),
         ]),
-    dcc.Checklist(id='all_localidades_checkbox',
-                  options={"on": "Todas las localidades"},
-                  value=["on"]
-                  ),
-    dcc.Dropdown(id='localidad',
-                 options=[{'label': str(b), 'value': b}
-                          for b in sorted(df['localidad'].unique())],
-                 placeholder="Selecciona una localidad",
-                 style={"display": "none"}
-                 ),
 ])
 
 map = html.Div([
