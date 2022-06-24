@@ -11,7 +11,7 @@ from components.sidebar import sidebar
 from components.jumbotron import jumbotron
 
 app = Dash(__name__, external_stylesheets=[
-           dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
+           dbc.themes.ZEPHYR], suppress_callback_exceptions=True)
 
 app.title = "Turismo Bogotá"
 
@@ -19,6 +19,7 @@ server = app.server
 
 # Load data
 df = pd.read_csv("./data-cleaned/scattermap_points.csv")
+localidades_df = pd.read_csv("./data-cleaned/localidades_properties.csv")
 with open("./data-cleaned/poligonos-localidades-min.json") as response:
     bogota_geojson = json.load(response)
 
@@ -33,10 +34,22 @@ app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
      Input("all_localidades_checkbox", "value")])
 def display_map(chosen_localidades, chosen_type, show_all_localidades):
     all_localidades = [b for b in sorted(df['localidad'].unique())]
+    # Default values when the user is seeing the entire bogota figure
+    map_zoom = 9
+    map_center = {"lat": 4.5500000, "lon": -74.1000000}
 
     # Handle map if user hasn't selected a specific localidad
     if (show_all_localidades == ["on"]):
         chosen_localidades = all_localidades
+    elif (show_all_localidades != ["on"] and chosen_localidades != None):
+        chosen_localidad_props = localidades_df[localidades_df['name']
+                                                == chosen_localidades]
+        map_zoom = chosen_localidad_props['zoom'].item()
+        chosen_localidad_center = pd.eval(
+            chosen_localidad_props['center_coordinates'].item())
+        map_center = {"lat": chosen_localidad_center[0],
+                      "lon": chosen_localidad_center[1]}
+        chosen_localidades = [chosen_localidades]
     else:
         chosen_localidades = [chosen_localidades]
 
@@ -47,8 +60,9 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades):
     fig = px.choropleth_mapbox(filtered_df, geojson=bogota_geojson, color="localidad",
                                locations="localidad", featureidkey="properties.Nombre de la localidad",
                                color_discrete_sequence=['blue'],
-                               center={"lat": 4.5500000, "lon": -74.1000000},
-                               mapbox_style="carto-positron", zoom=9,
+                               center=map_center,
+                               zoom=map_zoom,
+                               mapbox_style="carto-positron",
                                opacity=0.1)
 
     fig.add_scattermapbox(lat=filtered_df['latitude'],

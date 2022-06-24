@@ -18,6 +18,22 @@ MARGIN_TOP = {
 }
 
 map_controls = html.Div([
+    # dbc.Card(
+    #     [
+    #         dbc.CardImg(
+    #             src="https://mediaim.expedia.com/destination/2/78dd6fee7217b2318c20db7cfdf68b26.jpg?impolicy=fcrop&w=360&h=224&q=mediumLow", top=True),
+    #         dbc.CardBody(
+    #             [
+    #                 html.H4("Card title", className="card-title"),
+    #                 html.P(
+    #                     "Some quick example text to build on the card title and "
+    #                     "make up the bulk of the card's content.",
+    #                     className="card-text",
+    #                 ),
+    #                 dbc.Button("Go somewhere", color="primary"),
+    #             ]
+    #         ),
+    #     ]),
     dcc.Checklist(id='all_localidades_checkbox',
                   options={"on": "Todas las localidades"},
                   value=["on"]
@@ -45,7 +61,7 @@ map_controls = html.Div([
 main_view = html.Div([
     dbc.Row([
         dbc.Col(custom_card("KPI #1", "Desc", "primary"), md=4),
-        dbc.Col(custom_card("KPI #2", "Desc", "secondary"), md=4),
+        dbc.Col(custom_card("KPI #2", "Desc", "warning"), md=4),
         dbc.Col(custom_card("KPI #3", "Desc", "info"), md=4)
     ]),
     dbc.Row([

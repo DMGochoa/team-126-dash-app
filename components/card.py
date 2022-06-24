@@ -13,5 +13,6 @@ def custom_card(title, description, color):
                 ),
             ]
         ),
-        color=color
+        color=color,
+        outline=True
     )
