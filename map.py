@@ -29,9 +29,18 @@ app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
 @app.callback(
     Output("choropleth-map", "figure"),
     [Input("localidad", "value"),
-     Input("type", "value")])
-def display_map(chosen_localidad, chosen_type):
-    filtered_df = df[(df['localidad'].isin(chosen_localidad))
+     Input("type", "value"),
+     Input("all_localidades_checkbox", "value")])
+def display_map(chosen_localidades, chosen_type, show_all_localidades):
+    all_localidades = [b for b in sorted(df['localidad'].unique())]
+
+    # Handle map if user hasn't selected a specific localidad
+    if (show_all_localidades == ["on"]):
+        chosen_localidades = all_localidades
+    else:
+        chosen_localidades = [chosen_localidades]
+
+    filtered_df = df[(df['localidad'].isin(chosen_localidades))
                      & (df['type'].isin(chosen_type))]
 
     # Map choropleth map exactly how you would do it on a jupyter notebook
@@ -52,6 +61,15 @@ def display_map(chosen_localidad, chosen_type):
     fig.update_layout(uirevision='foo')
     fig.update_layout(showlegend=False)
     return fig
+
+
+# Show or hide localidades dropdown depending on the checkbox to show all localidades
+@app.callback(Output("localidad", "style"), [Input("all_localidades_checkbox", "value")])
+def hide_dropdown(show_all_localidades):
+    if (show_all_localidades == ["on"]):
+        return {"display": "none"}
+    else:
+        return {"display": "block"}
 
 
 # Display different content based on the url
