@@ -13,16 +13,17 @@ SIDEBAR_STYLE = {
 
 sidebar = html.Div(
     [
-        html.H2("Sidebar", className="display-4"),
+        html.H2("Team 126", className="display-4"),
         html.Hr(),
-        html.P(
-            "A simple sidebar layout with navigation links", className="lead"
-        ),
+        # html.P(
+        #     "A simple sidebar layout with navigation links", className="lead"
+        # ),
         dbc.Nav(
             [
-                dbc.NavLink("Tú perfil de turista",
+                dbc.NavLink("Explora Bogotá",
                             href="/", active="exact"),
-                dbc.NavLink("Info. general", href="/page-1", active="exact"),
+                dbc.NavLink("Tú perfil de turista",
+                            href="/page-1", active="exact"),
                 dbc.NavLink("Sobre nosotros", href="/page-2", active="exact"),
             ],
             vertical=True,

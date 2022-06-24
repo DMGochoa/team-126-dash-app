@@ -11,7 +11,7 @@ from components.sidebar import sidebar
 from components.jumbotron import jumbotron
 
 app = Dash(__name__, external_stylesheets=[
-           dbc.themes.ZEPHYR], suppress_callback_exceptions=True)
+           dbc.themes.LUX], suppress_callback_exceptions=True)
 
 app.title = "Turismo Bogotá"
 
@@ -19,6 +19,7 @@ server = app.server
 
 # Load data
 df = pd.read_csv("./data-cleaned/scattermap_points.csv")
+# TODO: arreglar municipios aledanos
 localidades_df = pd.read_csv("./data-cleaned/localidades_properties.csv")
 with open("./data-cleaned/poligonos-localidades-min.json") as response:
     bogota_geojson = json.load(response)
@@ -42,6 +43,7 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades):
     if (show_all_localidades == ["on"]):
         chosen_localidades = all_localidades
     elif (show_all_localidades != ["on"] and chosen_localidades != None):
+        # When there's a specific localidad selected, we adjust the center and the zoom values
         chosen_localidad_props = localidades_df[localidades_df['name']
                                                 == chosen_localidades]
         map_zoom = chosen_localidad_props['zoom'].item()

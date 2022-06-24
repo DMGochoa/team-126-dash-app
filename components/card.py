@@ -6,13 +6,12 @@ def custom_card(title, description, color):
     return dbc.Card(
         dbc.CardBody(
             [
-                html.H4(title, className="card-title"),
+                html.H4(title, className="kpi-title"),
                 html.P(
                     description,
-                    className="card-text",
+                    className="kpi-text",
                 ),
             ]
         ),
-        color=color,
-        outline=True
+        color=color
     )

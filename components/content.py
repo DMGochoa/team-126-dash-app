@@ -14,26 +14,26 @@ CONTENT_STYLE = {
 }
 
 MARGIN_TOP = {
-    "margin-top": "3rem",
+    "margin-top": "2rem",
 }
 
 map_controls = html.Div([
-    # dbc.Card(
-    #     [
-    #         dbc.CardImg(
-    #             src="https://mediaim.expedia.com/destination/2/78dd6fee7217b2318c20db7cfdf68b26.jpg?impolicy=fcrop&w=360&h=224&q=mediumLow", top=True),
-    #         dbc.CardBody(
-    #             [
-    #                 html.H4("Card title", className="card-title"),
-    #                 html.P(
-    #                     "Some quick example text to build on the card title and "
-    #                     "make up the bulk of the card's content.",
-    #                     className="card-text",
-    #                 ),
-    #                 dbc.Button("Go somewhere", color="primary"),
-    #             ]
-    #         ),
-    #     ]),
+    dbc.Card(
+        [
+            dbc.CardImg(
+                src="https://mediaim.expedia.com/destination/2/78dd6fee7217b2318c20db7cfdf68b26.jpg?impolicy=fcrop&w=360&h=224&q=mediumLow", top=True),
+            dbc.CardBody(
+                [
+                    html.H4("Card title", className="card-title"),
+                    html.P(
+                        "Some quick example text to build on the card title and "
+                        "make up the bulk of the card's content.",
+                        className="card-text",
+                    ),
+                    dbc.Button("Go somewhere", color="primary"),
+                ]
+            ),
+        ]),
     dcc.Checklist(id='all_localidades_checkbox',
                   options={"on": "Todas las localidades"},
                   value=["on"]
@@ -44,30 +44,28 @@ map_controls = html.Div([
                  placeholder="Selecciona una localidad",
                  style={"display": "none"}
                  ),
+])
+
+map = html.Div([
+    dcc.Graph(id="choropleth-map"),
     dcc.Checklist(id='type',
                   options=[{'label': str(b), 'value': b}
                            for b in sorted(df['type'].unique())],
                   value=[b for b in sorted(df['type'].unique())],
                   inline=True
                   ),
-    # dcc.Dropdown(id='localidad',
-    #              options=[{'label': str(b), 'value': b}
-    #                       for b in sorted(df['localidad'].unique())],
-    #              value=[b for b in sorted(df['localidad'].unique())],
-    #              multi=True
-    #              ),
-])
+
+], style=MARGIN_TOP)
 
 main_view = html.Div([
     dbc.Row([
         dbc.Col(custom_card("KPI #1", "Desc", "primary"), md=4),
-        dbc.Col(custom_card("KPI #2", "Desc", "warning"), md=4),
+        dbc.Col(custom_card("KPI #2", "Desc", "success"), md=4),
         dbc.Col(custom_card("KPI #3", "Desc", "info"), md=4)
     ]),
     dbc.Row([
         dbc.Col(map_controls, md=4, style=MARGIN_TOP),
-        dbc.Col(html.Div(dcc.Graph(id="choropleth-map")),
-                md=8, style=MARGIN_TOP)
+        dbc.Col(map)
     ])
 ])
 
