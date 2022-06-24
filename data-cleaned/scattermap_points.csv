@@ -222,9 +222,9 @@
 220;Parque Mirador de los Nevados;SUBA;4.742167;-74.079908;Atractivo_Turistico;#00b4eb
 221;Centro Cultural y Biblioteca Pública Julio Mario Santo Domingo;SUBA;4.756568;-74.062717;Atractivo_Turistico;#00b4eb
 222;Teatro Mayor Julio Mario Santo Domingo;SUBA;4.756568;-74.062717;Atractivo_Turistico;#00b4eb
-223;Parque Fontanar del Río;TIBABUYES;4.756278;-74.111399;Atractivo_Turistico;#00b4eb
-224;Divercity;SAN JOSE DE BAVARIA;4.762071;-74.045748;Atractivo_Turistico;#00b4eb
-225;Centro Comercial Santafé;SAN JOSE DE BAVARIA;4.762279;-74.046435;Atractivo_Turistico;#00b4eb
+223;Parque Fontanar del Río;SUBA;4.756278;-74.111399;Atractivo_Turistico;#00b4eb
+224;Divercity;SUBA;4.762071;-74.045748;Atractivo_Turistico;#00b4eb
+225;Centro Comercial Santafé;SUBA;4.762279;-74.046435;Atractivo_Turistico;#00b4eb
 226;Parque Velódromo Primero de Mayo;SAN CRISTOBAL;4.573447;-74.088664;Atractivo_Turistico;#00b4eb
 227;Escultura Divino Niño del 20 de Julio;SAN CRISTOBAL;4.568036;-74.095666;Atractivo_Turistico;#00b4eb
 228;Santuario del Niño Jesús;SAN CRISTOBAL;4.568672;-74.09558;Atractivo_Turistico;#00b4eb
@@ -242,7 +242,7 @@
 240;Parque Ciudad Montes;PUENTE ARANDA;4.602472;-74.115598;Atractivo_Turistico;#00b4eb
 241;Carrera Séptima;SANTA FE;4.605298;-74.07158;Atractivo_Turistico;#00b4eb
 242;Plaza Distrital de Mercado Doce de Octubre;BARRIOS UNIDOS;4.669114;-74.074433;Atractivo_Turistico;#00b4eb
-243;Centro Comercial Parque la Colina;CASA BLANCA SUBA;4.732945;-74.066363;Atractivo_Turistico;#00b4eb
+243;Centro Comercial Parque la Colina;SUBA;4.732945;-74.066363;Atractivo_Turistico;#00b4eb
 244;Iglesia de Jesucristo de los Santos de los Últimos Días;SUBA;4.707988;-74.056246;Atractivo_Turistico;#00b4eb
 245;Edificio Ministerio de Hacienda y Crédito Público;CANDELARIA;4.594126;-74.078394;Atractivo_Turistico;#00b4eb
 246;Museo de Ciencias Universidad El Bosque;USAQUEN;4.710697;-74.032052;Atractivo_Turistico;#00b4eb
@@ -419,237 +419,234 @@
 417;Biblioteca Nacional de Colombia;SANTA FE;4.609532;-74.068652;Atractivo_Turistico;#00b4eb
 418;Edificio Academia Colombiana de la Lengua;CANDELARIA;4.601587;-74.0685;Atractivo_Turistico;#00b4eb
 419;Conjunto Escultórico 16 Torres;SANTA FE;4.618516;-74.059061;Atractivo_Turistico;#00b4eb
-420;Parque Regional La Florida;COTA;4.729851;-74.14858;Atractivo_Turistico;#00b4eb
-421;Parque Metropolitano Timiza - Villa del Río;KENNEDY;4.609124;-74.154352;Atractivo_Turistico;#00b4eb
-422;Puente de San Antonio de la Zanja;FONTIBON;4.665718;-74.140646;Atractivo_Turistico;#00b4eb
-423;Monumento a Isabel La Católica y Cristóbal Colón;FONTIBON;4.687546;-74.128474;Atractivo_Turistico;#00b4eb
-424;Catedral Santiago Apóstol;FONTIBON;4.672558;-74.144115;Atractivo_Turistico;#00b4eb
-425;Maloka Museo Interactivo;FONTIBON;4.655647;-74.109273;Atractivo_Turistico;#00b4eb
-426;Escultura El Viajero;FONTIBON;4.692044;-74.133848;Atractivo_Turistico;#00b4eb
-427;Museo de Bogotá Sede Casa de los 7 Balcones;CANDELARIA;4.595427;-74.073058;Atractivo_Turistico;#00b4eb
-428;Museo de Bogotá Sede Casa Samano;CANDELARIA;4.595818;-74.073037;Atractivo_Turistico;#00b4eb
-429;Conjunto Escultórico Doble Victoria Alada;FONTIBON;4.692942;-74.135567;Atractivo_Turistico;#00b4eb
-430;Monumento La Ventana;FONTIBON;4.677246;-74.118837;Atractivo_Turistico;#00b4eb
-431;Escultura Longos;TEUSAQUILLO;4.64048;-74.094711;Atractivo_Turistico;#00b4eb
-432;Archivo General de la Nación;CANDELARIA;4.594078;-74.07685;Atractivo_Turistico;#00b4eb
-433;Escultura Horizontes;FONTIBON;4.693943;-74.136949;Atractivo_Turistico;#00b4eb
-434;Escultura Eclipse;TEUSAQUILLO;4.648611;-74.100171;Atractivo_Turistico;#00b4eb
-435;Escultura Intiwatana;FONTIBON;4.673153;-74.115976;Atractivo_Turistico;#00b4eb
-436;Monumento Pedazo de Río;FONTIBON;4.697162;-74.139429;Atractivo_Turistico;#00b4eb
-437;Monumento Oración al Proscrito;FONTIBON;4.697393;-74.139816;Atractivo_Turistico;#00b4eb
-438;Claustro de San Agustín;CANDELARIA;4.595374;-74.07847;Atractivo_Turistico;#00b4eb
-439;Observatorio Astronómico Nacional;CANDELARIA;4.596112;-74.077545;Atractivo_Turistico;#00b4eb
-440;Puente de Guadua Jenny Garzón;ENGATIVA;4.727672;-74.126255;Atractivo_Turistico;#00b4eb
-441;Plaza Fundacional de Fontibón;FONTIBON;4.673298;-74.144729;Atractivo_Turistico;#00b4eb
-442;Centro Cultural Gabriel García Márquez;CANDELARIA;4.597674;-74.073969;Atractivo_Turistico;#00b4eb
-443;Casa de la Cultura de Fontibón Cacique Hyntiba;FONTIBON;4.672972;-74.14525;Atractivo_Turistico;#00b4eb
-444;Museo Histórico de la Fiscalía General de la Nación;SANTA FE;4.607749;-74.075886;Atractivo_Turistico;#00b4eb
-445;Salitre Plaza Centro Comercial;FONTIBON;4.653391;-74.109935;Atractivo_Turistico;#00b4eb
-446;Parque Sauzalito;FONTIBON;4.653532;-74.112271;Atractivo_Turistico;#00b4eb
-447;Monumento Todas Las Banderas;KENNEDY;4.631138;-74.148297;Atractivo_Turistico;#00b4eb
-448;Museo del Saber en la Gestión de Riesgo de Desastres de Colombia;ENGATIVA;4.683398;-74.120454;Atractivo_Turistico;#00b4eb
-449;Titán Plaza Centro Comercial y Empresarial;ENGATIVA;4.694708;-74.086188;Atractivo_Turistico;#00b4eb
-450;Estación de la Sabana de Bogotá;LOS MARTIRES;4.607094;-74.083342;Atractivo_Turistico;#00b4eb
-451;Escultura Minerva;CANDELARIA;4.596736;-74.072786;Atractivo_Turistico;#00b4eb
-452;Casa Hacienda La Conejera;SUBA;4.768335;-74.080936;Atractivo_Turistico;#00b4eb
-453;Iglesia Nuestra Señora de los Ángeles La Porciúncula;CHAPINERO;4.657332;-74.058231;Atractivo_Turistico;#00b4eb
-454;Iglesia Nuestra Señora de Chiquinquirá;CHAPINERO;4.638414;-74.064954;Atractivo_Turistico;#00b4eb
-455;Casa Grau Museo;CHAPINERO;4.675176;-74.041655;Atractivo_Turistico;#00b4eb
-456;Museo de Historia de la Medicina Ricardo Rueda González;CHAPINERO;4.651676;-74.057599;Atractivo_Turistico;#00b4eb
-457;Granja Atahualpa;USME;4.467945;-74.116532;Atractivo_Turistico;#00b4eb
-458;Laguna Chinará;USME;4.4495;-74.0851;Atractivo_Turistico;#00b4eb
-459;Agroparque Los Soches;USME;4.473873;-74.087373;Atractivo_Turistico;#00b4eb
-460;Parque Ecológico Matarredonda;CHOACHI;4.561124;-74.001328;Atractivo_Turistico;#00b4eb
-461;Biblioteca Pública El Tunal Gabriel García Márquez;TUNJUELITO;4.571898;-74.129857;Atractivo_Turistico;#00b4eb
-462;Edificio del Concejo de Bogotá;TEUSAQUILLO;4.624928;-74.077749;Atractivo_Turistico;#00b4eb
-463;Plaza del Concejo de Bogotá Luis Carlos Sarmiento;TEUSAQUILLO;4.62485;-74.078319;Atractivo_Turistico;#00b4eb
-464;Cabildo Indígena MHUYSQA de Bosa;BOSA;4.617649;-74.204141;Atractivo_Turistico;#00b4eb
-465;Museo Histórico Mariano Ospina Pérez;TEUSAQUILLO;4.628153;-74.074837;Atractivo_Turistico;#00b4eb
-466;Park Way;TEUSAQUILLO;4.629459;-74.075201;Atractivo_Turistico;#00b4eb
-467;Museo de la Independencia Casa del Florero;CANDELARIA;4.59833;-74.075105;Atractivo_Turistico;#00b4eb
-468;Teatro Municipal Jorge Eliécer Gaitán;SANTA FE;4.608779;-74.070923;Atractivo_Turistico;#00b4eb
-469;Monumento a Sía la Diosa del Agua;KENNEDY;4.62984;-74.131435;Atractivo_Turistico;#00b4eb
-470;Monumento a las Banderas;KENNEDY;4.631138;-74.148297;Atractivo_Turistico;#00b4eb
-471;Zona Gastronómica La Macarena;SANTA FE;4.61379;-74.066977;Atractivo_Turistico;#00b4eb
-472;Rieles del Tranvía;SANTA FE;4.60151;-74.073377;Atractivo_Turistico;#00b4eb
-473;Puente de Boyacá;CANDELARIA;4.602766;-74.06723;Atractivo_Turistico;#00b4eb
-474;Plazoleta del Rosario;CANDELARIA;4.600704;-74.072923;Atractivo_Turistico;#00b4eb
-475;Plaza La Santamaría;SANTA FE;4.612915;-74.068133;Atractivo_Turistico;#00b4eb
-476;Escultura Pepe Cáceres;SANTA FE;4.61284;-74.068414;Atractivo_Turistico;#00b4eb
-477;Escultura César Rincón;SANTA FE;4.613193;-74.068513;Atractivo_Turistico;#00b4eb
-478;Pastelería Florida;CANDELARIA;4.607324;-74.070662;Atractivo_Turistico;#00b4eb
-479;Parque Nacional Enrique Olaya Herrera;SANTA FE;4.62351;-74.062214;Atractivo_Turistico;#00b4eb
-480;Parque de los Periodistas Gabriel García Márquez;SANTA FE;4.60125;-74.069444;Atractivo_Turistico;#00b4eb
-481;Pasaje La Macarena;SANTA FE;4.606871;-74.072312;Atractivo_Turistico;#00b4eb
-482;Estatua Antonio Nariño;CANDELARIA;4.596412;-74.076795;Atractivo_Turistico;#00b4eb
-483;Museo de Arte Moderno de Bogotá;SANTA FE;4.610256;-74.069261;Atractivo_Turistico;#00b4eb
-484;Escultura La Pola;CANDELARIA;4.601624;-74.067657;Atractivo_Turistico;#00b4eb
-485;Iglesia de San José;SANTA FE;4.604142;-74.078354;Atractivo_Turistico;#00b4eb
-486;Multiplaza Centro Comercial;FONTIBON;4.652384;-74.125994;Atractivo_Turistico;#00b4eb
-487;Iglesia Nuestra Señora de las Nieves;SANTA FE;4.60615;-74.070877;Atractivo_Turistico;#00b4eb
-488;Teatro El Parque;SANTA FE;4.622946;-74.063691;Atractivo_Turistico;#00b4eb
-489;Parque Zonal San Andrés;ENGATIVA;4.712602;-74.110833;Atractivo_Turistico;#00b4eb
-490;Capilla de La Bordadita;CANDELARIA;4.600023;-74.07327;Atractivo_Turistico;#00b4eb
-491;Museo de la Universidad del Rosario;CANDELARIA;4.600278;-74.073255;Atractivo_Turistico;#00b4eb
-492;Festival Internacional de Teatro Rosa;TEUSAQUILLO;4.648739;-74.066834;Atractivo_Turistico;#00b4eb
-493;Parque Central Bavaria;SANTA FE;4.616744;-74.069908;Atractivo_Turistico;#00b4eb
-494;Escultura Rufino José Cuervo;CANDELARIA;4.597124;-74.075297;Atractivo_Turistico;#00b4eb
-495;Edificio Hotel de la Ópera;CANDELARIA;4.596806;-74.074726;Atractivo_Turistico;#00b4eb
-496;Pasaje Rivas;CANDELARIA;4.599368;-74.078052;Atractivo_Turistico;#00b4eb
-497;Casa Museo Jorge Eliécer Gaitán;TEUSAQUILLO;4.630783;-74.069521;Atractivo_Turistico;#00b4eb
-498;Basílica de Nuestra Señora de Lourdes;CHAPINERO;4.649513;-74.062388;Atractivo_Turistico;#00b4eb
-499;Museo de Arte de la Universidad Nacional;TEUSAQUILLO;4.634515;-74.080833;Atractivo_Turistico;#00b4eb
-500;Casa Gómez Campuzano;CHAPINERO;4.663144;-74.051461;Atractivo_Turistico;#00b4eb
-501;Escultura Ricardo Palma;CANDELARIA;4.602308;-74.067253;Atractivo_Turistico;#00b4eb
-502;Escultura Camilo Torres;CANDELARIA;4.597182;-74.075777;Atractivo_Turistico;#00b4eb
-503;Colegio Mayor de San Bartolomé;CANDELARIA;4.596812;-74.075935;Atractivo_Turistico;#00b4eb
-504;Plazoleta del Chorro de Quevedo;CANDELARIA;4.597236;-74.06969;Atractivo_Turistico;#00b4eb
-505;Callejón del Embudo;CANDELARIA;4.597805;-74.069647;Atractivo_Turistico;#00b4eb
-506;Catedral Primada de Colombia;CANDELARIA;4.597765;-74.075012;Atractivo_Turistico;#00b4eb
-507;Jardín Botánico de Bogotá José Celestino Mutis;ENGATIVA;4.668051;-74.100069;Atractivo_Turistico;#00b4eb
-508;Cerro de Guadalupe;SANTA FE;4.592162;-74.056348;Atractivo_Turistico;#00b4eb
-509;Museo Nacional de Geografía y Cartografía;TEUSAQUILLO;4.639542;-74.079867;Atractivo_Turistico;#00b4eb
-510;Museo Geológico Nacional José Royo y Gómez;TEUSAQUILLO;4.640949;-74.080052;Atractivo_Turistico;#00b4eb
-511;Movistar Arena;TEUSAQUILLO;4.649133;-74.077522;Atractivo_Turistico;#00b4eb
-512;Museo de Suelos de Colombia;TEUSAQUILLO;4.639603;-74.079744;Atractivo_Turistico;#00b4eb
-513;Reserva El Delirio;SAN CRISTOBAL;4.560075;-74.062814;Atractivo_Turistico;#00b4eb
-514;Mercado de las Pulgas de Usaquén;USAQUEN;4.696272;-74.030751;Atractivo_Turistico;#00b4eb
-515;Parque Ecológico Distrital Humedal Santa María del Lago;ENGATIVA;4.69447;-74.094375;Atractivo_Turistico;#00b4eb
-516;Parque Ecológico Distrital Humedal Torca - GÃ¼aymaral;SUBA;4.79894;-74.040892;Atractivo_Turistico;#00b4eb
-517;Parque Ecológico Distrital Humedal Salitre;BARRIOS UNIDOS;4.66747;-74.088026;Atractivo_Turistico;#00b4eb
-518;Parque Ecológico Distrital Humedal Capellanía;FONTIBON;4.674708;-74.130509;Atractivo_Turistico;#00b4eb
-519;Biblioteca Auditorio Universidad Jorge Tadeo Lozano (Módulo 21);SANTA FE;4.606236;-74.067392;Atractivo_Turistico;#00b4eb
-520;Reserva Forestal Protectora Bosque Oriental Bogotá;SANTA FE;4.612094;-74.037129;Atractivo_Turistico;#00b4eb
-521;Chorro de Padilla;CANDELARIA;4.601429;-74.059041;Atractivo_Turistico;#00b4eb
-522;Museo de Artes Visuales;SANTA FE;4.606016;-74.067152;Atractivo_Turistico;#00b4eb
-523;Parque Ecológico Distrital Humedal Tibanica;DESPENSA;4.60355;-74.204616;Atractivo_Turistico;#00b4eb
-524;Edificio Guillermo Rueda Montaña de la Universidad de Bogotá Jorge Tadeo Lozano;SANTA FE;4.606796;-74.066967;Atractivo_Turistico;#00b4eb
-525;Parque Ecológico Distrital Humedal La Conejera;SUBA;4.760945;-74.102633;Atractivo_Turistico;#00b4eb
-526;Vereda La Requilina;USME;4.468696;-74.120375;Atractivo_Turistico;#00b4eb
-527;Palacio Arzobispal;CANDELARIA;4.5974;-74.075534;Atractivo_Turistico;#00b4eb
-528;Capilla del Sagrario;CANDELARIA;4.597578;-74.075332;Atractivo_Turistico;#00b4eb
-529;Parque Ecológico Distrital Humedal Jaboque;ENGATIVA;4.720823;-74.138104;Atractivo_Turistico;#00b4eb
-530;Parque Ecológico Distrital Humedal Meandro del Say;FONTIBON;4.674421;-74.164732;Atractivo_Turistico;#00b4eb
-531;Parque Ecológico Distrital Humedal El Tunjo;TUNJUELITO;4.570729;-74.140052;Atractivo_Turistico;#00b4eb
-532;Las Moyas;CHAPINERO;4.660757;-74.020832;Atractivo_Turistico;#00b4eb
-533;Páramo de Cruz Verde;SAN CRISTOBAL;4.535022;-74.036173;Atractivo_Turistico;#00b4eb
-534;Parque Ecológico Distrital Humedal Córdoba;SUBA;4.702206;-74.069589;Atractivo_Turistico;#00b4eb
-535;Iglesia de Nuestra Señora de la Candelaria;CANDELARIA;4.596769;-74.072456;Atractivo_Turistico;#00b4eb
-536;Escultura San Juan Bosco;CANDELARIA;4.594679;-74.074949;Atractivo_Turistico;#00b4eb
-537;Iglesia de San Agustín;CANDELARIA;4.593886;-74.077975;Atractivo_Turistico;#00b4eb
-538;Santuario de Nuestra Señora del Carmen;CANDELARIA;4.594731;-74.074664;Atractivo_Turistico;#00b4eb
-539;Iglesia Nuestra Señora de las Aguas;CANDELARIA;4.602386;-74.066896;Atractivo_Turistico;#00b4eb
-540;Claustro de las Aguas;CANDELARIA;4.601911;-74.066766;Atractivo_Turistico;#00b4eb
-541;Alimentarte Food Festival;CHAPINERO;4.67313;-74.054603;Atractivo_Turistico;#00b4eb
-542;Feria Tecnológica e Industrial del Mueble y la Madera;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
-543;Templo de San Francisco;SANTA FE;4.601888;-74.073263;Atractivo_Turistico;#00b4eb
-544;Palacio de Justicia Alfonso Reyes Echandía;CANDELARIA;4.598989;-74.075523;Atractivo_Turistico;#00b4eb
-545;Parque Ecológico Distrital Humedal Juan Amarillo;ENGATIVA;4.728023;-74.109147;Atractivo_Turistico;#00b4eb
-546;Parque Ecológico Distrital Humedal El Burro;KENNEDY;4.642819;-74.150844;Atractivo_Turistico;#00b4eb
-547;Parque Ecológico Distrital Humedal La Vaca;KENNEDY;4.629082;-74.162258;Atractivo_Turistico;#00b4eb
-548;Parque Ecológico Distrital Humedal Techo;KENNEDY;4.648018;-74.143338;Atractivo_Turistico;#00b4eb
-549;Parque Ecológico Cantarrana;USME;4.50026;-74.12161;Atractivo_Turistico;#00b4eb
-550;Cerro La Aguadora;USAQUEN;4.689573;-74.018403;Atractivo_Turistico;#00b4eb
-551;Parque Ecológico Distrital de Montaña Entrenubes;SAN CRISTOBAL;4.5395;-74.0974;Atractivo_Turistico;#00b4eb
-552;Centro Comercial Gran Estación;TEUSAQUILLO;4.646982;-74.101763;Atractivo_Turistico;#00b4eb
-553;Zona Rural de Ciudad Bolívar;CIUDAD BOLIVAR;4.466951;-74.16054;Atractivo_Turistico;#00b4eb
-554;Embalse Chisacá;USME;4.383694;-74.173279;Atractivo_Turistico;#00b4eb
-555;Embalse La Regadera;USME;4.39943;-74.142028;Atractivo_Turistico;#00b4eb
-556;Iglesia San Pedro de Usme;USME;4.470585;-74.125734;Atractivo_Turistico;#00b4eb
-557;Casa Fundación Gilberto Álzate Avendaño FUGA;CANDELARIA;4.595486;-74.072403;Atractivo_Turistico;#00b4eb
-558;Escultura Lumbalú;FONTIBON;4.650785;-74.113486;Atractivo_Turistico;#00b4eb
-559;Fiesta de Reyes Magos y Epifanía;CANDELARIA;4.593553;-74.068992;Atractivo_Turistico;#00b4eb
-560;Museo Millonarios FC;TEUSAQUILLO;4.645513;-74.078307;Atractivo_Turistico;#00b4eb
-561;Hacienda Tagaste;KENNEDY;4.653079;-74.143723;Atractivo_Turistico;#00b4eb
-562;Mural El Hombre y el Drama de la Vivienda;SANTA FE;4.607749;-74.075886;Atractivo_Turistico;#00b4eb
-563;Iglesia San Alfonso María de Ligorio;TEUSAQUILLO;4.627946;-74.078088;Atractivo_Turistico;#00b4eb
-564;Salón Histórico del Batallón Guardia Presidencial;CANDELARIA;4.591934;-74.080328;Atractivo_Turistico;#00b4eb
-565;Festividad de la Virgen de Chiquinquirá;CHAPINERO;4.638513;-74.065281;Atractivo_Turistico;#00b4eb
-566;Fiesta de Nuestra Señora de Lourdes;CHAPINERO;4.649688;-74.063109;Atractivo_Turistico;#00b4eb
-567;Santuario de Nuestra Señora de la Peña;SANTA FE;4.586087;-74.065225;Atractivo_Turistico;#00b4eb
-568;Palacio de Liévano;CANDELARIA;4.598448;-74.076648;Atractivo_Turistico;#00b4eb
-569;Fiesta del Señor de los Milagros;TEUSAQUILLO;4.627946;-74.078088;Atractivo_Turistico;#00b4eb
-570;Santuario de Nuestra Señora de Guadalupe;SANTA FE;4.591775;-74.054225;Atractivo_Turistico;#00b4eb
-571;Ciclo Rosa;SANTA FE;4.608819;-74.070619;Atractivo_Turistico;#00b4eb
-572;Capilla de Santa María de los Ángeles;CHAPINERO;4.661367;-74.050657;Atractivo_Turistico;#00b4eb
-573;Andigráfica;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
-574;Edificio Four Seasons Hotel Casa Medina Bogotá;CHAPINERO;4.652235;-74.056308;Atractivo_Turistico;#00b4eb
-575;Casa de la Cultura de Usme;USME;4.472721;-74.123023;Atractivo_Turistico;#00b4eb
-576;Expoconstrucción y Expodiseño;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
-577;Colección Pizano;TEUSAQUILLO;4.63536;-74.083079;Atractivo_Turistico;#00b4eb
-578;Casa del General Pedro Alcántara Herrán;CANDELARIA;4.597174;-74.074153;Atractivo_Turistico;#00b4eb
-579;Palacio de Echeverry;CANDELARIA;4.596513;-74.077775;Atractivo_Turistico;#00b4eb
-580;Iglesia Nuestra Señora de la Medalla Milagrosa;FONTIBON;4.652063;-74.108931;Atractivo_Turistico;#00b4eb
-581;Palacio de San Carlos;CANDELARIA;4.596365;-74.074816;Atractivo_Turistico;#00b4eb
-582;Feria Agroexpo;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
-583;Feria Belleza y Salud;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
-584;Feria Expoartesanías;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
-585;Feria Internacional de Arte de Bogotá - ARTBO;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
-586;Feria Internacional de Bogotá Exposición Industrial;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
-587;Plaza de Bolívar;CANDELARIA;4.598105;-74.076096;Atractivo_Turistico;#00b4eb
-588;Plazuela Rufino Cuervo;CANDELARIA;4.597161;-74.075274;Atractivo_Turistico;#00b4eb
-589;Feria Internacional del Libro de Bogotá FILBO;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
-590;International Footwear & Leather Show y Exhibición Internacional del Cuero e Insumos Maquinaria y Tecnología IFLS+EICI;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
-591;Parque Salitre Mágico;BARRIOS UNIDOS;4.667315;-74.089862;Atractivo_Turistico;#00b4eb
-592;Temporada Taurina en Bogotá;SANTA FE;4.612814;-74.068297;Atractivo_Turistico;#00b4eb
-593;Cerro de Monserrate;SANTA FE;4.606023;-74.05487;Atractivo_Turistico;#00b4eb
-594;Claustro Principal de la Universidad Colegio Mayor de Nuestra Señora del Rosario;CANDELARIA;4.600278;-74.073255;Atractivo_Turistico;#00b4eb
-595;Auditorio León de Greiff;TEUSAQUILLO;4.635692;-74.082292;Atractivo_Turistico;#00b4eb
-596;Altar Mayor Templo de San Francisco;SANTA FE;4.601888;-74.073263;Atractivo_Turistico;#00b4eb
-597;Balcón Palacio de San Carlos;CANDELARIA;4.596325;-74.074569;Atractivo_Turistico;#00b4eb
-598;Colección de Instrumentos Musicales;CANDELARIA;4.597401;-74.072424;Atractivo_Turistico;#00b4eb
-599;Casa Natal José María Vergara y Vergara;CANDELARIA;4.597548;-74.072022;Atractivo_Turistico;#00b4eb
-600;Sala de Conciertos Biblioteca Luis Ángel Arango;CANDELARIA;4.596999;-74.072825;Atractivo_Turistico;#00b4eb
-601;Colección Numismática Casa de la Moneda;CANDELARIA;4.596755;-74.073577;Atractivo_Turistico;#00b4eb
-602;Casa Natal de Rafael Pombo;CANDELARIA;4.596473;-74.074167;Atractivo_Turistico;#00b4eb
-603;Casa Delia Zapata Olivella;CANDELARIA;4.594429;-74.071966;Atractivo_Turistico;#00b4eb
-604;Casa Gregorio Vásquez de Arce y Ceballos;CANDELARIA;4.596441;-74.07265;Atractivo_Turistico;#00b4eb
-605;Calle 10;CANDELARIA;4.596811;-74.074991;Atractivo_Turistico;#00b4eb
-606;Museo de La Salle;CANDELARIA;4.594553;-74.070488;Atractivo_Turistico;#00b4eb
-607;Biblioteca del Congreso Luis Carlos Galán Sarmiento;CANDELARIA;4.595691;-74.075388;Atractivo_Turistico;#00b4eb
-608;Edificio Archivo de Bogotá;CANDELARIA;4.591335;-74.077394;Atractivo_Turistico;#00b4eb
-609;Casa Sede Sociedad Económica de Amigos del País;CANDELARIA;4.598179;-74.07467;Atractivo_Turistico;#00b4eb
-610;Plaza Fundacional de Usme;USME;4.471034;-74.125326;Atractivo_Turistico;#00b4eb
-611;Zona de Amortiguación del Parque Nacional Natural Sumapaz;SUMAPAZ;4.189558;-74.190089;Atractivo_Turistico;#00b4eb
-612;Sinagoga Adat Israel;CHAPINERO;4.675349;-74.041975;Atractivo_Turistico;#00b4eb
-613;Iglesia Divino Salvador;CHAPINERO;4.644177;-74.069129;Atractivo_Turistico;#00b4eb
-614;Zona Rural Verjón Alto y Bajo;SANTA FE;4.616618;-74.010392;Atractivo_Turistico;#00b4eb
-615;Laguna Ubchihiqa;SUMAPAZ;4.3757;-74.2298;Atractivo_Turistico;#00b4eb
-616;Quebrada Las Delicias;CHAPINERO;4.6382;-74.052141;Atractivo_Turistico;#00b4eb
-617;Escultura Tomás Cipriano de Mosquera;CANDELARIA;4.597357;-74.076462;Atractivo_Turistico;#00b4eb
-618;Biblioteca Luis Ángel Arango;CANDELARIA;4.596977;-74.072806;Atractivo_Turistico;#00b4eb
-619;Museo de Arquitectura Leopoldo Rother;TEUSAQUILLO;4.634001;-74.083164;Atractivo_Turistico;#00b4eb
-620;Río San Francisco - Vicachá;SANTA FE;4.601105;-74.059197;Atractivo_Turistico;#00b4eb
-621;Escultura Pórtico;SANTA FE;4.597264;-74.084075;Atractivo_Turistico;#00b4eb
-622;Castillo del Mono Osorio;CHAPINERO;4.655344;-74.051419;Atractivo_Turistico;#00b4eb
-623;Capilla San Miguel del Príncipe;CANDELARIA;4.597231;-74.069843;Atractivo_Turistico;#00b4eb
-624;Casa Republicana;CANDELARIA;4.597572;-74.072809;Atractivo_Turistico;#00b4eb
-625;Iglesia de Santa Bárbara;CANDELARIA;4.592202;-74.078583;Atractivo_Turistico;#00b4eb
-626;Iglesia San Juan de Dios;CANDELARIA;4.600493;-74.077441;Atractivo_Turistico;#00b4eb
-627;Iglesia Nuestra Señora de Egipto;CANDELARIA;4.593428;-74.068831;Atractivo_Turistico;#00b4eb
-628;Iglesia de la Concepción;CANDELARIA;4.59878;-74.077743;Atractivo_Turistico;#00b4eb
-629;Iglesia de San Ignacio;CANDELARIA;4.596685;-74.07559;Atractivo_Turistico;#00b4eb
-630;Escultura Manuel Murillo Toro;CANDELARIA;4.600266;-74.075148;Atractivo_Turistico;#00b4eb
-631;Escultura Puerta del Palacio Arzobispal;CANDELARIA;4.597468;-74.075675;Atractivo_Turistico;#00b4eb
-632;Florero de Llorente;CANDELARIA;4.598272;-74.075164;Atractivo_Turistico;#00b4eb
-633;Monumento a la Batalla de Ayacucho;CANDELARIA;4.594845;-74.076749;Atractivo_Turistico;#00b4eb
-634;Parque Metropolitano Arborizadora Alta;CIUDAD BOLIVAR;4.564019;-74.168195;Atractivo_Turistico;#00b4eb
-635;Eje Ambiental;SANTA FE;4.600742;-74.070536;Atractivo_Turistico;#00b4eb
-636;Teatro al Aire Libre la Media Torta;CANDELARIA;4.599749;-74.065947;Atractivo_Turistico;#00b4eb
-637;Centro Histórico de La Candelaria;CANDELARIA;4.596254;-74.074121;Atractivo_Turistico;#00b4eb
-638;Casa Museo Quinta de Bolívar;CANDELARIA;4.602665;-74.063231;Atractivo_Turistico;#00b4eb
-639;Sitio del Asesinato de Jorge Eliécer Gaitán;CANDELARIA;4.601221;-74.073658;Atractivo_Turistico;#00b4eb
-640;Escultura Gonzalo Jiménez de Quesada;CANDELARIA;4.600704;-74.072923;Atractivo_Turistico;#00b4eb
-641;Museo del Cobre;CANDELARIA;4.600622;-74.072596;Atractivo_Turistico;#00b4eb
-642;Museo Casa Cuervo Urisarri;CANDELARIA;4.595727;-74.073986;Atractivo_Turistico;#00b4eb
-643;Iglesia San Antonio de Padua;ANTONIO NARIÑO;4.587717;-74.093247;Atractivo_Turistico;#00b4eb
-644;Teatro La Candelaria;CANDELARIA;4.596355;-74.070934;Atractivo_Turistico;#00b4eb
-645;Casa de Poesía Silva;CANDELARIA;4.598603;-74.070583;Atractivo_Turistico;#00b4eb
-646;Edificio Monserrate;SANTA FE;4.600541;-74.070518;Atractivo_Turistico;#00b4eb
-647;Edificio Pedro A. López;CANDELARIA;4.601548;-74.074309;Atractivo_Turistico;#00b4eb
-648;Edificio Andes;CANDELARIA;4.601908;-74.07457;Atractivo_Turistico;#00b4eb
-649;Casa Museo Francisco José de Caldas;CANDELARIA;4.59473;-74.078856;Atractivo_Turistico;#00b4eb
-650;Edificio Vengoechea;CANDELARIA;4.597798;-74.073038;Atractivo_Turistico;#00b4eb
-651;Monumento a Rafael Núñez;CANDELARIA;4.596955;-74.076715;Atractivo_Turistico;#00b4eb
-652;Casa de los Comuneros;CANDELARIA;4.597858;-74.077089;Atractivo_Turistico;#00b4eb
-653;Calle del Camarín del Carmen;CANDELARIA;4.595092;-74.074178;Atractivo_Turistico;#00b4eb
+420;Parque Metropolitano Timiza - Villa del Río;KENNEDY;4.609124;-74.154352;Atractivo_Turistico;#00b4eb
+421;Puente de San Antonio de la Zanja;FONTIBON;4.665718;-74.140646;Atractivo_Turistico;#00b4eb
+422;Monumento a Isabel La Católica y Cristóbal Colón;FONTIBON;4.687546;-74.128474;Atractivo_Turistico;#00b4eb
+423;Catedral Santiago Apóstol;FONTIBON;4.672558;-74.144115;Atractivo_Turistico;#00b4eb
+424;Maloka Museo Interactivo;FONTIBON;4.655647;-74.109273;Atractivo_Turistico;#00b4eb
+425;Escultura El Viajero;FONTIBON;4.692044;-74.133848;Atractivo_Turistico;#00b4eb
+426;Museo de Bogotá Sede Casa de los 7 Balcones;CANDELARIA;4.595427;-74.073058;Atractivo_Turistico;#00b4eb
+427;Museo de Bogotá Sede Casa Samano;CANDELARIA;4.595818;-74.073037;Atractivo_Turistico;#00b4eb
+428;Conjunto Escultórico Doble Victoria Alada;FONTIBON;4.692942;-74.135567;Atractivo_Turistico;#00b4eb
+429;Monumento La Ventana;FONTIBON;4.677246;-74.118837;Atractivo_Turistico;#00b4eb
+430;Escultura Longos;TEUSAQUILLO;4.64048;-74.094711;Atractivo_Turistico;#00b4eb
+431;Archivo General de la Nación;CANDELARIA;4.594078;-74.07685;Atractivo_Turistico;#00b4eb
+432;Escultura Horizontes;FONTIBON;4.693943;-74.136949;Atractivo_Turistico;#00b4eb
+433;Escultura Eclipse;TEUSAQUILLO;4.648611;-74.100171;Atractivo_Turistico;#00b4eb
+434;Escultura Intiwatana;FONTIBON;4.673153;-74.115976;Atractivo_Turistico;#00b4eb
+435;Monumento Pedazo de Río;FONTIBON;4.697162;-74.139429;Atractivo_Turistico;#00b4eb
+436;Monumento Oración al Proscrito;FONTIBON;4.697393;-74.139816;Atractivo_Turistico;#00b4eb
+437;Claustro de San Agustín;CANDELARIA;4.595374;-74.07847;Atractivo_Turistico;#00b4eb
+438;Observatorio Astronómico Nacional;CANDELARIA;4.596112;-74.077545;Atractivo_Turistico;#00b4eb
+439;Puente de Guadua Jenny Garzón;ENGATIVA;4.727672;-74.126255;Atractivo_Turistico;#00b4eb
+440;Plaza Fundacional de Fontibón;FONTIBON;4.673298;-74.144729;Atractivo_Turistico;#00b4eb
+441;Centro Cultural Gabriel García Márquez;CANDELARIA;4.597674;-74.073969;Atractivo_Turistico;#00b4eb
+442;Casa de la Cultura de Fontibón Cacique Hyntiba;FONTIBON;4.672972;-74.14525;Atractivo_Turistico;#00b4eb
+443;Museo Histórico de la Fiscalía General de la Nación;SANTA FE;4.607749;-74.075886;Atractivo_Turistico;#00b4eb
+444;Salitre Plaza Centro Comercial;FONTIBON;4.653391;-74.109935;Atractivo_Turistico;#00b4eb
+445;Parque Sauzalito;FONTIBON;4.653532;-74.112271;Atractivo_Turistico;#00b4eb
+446;Monumento Todas Las Banderas;KENNEDY;4.631138;-74.148297;Atractivo_Turistico;#00b4eb
+447;Museo del Saber en la Gestión de Riesgo de Desastres de Colombia;ENGATIVA;4.683398;-74.120454;Atractivo_Turistico;#00b4eb
+448;Titán Plaza Centro Comercial y Empresarial;ENGATIVA;4.694708;-74.086188;Atractivo_Turistico;#00b4eb
+449;Estación de la Sabana de Bogotá;LOS MARTIRES;4.607094;-74.083342;Atractivo_Turistico;#00b4eb
+450;Escultura Minerva;CANDELARIA;4.596736;-74.072786;Atractivo_Turistico;#00b4eb
+451;Casa Hacienda La Conejera;SUBA;4.768335;-74.080936;Atractivo_Turistico;#00b4eb
+452;Iglesia Nuestra Señora de los Ángeles La Porciúncula;CHAPINERO;4.657332;-74.058231;Atractivo_Turistico;#00b4eb
+453;Iglesia Nuestra Señora de Chiquinquirá;CHAPINERO;4.638414;-74.064954;Atractivo_Turistico;#00b4eb
+454;Casa Grau Museo;CHAPINERO;4.675176;-74.041655;Atractivo_Turistico;#00b4eb
+455;Museo de Historia de la Medicina Ricardo Rueda González;CHAPINERO;4.651676;-74.057599;Atractivo_Turistico;#00b4eb
+456;Granja Atahualpa;USME;4.467945;-74.116532;Atractivo_Turistico;#00b4eb
+457;Laguna Chinará;USME;4.4495;-74.0851;Atractivo_Turistico;#00b4eb
+458;Agroparque Los Soches;USME;4.473873;-74.087373;Atractivo_Turistico;#00b4eb
+459;Biblioteca Pública El Tunal Gabriel García Márquez;TUNJUELITO;4.571898;-74.129857;Atractivo_Turistico;#00b4eb
+460;Edificio del Concejo de Bogotá;TEUSAQUILLO;4.624928;-74.077749;Atractivo_Turistico;#00b4eb
+461;Plaza del Concejo de Bogotá Luis Carlos Sarmiento;TEUSAQUILLO;4.62485;-74.078319;Atractivo_Turistico;#00b4eb
+462;Cabildo Indígena MHUYSQA de Bosa;BOSA;4.617649;-74.204141;Atractivo_Turistico;#00b4eb
+463;Museo Histórico Mariano Ospina Pérez;TEUSAQUILLO;4.628153;-74.074837;Atractivo_Turistico;#00b4eb
+464;Park Way;TEUSAQUILLO;4.629459;-74.075201;Atractivo_Turistico;#00b4eb
+465;Museo de la Independencia Casa del Florero;CANDELARIA;4.59833;-74.075105;Atractivo_Turistico;#00b4eb
+466;Teatro Municipal Jorge Eliécer Gaitán;SANTA FE;4.608779;-74.070923;Atractivo_Turistico;#00b4eb
+467;Monumento a Sía la Diosa del Agua;KENNEDY;4.62984;-74.131435;Atractivo_Turistico;#00b4eb
+468;Monumento a las Banderas;KENNEDY;4.631138;-74.148297;Atractivo_Turistico;#00b4eb
+469;Zona Gastronómica La Macarena;SANTA FE;4.61379;-74.066977;Atractivo_Turistico;#00b4eb
+470;Rieles del Tranvía;SANTA FE;4.60151;-74.073377;Atractivo_Turistico;#00b4eb
+471;Puente de Boyacá;CANDELARIA;4.602766;-74.06723;Atractivo_Turistico;#00b4eb
+472;Plazoleta del Rosario;CANDELARIA;4.600704;-74.072923;Atractivo_Turistico;#00b4eb
+473;Plaza La Santamaría;SANTA FE;4.612915;-74.068133;Atractivo_Turistico;#00b4eb
+474;Escultura Pepe Cáceres;SANTA FE;4.61284;-74.068414;Atractivo_Turistico;#00b4eb
+475;Escultura César Rincón;SANTA FE;4.613193;-74.068513;Atractivo_Turistico;#00b4eb
+476;Pastelería Florida;CANDELARIA;4.607324;-74.070662;Atractivo_Turistico;#00b4eb
+477;Parque Nacional Enrique Olaya Herrera;SANTA FE;4.62351;-74.062214;Atractivo_Turistico;#00b4eb
+478;Parque de los Periodistas Gabriel García Márquez;SANTA FE;4.60125;-74.069444;Atractivo_Turistico;#00b4eb
+479;Pasaje La Macarena;SANTA FE;4.606871;-74.072312;Atractivo_Turistico;#00b4eb
+480;Estatua Antonio Nariño;CANDELARIA;4.596412;-74.076795;Atractivo_Turistico;#00b4eb
+481;Museo de Arte Moderno de Bogotá;SANTA FE;4.610256;-74.069261;Atractivo_Turistico;#00b4eb
+482;Escultura La Pola;CANDELARIA;4.601624;-74.067657;Atractivo_Turistico;#00b4eb
+483;Iglesia de San José;SANTA FE;4.604142;-74.078354;Atractivo_Turistico;#00b4eb
+484;Multiplaza Centro Comercial;FONTIBON;4.652384;-74.125994;Atractivo_Turistico;#00b4eb
+485;Iglesia Nuestra Señora de las Nieves;SANTA FE;4.60615;-74.070877;Atractivo_Turistico;#00b4eb
+486;Teatro El Parque;SANTA FE;4.622946;-74.063691;Atractivo_Turistico;#00b4eb
+487;Parque Zonal San Andrés;ENGATIVA;4.712602;-74.110833;Atractivo_Turistico;#00b4eb
+488;Capilla de La Bordadita;CANDELARIA;4.600023;-74.07327;Atractivo_Turistico;#00b4eb
+489;Museo de la Universidad del Rosario;CANDELARIA;4.600278;-74.073255;Atractivo_Turistico;#00b4eb
+490;Festival Internacional de Teatro Rosa;TEUSAQUILLO;4.648739;-74.066834;Atractivo_Turistico;#00b4eb
+491;Parque Central Bavaria;SANTA FE;4.616744;-74.069908;Atractivo_Turistico;#00b4eb
+492;Escultura Rufino José Cuervo;CANDELARIA;4.597124;-74.075297;Atractivo_Turistico;#00b4eb
+493;Edificio Hotel de la Ópera;CANDELARIA;4.596806;-74.074726;Atractivo_Turistico;#00b4eb
+494;Pasaje Rivas;CANDELARIA;4.599368;-74.078052;Atractivo_Turistico;#00b4eb
+495;Casa Museo Jorge Eliécer Gaitán;TEUSAQUILLO;4.630783;-74.069521;Atractivo_Turistico;#00b4eb
+496;Basílica de Nuestra Señora de Lourdes;CHAPINERO;4.649513;-74.062388;Atractivo_Turistico;#00b4eb
+497;Museo de Arte de la Universidad Nacional;TEUSAQUILLO;4.634515;-74.080833;Atractivo_Turistico;#00b4eb
+498;Casa Gómez Campuzano;CHAPINERO;4.663144;-74.051461;Atractivo_Turistico;#00b4eb
+499;Escultura Ricardo Palma;CANDELARIA;4.602308;-74.067253;Atractivo_Turistico;#00b4eb
+500;Escultura Camilo Torres;CANDELARIA;4.597182;-74.075777;Atractivo_Turistico;#00b4eb
+501;Colegio Mayor de San Bartolomé;CANDELARIA;4.596812;-74.075935;Atractivo_Turistico;#00b4eb
+502;Plazoleta del Chorro de Quevedo;CANDELARIA;4.597236;-74.06969;Atractivo_Turistico;#00b4eb
+503;Callejón del Embudo;CANDELARIA;4.597805;-74.069647;Atractivo_Turistico;#00b4eb
+504;Catedral Primada de Colombia;CANDELARIA;4.597765;-74.075012;Atractivo_Turistico;#00b4eb
+505;Jardín Botánico de Bogotá José Celestino Mutis;ENGATIVA;4.668051;-74.100069;Atractivo_Turistico;#00b4eb
+506;Cerro de Guadalupe;SANTA FE;4.592162;-74.056348;Atractivo_Turistico;#00b4eb
+507;Museo Nacional de Geografía y Cartografía;TEUSAQUILLO;4.639542;-74.079867;Atractivo_Turistico;#00b4eb
+508;Museo Geológico Nacional José Royo y Gómez;TEUSAQUILLO;4.640949;-74.080052;Atractivo_Turistico;#00b4eb
+509;Movistar Arena;TEUSAQUILLO;4.649133;-74.077522;Atractivo_Turistico;#00b4eb
+510;Museo de Suelos de Colombia;TEUSAQUILLO;4.639603;-74.079744;Atractivo_Turistico;#00b4eb
+511;Reserva El Delirio;SAN CRISTOBAL;4.560075;-74.062814;Atractivo_Turistico;#00b4eb
+512;Mercado de las Pulgas de Usaquén;USAQUEN;4.696272;-74.030751;Atractivo_Turistico;#00b4eb
+513;Parque Ecológico Distrital Humedal Santa María del Lago;ENGATIVA;4.69447;-74.094375;Atractivo_Turistico;#00b4eb
+514;Parque Ecológico Distrital Humedal Torca - GÃ¼aymaral;SUBA;4.79894;-74.040892;Atractivo_Turistico;#00b4eb
+515;Parque Ecológico Distrital Humedal Salitre;BARRIOS UNIDOS;4.66747;-74.088026;Atractivo_Turistico;#00b4eb
+516;Parque Ecológico Distrital Humedal Capellanía;FONTIBON;4.674708;-74.130509;Atractivo_Turistico;#00b4eb
+517;Biblioteca Auditorio Universidad Jorge Tadeo Lozano (Módulo 21);SANTA FE;4.606236;-74.067392;Atractivo_Turistico;#00b4eb
+518;Reserva Forestal Protectora Bosque Oriental Bogotá;SANTA FE;4.612094;-74.037129;Atractivo_Turistico;#00b4eb
+519;Chorro de Padilla;CANDELARIA;4.601429;-74.059041;Atractivo_Turistico;#00b4eb
+520;Museo de Artes Visuales;SANTA FE;4.606016;-74.067152;Atractivo_Turistico;#00b4eb
+521;Edificio Guillermo Rueda Montaña de la Universidad de Bogotá Jorge Tadeo Lozano;SANTA FE;4.606796;-74.066967;Atractivo_Turistico;#00b4eb
+522;Parque Ecológico Distrital Humedal La Conejera;SUBA;4.760945;-74.102633;Atractivo_Turistico;#00b4eb
+523;Vereda La Requilina;USME;4.468696;-74.120375;Atractivo_Turistico;#00b4eb
+524;Palacio Arzobispal;CANDELARIA;4.5974;-74.075534;Atractivo_Turistico;#00b4eb
+525;Capilla del Sagrario;CANDELARIA;4.597578;-74.075332;Atractivo_Turistico;#00b4eb
+526;Parque Ecológico Distrital Humedal Jaboque;ENGATIVA;4.720823;-74.138104;Atractivo_Turistico;#00b4eb
+527;Parque Ecológico Distrital Humedal Meandro del Say;FONTIBON;4.674421;-74.164732;Atractivo_Turistico;#00b4eb
+528;Parque Ecológico Distrital Humedal El Tunjo;TUNJUELITO;4.570729;-74.140052;Atractivo_Turistico;#00b4eb
+529;Las Moyas;CHAPINERO;4.660757;-74.020832;Atractivo_Turistico;#00b4eb
+530;Páramo de Cruz Verde;SAN CRISTOBAL;4.535022;-74.036173;Atractivo_Turistico;#00b4eb
+531;Parque Ecológico Distrital Humedal Córdoba;SUBA;4.702206;-74.069589;Atractivo_Turistico;#00b4eb
+532;Iglesia de Nuestra Señora de la Candelaria;CANDELARIA;4.596769;-74.072456;Atractivo_Turistico;#00b4eb
+533;Escultura San Juan Bosco;CANDELARIA;4.594679;-74.074949;Atractivo_Turistico;#00b4eb
+534;Iglesia de San Agustín;CANDELARIA;4.593886;-74.077975;Atractivo_Turistico;#00b4eb
+535;Santuario de Nuestra Señora del Carmen;CANDELARIA;4.594731;-74.074664;Atractivo_Turistico;#00b4eb
+536;Iglesia Nuestra Señora de las Aguas;CANDELARIA;4.602386;-74.066896;Atractivo_Turistico;#00b4eb
+537;Claustro de las Aguas;CANDELARIA;4.601911;-74.066766;Atractivo_Turistico;#00b4eb
+538;Alimentarte Food Festival;CHAPINERO;4.67313;-74.054603;Atractivo_Turistico;#00b4eb
+539;Feria Tecnológica e Industrial del Mueble y la Madera;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
+540;Templo de San Francisco;SANTA FE;4.601888;-74.073263;Atractivo_Turistico;#00b4eb
+541;Palacio de Justicia Alfonso Reyes Echandía;CANDELARIA;4.598989;-74.075523;Atractivo_Turistico;#00b4eb
+542;Parque Ecológico Distrital Humedal Juan Amarillo;ENGATIVA;4.728023;-74.109147;Atractivo_Turistico;#00b4eb
+543;Parque Ecológico Distrital Humedal El Burro;KENNEDY;4.642819;-74.150844;Atractivo_Turistico;#00b4eb
+544;Parque Ecológico Distrital Humedal La Vaca;KENNEDY;4.629082;-74.162258;Atractivo_Turistico;#00b4eb
+545;Parque Ecológico Distrital Humedal Techo;KENNEDY;4.648018;-74.143338;Atractivo_Turistico;#00b4eb
+546;Parque Ecológico Cantarrana;USME;4.50026;-74.12161;Atractivo_Turistico;#00b4eb
+547;Cerro La Aguadora;USAQUEN;4.689573;-74.018403;Atractivo_Turistico;#00b4eb
+548;Parque Ecológico Distrital de Montaña Entrenubes;SAN CRISTOBAL;4.5395;-74.0974;Atractivo_Turistico;#00b4eb
+549;Centro Comercial Gran Estación;TEUSAQUILLO;4.646982;-74.101763;Atractivo_Turistico;#00b4eb
+550;Zona Rural de Ciudad Bolívar;CIUDAD BOLIVAR;4.466951;-74.16054;Atractivo_Turistico;#00b4eb
+551;Embalse Chisacá;USME;4.383694;-74.173279;Atractivo_Turistico;#00b4eb
+552;Embalse La Regadera;USME;4.39943;-74.142028;Atractivo_Turistico;#00b4eb
+553;Iglesia San Pedro de Usme;USME;4.470585;-74.125734;Atractivo_Turistico;#00b4eb
+554;Casa Fundación Gilberto Álzate Avendaño FUGA;CANDELARIA;4.595486;-74.072403;Atractivo_Turistico;#00b4eb
+555;Escultura Lumbalú;FONTIBON;4.650785;-74.113486;Atractivo_Turistico;#00b4eb
+556;Fiesta de Reyes Magos y Epifanía;CANDELARIA;4.593553;-74.068992;Atractivo_Turistico;#00b4eb
+557;Museo Millonarios FC;TEUSAQUILLO;4.645513;-74.078307;Atractivo_Turistico;#00b4eb
+558;Hacienda Tagaste;KENNEDY;4.653079;-74.143723;Atractivo_Turistico;#00b4eb
+559;Mural El Hombre y el Drama de la Vivienda;SANTA FE;4.607749;-74.075886;Atractivo_Turistico;#00b4eb
+560;Iglesia San Alfonso María de Ligorio;TEUSAQUILLO;4.627946;-74.078088;Atractivo_Turistico;#00b4eb
+561;Salón Histórico del Batallón Guardia Presidencial;CANDELARIA;4.591934;-74.080328;Atractivo_Turistico;#00b4eb
+562;Festividad de la Virgen de Chiquinquirá;CHAPINERO;4.638513;-74.065281;Atractivo_Turistico;#00b4eb
+563;Fiesta de Nuestra Señora de Lourdes;CHAPINERO;4.649688;-74.063109;Atractivo_Turistico;#00b4eb
+564;Santuario de Nuestra Señora de la Peña;SANTA FE;4.586087;-74.065225;Atractivo_Turistico;#00b4eb
+565;Palacio de Liévano;CANDELARIA;4.598448;-74.076648;Atractivo_Turistico;#00b4eb
+566;Fiesta del Señor de los Milagros;TEUSAQUILLO;4.627946;-74.078088;Atractivo_Turistico;#00b4eb
+567;Santuario de Nuestra Señora de Guadalupe;SANTA FE;4.591775;-74.054225;Atractivo_Turistico;#00b4eb
+568;Ciclo Rosa;SANTA FE;4.608819;-74.070619;Atractivo_Turistico;#00b4eb
+569;Capilla de Santa María de los Ángeles;CHAPINERO;4.661367;-74.050657;Atractivo_Turistico;#00b4eb
+570;Andigráfica;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
+571;Edificio Four Seasons Hotel Casa Medina Bogotá;CHAPINERO;4.652235;-74.056308;Atractivo_Turistico;#00b4eb
+572;Casa de la Cultura de Usme;USME;4.472721;-74.123023;Atractivo_Turistico;#00b4eb
+573;Expoconstrucción y Expodiseño;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
+574;Colección Pizano;TEUSAQUILLO;4.63536;-74.083079;Atractivo_Turistico;#00b4eb
+575;Casa del General Pedro Alcántara Herrán;CANDELARIA;4.597174;-74.074153;Atractivo_Turistico;#00b4eb
+576;Palacio de Echeverry;CANDELARIA;4.596513;-74.077775;Atractivo_Turistico;#00b4eb
+577;Iglesia Nuestra Señora de la Medalla Milagrosa;FONTIBON;4.652063;-74.108931;Atractivo_Turistico;#00b4eb
+578;Palacio de San Carlos;CANDELARIA;4.596365;-74.074816;Atractivo_Turistico;#00b4eb
+579;Feria Agroexpo;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
+580;Feria Belleza y Salud;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
+581;Feria Expoartesanías;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
+582;Feria Internacional de Arte de Bogotá - ARTBO;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
+583;Feria Internacional de Bogotá Exposición Industrial;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
+584;Plaza de Bolívar;CANDELARIA;4.598105;-74.076096;Atractivo_Turistico;#00b4eb
+585;Plazuela Rufino Cuervo;CANDELARIA;4.597161;-74.075274;Atractivo_Turistico;#00b4eb
+586;Feria Internacional del Libro de Bogotá FILBO;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
+587;International Footwear & Leather Show y Exhibición Internacional del Cuero e Insumos Maquinaria y Tecnología IFLS+EICI;TEUSAQUILLO;4.629172;-74.089762;Atractivo_Turistico;#00b4eb
+588;Parque Salitre Mágico;BARRIOS UNIDOS;4.667315;-74.089862;Atractivo_Turistico;#00b4eb
+589;Temporada Taurina en Bogotá;SANTA FE;4.612814;-74.068297;Atractivo_Turistico;#00b4eb
+590;Cerro de Monserrate;SANTA FE;4.606023;-74.05487;Atractivo_Turistico;#00b4eb
+591;Claustro Principal de la Universidad Colegio Mayor de Nuestra Señora del Rosario;CANDELARIA;4.600278;-74.073255;Atractivo_Turistico;#00b4eb
+592;Auditorio León de Greiff;TEUSAQUILLO;4.635692;-74.082292;Atractivo_Turistico;#00b4eb
+593;Altar Mayor Templo de San Francisco;SANTA FE;4.601888;-74.073263;Atractivo_Turistico;#00b4eb
+594;Balcón Palacio de San Carlos;CANDELARIA;4.596325;-74.074569;Atractivo_Turistico;#00b4eb
+595;Colección de Instrumentos Musicales;CANDELARIA;4.597401;-74.072424;Atractivo_Turistico;#00b4eb
+596;Casa Natal José María Vergara y Vergara;CANDELARIA;4.597548;-74.072022;Atractivo_Turistico;#00b4eb
+597;Sala de Conciertos Biblioteca Luis Ángel Arango;CANDELARIA;4.596999;-74.072825;Atractivo_Turistico;#00b4eb
+598;Colección Numismática Casa de la Moneda;CANDELARIA;4.596755;-74.073577;Atractivo_Turistico;#00b4eb
+599;Casa Natal de Rafael Pombo;CANDELARIA;4.596473;-74.074167;Atractivo_Turistico;#00b4eb
+600;Casa Delia Zapata Olivella;CANDELARIA;4.594429;-74.071966;Atractivo_Turistico;#00b4eb
+601;Casa Gregorio Vásquez de Arce y Ceballos;CANDELARIA;4.596441;-74.07265;Atractivo_Turistico;#00b4eb
+602;Calle 10;CANDELARIA;4.596811;-74.074991;Atractivo_Turistico;#00b4eb
+603;Museo de La Salle;CANDELARIA;4.594553;-74.070488;Atractivo_Turistico;#00b4eb
+604;Biblioteca del Congreso Luis Carlos Galán Sarmiento;CANDELARIA;4.595691;-74.075388;Atractivo_Turistico;#00b4eb
+605;Edificio Archivo de Bogotá;CANDELARIA;4.591335;-74.077394;Atractivo_Turistico;#00b4eb
+606;Casa Sede Sociedad Económica de Amigos del País;CANDELARIA;4.598179;-74.07467;Atractivo_Turistico;#00b4eb
+607;Plaza Fundacional de Usme;USME;4.471034;-74.125326;Atractivo_Turistico;#00b4eb
+608;Zona de Amortiguación del Parque Nacional Natural Sumapaz;SUMAPAZ;4.189558;-74.190089;Atractivo_Turistico;#00b4eb
+609;Sinagoga Adat Israel;CHAPINERO;4.675349;-74.041975;Atractivo_Turistico;#00b4eb
+610;Iglesia Divino Salvador;CHAPINERO;4.644177;-74.069129;Atractivo_Turistico;#00b4eb
+611;Zona Rural Verjón Alto y Bajo;SANTA FE;4.616618;-74.010392;Atractivo_Turistico;#00b4eb
+612;Laguna Ubchihiqa;SUMAPAZ;4.3757;-74.2298;Atractivo_Turistico;#00b4eb
+613;Quebrada Las Delicias;CHAPINERO;4.6382;-74.052141;Atractivo_Turistico;#00b4eb
+614;Escultura Tomás Cipriano de Mosquera;CANDELARIA;4.597357;-74.076462;Atractivo_Turistico;#00b4eb
+615;Biblioteca Luis Ángel Arango;CANDELARIA;4.596977;-74.072806;Atractivo_Turistico;#00b4eb
+616;Museo de Arquitectura Leopoldo Rother;TEUSAQUILLO;4.634001;-74.083164;Atractivo_Turistico;#00b4eb
+617;Río San Francisco - Vicachá;SANTA FE;4.601105;-74.059197;Atractivo_Turistico;#00b4eb
+618;Escultura Pórtico;SANTA FE;4.597264;-74.084075;Atractivo_Turistico;#00b4eb
+619;Castillo del Mono Osorio;CHAPINERO;4.655344;-74.051419;Atractivo_Turistico;#00b4eb
+620;Capilla San Miguel del Príncipe;CANDELARIA;4.597231;-74.069843;Atractivo_Turistico;#00b4eb
+621;Casa Republicana;CANDELARIA;4.597572;-74.072809;Atractivo_Turistico;#00b4eb
+622;Iglesia de Santa Bárbara;CANDELARIA;4.592202;-74.078583;Atractivo_Turistico;#00b4eb
+623;Iglesia San Juan de Dios;CANDELARIA;4.600493;-74.077441;Atractivo_Turistico;#00b4eb
+624;Iglesia Nuestra Señora de Egipto;CANDELARIA;4.593428;-74.068831;Atractivo_Turistico;#00b4eb
+625;Iglesia de la Concepción;CANDELARIA;4.59878;-74.077743;Atractivo_Turistico;#00b4eb
+626;Iglesia de San Ignacio;CANDELARIA;4.596685;-74.07559;Atractivo_Turistico;#00b4eb
+627;Escultura Manuel Murillo Toro;CANDELARIA;4.600266;-74.075148;Atractivo_Turistico;#00b4eb
+628;Escultura Puerta del Palacio Arzobispal;CANDELARIA;4.597468;-74.075675;Atractivo_Turistico;#00b4eb
+629;Florero de Llorente;CANDELARIA;4.598272;-74.075164;Atractivo_Turistico;#00b4eb
+630;Monumento a la Batalla de Ayacucho;CANDELARIA;4.594845;-74.076749;Atractivo_Turistico;#00b4eb
+631;Parque Metropolitano Arborizadora Alta;CIUDAD BOLIVAR;4.564019;-74.168195;Atractivo_Turistico;#00b4eb
+632;Eje Ambiental;SANTA FE;4.600742;-74.070536;Atractivo_Turistico;#00b4eb
+633;Teatro al Aire Libre la Media Torta;CANDELARIA;4.599749;-74.065947;Atractivo_Turistico;#00b4eb
+634;Centro Histórico de La Candelaria;CANDELARIA;4.596254;-74.074121;Atractivo_Turistico;#00b4eb
+635;Casa Museo Quinta de Bolívar;CANDELARIA;4.602665;-74.063231;Atractivo_Turistico;#00b4eb
+636;Sitio del Asesinato de Jorge Eliécer Gaitán;CANDELARIA;4.601221;-74.073658;Atractivo_Turistico;#00b4eb
+637;Escultura Gonzalo Jiménez de Quesada;CANDELARIA;4.600704;-74.072923;Atractivo_Turistico;#00b4eb
+638;Museo del Cobre;CANDELARIA;4.600622;-74.072596;Atractivo_Turistico;#00b4eb
+639;Museo Casa Cuervo Urisarri;CANDELARIA;4.595727;-74.073986;Atractivo_Turistico;#00b4eb
+640;Iglesia San Antonio de Padua;ANTONIO NARIÑO;4.587717;-74.093247;Atractivo_Turistico;#00b4eb
+641;Teatro La Candelaria;CANDELARIA;4.596355;-74.070934;Atractivo_Turistico;#00b4eb
+642;Casa de Poesía Silva;CANDELARIA;4.598603;-74.070583;Atractivo_Turistico;#00b4eb
+643;Edificio Monserrate;SANTA FE;4.600541;-74.070518;Atractivo_Turistico;#00b4eb
+644;Edificio Pedro A. López;CANDELARIA;4.601548;-74.074309;Atractivo_Turistico;#00b4eb
+645;Edificio Andes;CANDELARIA;4.601908;-74.07457;Atractivo_Turistico;#00b4eb
+646;Casa Museo Francisco José de Caldas;CANDELARIA;4.59473;-74.078856;Atractivo_Turistico;#00b4eb
+647;Edificio Vengoechea;CANDELARIA;4.597798;-74.073038;Atractivo_Turistico;#00b4eb
+648;Monumento a Rafael Núñez;CANDELARIA;4.596955;-74.076715;Atractivo_Turistico;#00b4eb
+649;Casa de los Comuneros;CANDELARIA;4.597858;-74.077089;Atractivo_Turistico;#00b4eb
+650;Calle del Camarín del Carmen;CANDELARIA;4.595092;-74.074178;Atractivo_Turistico;#00b4eb
