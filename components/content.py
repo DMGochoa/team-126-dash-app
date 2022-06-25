@@ -18,6 +18,10 @@ MARGIN_TOP = {
 }
 
 map_controls = html.Div([
+    html.P(
+        "💡 Tip: Puedes buscar y ver localidades especificas removiendo la "
+        "opción de 'Ver todas las localidades'.",
+    ),
     dbc.Card(
         [
             dbc.CardImg(
@@ -52,7 +56,9 @@ map = html.Div([
                   options=[{'label': str(b), 'value': b}
                            for b in sorted(df['type'].unique())],
                   value=[b for b in sorted(df['type'].unique())],
-                  inline=True
+                  inline=True,
+                  labelStyle={"margin": "1rem 1rem 0 0"},
+                  inputStyle={"margin-right": "0.25rem"}
                   ),
 
 ], style=MARGIN_TOP)

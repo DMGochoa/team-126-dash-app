@@ -15,9 +15,6 @@ sidebar = html.Div(
     [
         html.H2("Team 126", className="display-4"),
         html.Hr(),
-        # html.P(
-        #     "A simple sidebar layout with navigation links", className="lead"
-        # ),
         dbc.Nav(
             [
                 dbc.NavLink("Explora Bogotá",
