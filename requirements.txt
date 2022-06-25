@@ -15,3 +15,5 @@ plotly==5.8.0
 tenacity==8.0.1
 Werkzeug==2.1.2
 zipp==3.8.0
+pandas
+dash_bootstrap_components
