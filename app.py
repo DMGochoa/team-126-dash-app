@@ -70,7 +70,8 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades):
     fig.add_scattermapbox(lat=filtered_df['latitude'],
                           lon=filtered_df['longitude'],
                           marker=dict(color=filtered_df['color']),
-                          hovertext=filtered_df['localidad']
+                          hovertemplate=filtered_df['type'] +
+                          ": " + filtered_df['name']
                           )
 
     fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
