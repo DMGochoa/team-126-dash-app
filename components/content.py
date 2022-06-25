@@ -19,8 +19,8 @@ MARGIN_TOP = {
 
 map_controls = html.Div([
     html.P(
-        "💡 Tip: Puedes buscar y ver localidades especificas removiendo la "
-        "opción de 'Ver todas las localidades'.",
+        "💡 Tip: Si quieres conocer más sobre este proyecto puedes hacer clic en "
+        " 'Sobre nosotros' en la barra lateral.",
     ),
     dbc.Card(
         [
@@ -28,10 +28,10 @@ map_controls = html.Div([
                 src="https://mediaim.expedia.com/destination/2/78dd6fee7217b2318c20db7cfdf68b26.jpg?impolicy=fcrop&w=360&h=224&q=mediumLow", top=True),
             dbc.CardBody(
                 [
-                    html.H4("Card title", className="card-title"),
+                    html.H4("Comienza a explorar", className="card-title"),
                     html.P(
-                        "Some quick example text to build on the card title and "
-                        "make up the bulk of the card's content.",
+                        "Puedes buscar y ver localidades especificas removiendo la "
+                        "opción de 'Ver todas las localidades'.",
                         className="card-text",
                     ),
                     dcc.Checklist(id='all_localidades_checkbox',
