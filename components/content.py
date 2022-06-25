@@ -1,5 +1,4 @@
-from dash import Dash, dcc, html, Input, Output
-from dash import html
+from dash import dcc, html
 import pandas as pd
 import dash_bootstrap_components as dbc
 

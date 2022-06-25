@@ -10,6 +10,9 @@ from components.content import main_view
 from components.sidebar import sidebar
 from components.jumbotron import jumbotron
 
+# Pages
+from pages.tourist_form import radios_input
+
 app = Dash(__name__, external_stylesheets=[
            dbc.themes.LUX], suppress_callback_exceptions=True)
 
@@ -100,8 +103,8 @@ def hide_dropdown(show_all_localidades):
 def render_page_content(pathname):
     if pathname == "/":
         return main_view
-    elif pathname == "/page-1":
-        return html.P("Acá va el formulario para clasificar con el modelo")
+    elif pathname == "/tu-perfil":
+        return radios_input
     elif pathname == "/delincuencia":
         return html.P("Acá puede ir información y KPI's sobre delincuencia")
     elif pathname == "/page-2":

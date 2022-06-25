@@ -20,7 +20,7 @@ sidebar = html.Div(
                 dbc.NavLink("Explora Bogotá",
                             href="/", active="exact"),
                 dbc.NavLink("Tú perfil de turista",
-                            href="/page-1", active="exact"),
+                            href="/tu-perfil", active="exact"),
                 dbc.NavLink("Delitos en Bogotá",
                             href="/delincuencia", active="exact"),
                 dbc.NavLink("Sobre nosotros", href="/page-2", active="exact"),
