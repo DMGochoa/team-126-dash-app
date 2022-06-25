@@ -14,6 +14,7 @@ app = Dash(__name__, external_stylesheets=[
            dbc.themes.LUX], suppress_callback_exceptions=True)
 
 app.title = "Turismo Bogotá"
+token = "pk.eyJ1Ijoiam9yY2hlY2x1bmllIiwiYSI6ImNsNHRiOWQzZDE5YmkzamxwM2k2YTZiNGUifQ.a8403FjDkiW0wAO_bO4lLg"
 
 server = app.server
 
@@ -61,10 +62,11 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades):
     # Map choropleth map exactly how you would do it on a jupyter notebook
     fig = px.choropleth_mapbox(filtered_df, geojson=bogota_geojson, color="localidad",
                                locations="localidad", featureidkey="properties.Nombre de la localidad",
-                               color_discrete_sequence=['blue'],
+                               color_discrete_sequence=['red'],
                                center=map_center,
                                zoom=map_zoom,
-                               mapbox_style="carto-positron",
+                               # mapbox_style="carto-positron",
+                               # mapbox_accesstoken=token,
                                opacity=0.1)
 
     fig.add_scattermapbox(lat=filtered_df['latitude'],
@@ -74,6 +76,10 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades):
                           ": " + filtered_df['name']
                           )
 
+    # basic, streets, outdoors, LIGHT, options: https://plotly.com/python/mapbox-layers/
+    fig.update_layout(mapbox_style="streets",
+                      mapbox_accesstoken=token)
+    #fig.update_layout(mapbox_style="dark", mapbox_accesstoken=token)
     fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
     fig.update_layout(uirevision='foo')
     fig.update_layout(showlegend=False)
