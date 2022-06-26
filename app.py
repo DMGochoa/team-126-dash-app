@@ -136,8 +136,8 @@ def render_page_content(pathname):
         return radios_input
     elif pathname == "/delincuencia":
         return html.P("Acá puede ir información y KPI's sobre delincuencia")
-    elif pathname == "/page-2":
-        return html.P("Oh cool, this is page 2!")
+    elif pathname == "/sobre-nosotros":
+        return html.P("Acá van los componentes de tarjeta de perfil con foto y bio de cada integrante")
     # If the user tries to reach a different page, return a 404 message
     return jumbotron
 
