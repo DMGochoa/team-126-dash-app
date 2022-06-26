@@ -69,8 +69,6 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades):
                                color_discrete_sequence=['red'],
                                center=map_center,
                                zoom=map_zoom,
-                               # mapbox_style="carto-positron",
-                               # mapbox_accesstoken=token,
                                opacity=0.1)
 
     fig.add_scattermapbox(lat=filtered_df['latitude'],
@@ -80,28 +78,46 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades):
                           ": " + filtered_df['name']
                           )
 
-    # basic, streets, outdoors, LIGHT, options: https://plotly.com/python/mapbox-layers/
     fig.update_layout(mapbox_style="streets",
                       mapbox_accesstoken=token)
-    #fig.update_layout(mapbox_style="dark", mapbox_accesstoken=token)
     fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
     fig.update_layout(uirevision='foo')
     fig.update_layout(showlegend=False)
     return fig
 
 
-# Show or hide localidades dropdown depending on the checkbox to show all localidades
 @app.callback(Output("localidad", "style"), [Input("all_localidades_checkbox", "value")])
 def hide_dropdown(show_all_localidades):
+    """
+    Shows or hide localidades dropdown depending on the checkbox to show all
+    localidades.
+    """
     if (show_all_localidades == ["on"]):
         return {"display": "none"}
     else:
         return {"display": "block"}
 
 
-# Display different content based on the url
+@app.callback(
+    Output("radioitems-checklist-output", "children"),
+    [
+        Input("single-choice-question-1", "value"),
+        Input("single-choice-question-2", "value"),
+    ],
+)
+def on_form_change(value_1, value_2):
+    """
+    Handles form values being changed and validated to pass onto the model.
+    """
+    print([value_1, value_2])
+    return ""
+
+
 @app.callback(Output("page-content", "children"), [Input("url", "pathname")])
 def render_page_content(pathname):
+    """
+    Display different content based on the url
+    """
     if pathname == "/":
         return main_view
     elif pathname == "/tu-perfil":
