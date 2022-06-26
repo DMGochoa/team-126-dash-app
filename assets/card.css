@@ -5,3 +5,36 @@
 .kpi-text {
     color: white;
 }
+
+#type > label:nth-child(1):before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #00B4EB;
+    margin-right: 5px;
+    margin-bottom: 1.5px;
+}
+
+#type > label:nth-child(2):before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #5c059e;
+    margin-right: 5px;
+    margin-bottom: 1.5px;
+}
+
+#type > label:nth-child(3):before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #EB0064;
+    margin-right: 5px;
+    margin-bottom: 1.5px;
+}
