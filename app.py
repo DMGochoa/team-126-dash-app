@@ -44,9 +44,9 @@ app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
      Input("all_localidades_checkbox", "value")])
 def display_map(chosen_localidades, chosen_type, show_all_localidades):
     # Default KPI's when seeing the entire bogota map figure.
-    kpi_crime = "10"
-    kpi_mean_hotel_price = "32000"
-    kpi_number_of_touristic_attractions = "320"
+    kpi_crime = "4500 delitos reportados en Bogotá"
+    kpi_mean_hotel_price = "$8043 precio promedio en Bogotá"
+    kpi_number_of_touristic_attractions = "3289 atractivos turisticos en Bogotá"
 
     # Default values when the user is seeing the entire bogota map figure.
     map_zoom = 9
@@ -66,6 +66,13 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades):
         map_center = {"lat": chosen_localidad_center[0],
                       "lon": chosen_localidad_center[1]}
         chosen_localidades = [chosen_localidades]
+
+        # We also display the specific KPI's for the selected localidad.
+        kpi_crime = "{} delitos reportados en {}".format(
+            chosen_localidad_props['kpi_crime'].item(), chosen_localidad_props['name'].item())
+        # kpi_number_of_touristic_attractions = chosen_localidad_props[
+        #     'kpi_number_of_touristic_attractions']
+        # TODO: add KPI for mean hotel value once we have it.
     else:
         chosen_localidades = [chosen_localidades]
 

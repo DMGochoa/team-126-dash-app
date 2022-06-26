@@ -7,10 +7,7 @@ def custom_card(id, title, color):
         dbc.CardBody(
             [
                 html.H4(title, className="kpi-title"),
-                html.P(
-                    className="kpi-text",
-                    id=id
-                ),
+                html.P(className="kpi-text", id=id),
             ]
         ),
         color=color
