@@ -70,7 +70,7 @@ main_view = html.Div([
     ]),
     dbc.Row([
         dbc.Col(map_controls, md=4, style=MARGIN_TOP),
-        dbc.Col(map)
+        dbc.Col(map, md=8)
     ])
 ])
 
