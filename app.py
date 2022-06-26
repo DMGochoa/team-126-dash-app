@@ -1,4 +1,4 @@
-from dash import Dash, dcc, html, Input, Output
+from dash import Dash, dcc, html, Input, Output, ALL
 import pandas as pd
 import plotly.express as px
 import json
@@ -100,16 +100,14 @@ def hide_dropdown(show_all_localidades):
 
 @app.callback(
     Output("radioitems-checklist-output", "children"),
-    [
-        Input("single-choice-question-1", "value"),
-        Input("single-choice-question-2", "value"),
-    ],
+    Input({'type': 'my-radio-input', 'index': ALL}, 'value'),
 )
-def on_form_change(value_1, value_2):
+def on_form_change(values):
     """
     Handles form values being changed and validated to pass onto the model.
     """
-    print([value_1, value_2])
+    for (i, value) in enumerate(values):
+        print(value)
     return ""
 
 

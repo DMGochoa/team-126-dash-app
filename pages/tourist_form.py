@@ -14,20 +14,6 @@ def create_radio_options(possible_options):
     return options
 
 
-NUMERICAL_RANGE_QUESTIONS = [{
-    "id": "numerical-range-question-1",
-    "question": "¿Cuánto piensa gastar (en dólares)?",
-    "min": 0,
-    "max": 60000,
-    "step": 10000
-}, {
-    "id": "numerical-range-question-2",
-    "question": "¿Cuántas noches piensa dormir en Bogotá?",
-    "min": 0,
-    "max": 730,
-    "step": 73
-}]
-
 NUMERICAL_INPUT_QUESTIONS = [{
     "id": "numerical-range-question-1",
     "question": "¿Cuánto piensa gastar (en dólares)?",
@@ -158,7 +144,11 @@ def custom_radio_input(id, question, options):
             dbc.Label(question, width=2),
             dbc.Col(
                 dbc.RadioItems(
-                    id=id,
+                    id={
+                        'type': 'my-radio-input',
+                        'index': id
+
+                    },
                     options=options,
                     value=False
                 ),
@@ -185,20 +175,6 @@ def custom_numerical_input(id, question, min, max):
     )
 
 
-def custom_slider_input(id, question, min, max, step):
-    return html.Div(
-        [
-            dbc.Label(question, width=2),
-            dbc.Col(
-                dcc.Slider(min, max, id=id, tooltip={
-                           "placement": "bottom", "always_visible": True}),
-                width=5,
-            ),
-        ],
-        className="mb-3",
-    )
-
-
 questions = []
 
 for item in NUMERICAL_INPUT_QUESTIONS:
@@ -210,6 +186,8 @@ for item in SINGLE_CHOICE_QUESTIONS:
         item['id'], item['question'], item['options']))
 
 
-questions.append(dbc.Col(dbc.Button("Enviar", color="primary"), width="auto"))
+questions.append(
+    dbc.Col(dbc.Button("Enviar", color="primary", disabled=True), width="auto"))
+questions.append(html.P(id="radioitems-checklist-output"))
 
 radios_input = html.Form(questions)
