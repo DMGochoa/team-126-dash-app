@@ -164,7 +164,10 @@ def custom_numerical_input(id, question, min, max):
         [
             dbc.Label(question, width=2),
             dbc.Col([
-                dbc.Input(type="number", id=id, min=min, max=max),
+                dbc.Input(type="number", id={
+                    'type': 'my-numeric-input',
+                    'index': id
+                }, min=min, max=max),
                 dbc.FormText(
                     "Valor debe estar entre {} y {}".format(min, max))
             ],

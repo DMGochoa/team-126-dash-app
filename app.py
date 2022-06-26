@@ -101,14 +101,18 @@ def hide_dropdown(show_all_localidades):
 
 @app.callback(
     Output("radioitems-checklist-output", "children"),
-    Input({'type': 'my-radio-input', 'index': ALL}, 'value'),
+    [Input({'type': 'my-numeric-input', 'index': ALL}, 'value'),
+     Input({'type': 'my-radio-input', 'index': ALL}, 'value')],
 )
-def on_form_change(values):
+def on_form_change(numerical_input_values, radio_button_values):
     """
     Handles form values being changed and validated to pass onto the model.
     """
-    for (i, value) in enumerate(values):
+    for (i, value) in enumerate(numerical_input_values):
         print(value)
+    for (i, value) in enumerate(radio_button_values):
+        print(value)
+
     return ""
 
 
