@@ -1,3 +1,4 @@
+from random import randrange
 from dash import dcc, html
 import pandas as pd
 import dash_bootstrap_components as dbc
@@ -16,10 +17,14 @@ MARGIN_TOP = {
     "margin-top": "2rem",
 }
 
+RANDOM_TIPS = [
+    "💡 Tip: Si quieres conocer más sobre este proyecto puedes hacer clic en 'Sobre nosotros' en la barra lateral.",
+    "💡 Tip: Las tarjetas con KPI cambian para mostrar información sobre la localidad seleccionada."
+]
+
 map_controls = html.Div([
     html.P(
-        "💡 Tip: Si quieres conocer más sobre este proyecto puedes hacer clic en "
-        " 'Sobre nosotros' en la barra lateral.",
+        RANDOM_TIPS[randrange(len(RANDOM_TIPS))]
     ),
     dbc.Card(
         [
