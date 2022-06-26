@@ -66,7 +66,7 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades):
             chosen_localidad_props['center_coordinates'].item())
         map_center = {"lat": chosen_localidad_center[0],
                       "lon": chosen_localidad_center[1]}
-        marker_size = 12
+        marker_size = 10
         chosen_localidades = [chosen_localidades]
 
         # We also display the specific KPI's for the selected localidad.
