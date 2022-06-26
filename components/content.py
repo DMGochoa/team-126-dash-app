@@ -64,9 +64,11 @@ map = html.Div([
 
 main_view = html.Div([
     dbc.Row([
-        dbc.Col(custom_card("KPI #1", "Desc", "primary"), md=4),
-        dbc.Col(custom_card("KPI #2", "Desc", "success"), md=4),
-        dbc.Col(custom_card("KPI #3", "Desc", "info"), md=4)
+        dbc.Col(custom_card("kpi_crime", "KPI #1", "primary"), md=4),
+        dbc.Col(custom_card("kpi_mean_hotel_price",
+                "KPI #2", "success"), md=4),
+        dbc.Col(custom_card("kpi_number_of_touristic_attractions",
+                "KPI #3", "info"), md=4)
     ]),
     dbc.Row([
         dbc.Col(map_controls, md=4, style=MARGIN_TOP),

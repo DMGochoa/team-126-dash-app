@@ -28,28 +28,36 @@ localidades_df = pd.read_csv("./data-cleaned/localidades_properties.csv")
 with open("./data-cleaned/poligonos-localidades-min.json") as response:
     bogota_geojson = json.load(response)
 crime = pd.read_csv("./data-cleaned/Delitos_x_localidad.csv")
-attractions=pd.read_csv("./data-cleaned/number_of_touristic_attractions.csv")
+attractions = pd.read_csv("./data-cleaned/number_of_touristic_attractions.csv")
 
 app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
 
 
 # Build interactive map
 @app.callback(
-    Output("choropleth-map", "figure"),
+    [Output("choropleth-map", "figure"),
+     Output("kpi_crime", "children"),
+     Output("kpi_mean_hotel_price", "children"),
+     Output("kpi_number_of_touristic_attractions", "children")],
     [Input("localidad", "value"),
      Input("type", "value"),
      Input("all_localidades_checkbox", "value")])
 def display_map(chosen_localidades, chosen_type, show_all_localidades):
-    all_localidades = [b for b in sorted(df['localidad'].unique())]
-    # Default values when the user is seeing the entire bogota figure
+    # Default KPI's when seeing the entire bogota map figure.
+    kpi_crime = "10"
+    kpi_mean_hotel_price = "32000"
+    kpi_number_of_touristic_attractions = "320"
+
+    # Default values when the user is seeing the entire bogota map figure.
     map_zoom = 9
     map_center = {"lat": 4.5500000, "lon": -74.1000000}
 
-    # Handle map if user hasn't selected a specific localidad
+    # Handle map if user hasn't selected a specific localidad.
+    all_localidades = [b for b in sorted(df['localidad'].unique())]
     if (show_all_localidades == ["on"]):
         chosen_localidades = all_localidades
     elif (show_all_localidades != ["on"] and chosen_localidades != None):
-        # When there's a specific localidad selected, we adjust the center and the zoom values
+        # When there's a specific localidad selected, we adjust the center and the zoom values.
         chosen_localidad_props = localidades_df[localidades_df['name']
                                                 == chosen_localidades]
         map_zoom = chosen_localidad_props['zoom'].item()
@@ -61,10 +69,11 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades):
     else:
         chosen_localidades = [chosen_localidades]
 
+    # Filter the dataframe to the selected localidad and scatter points.
     filtered_df = df[(df['localidad'].isin(chosen_localidades))
                      & (df['type'].isin(chosen_type))]
 
-    # Map choropleth map exactly how you would do it on a jupyter notebook
+    # Choropleth map exactly how you would do it on a jupyter notebook.
     fig = px.choropleth_mapbox(filtered_df, geojson=bogota_geojson, color="localidad",
                                locations="localidad", featureidkey="properties.Nombre de la localidad",
                                color_discrete_sequence=['red'],
@@ -84,7 +93,7 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades):
     fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
     fig.update_layout(uirevision='foo')
     fig.update_layout(showlegend=False)
-    return fig
+    return fig, kpi_crime, kpi_mean_hotel_price, kpi_number_of_touristic_attractions
 
 
 @app.callback(Output("localidad", "style"), [Input("all_localidades_checkbox", "value")])
