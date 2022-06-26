@@ -650,3 +650,153 @@ Unnamed: 0,name,localidad,latitude,longitude,type,color
 648,Monumento a Rafael Núñez,CANDELARIA,4.596955,-74.076715,Atractivo Turistico,#00B4EB
 649,Casa de los Comuneros,CANDELARIA,4.597858,-74.077089,Atractivo Turistico,#00B4EB
 650,Calle del Camarín del Carmen,CANDELARIA,4.595092,-74.074178,Atractivo Turistico,#00B4EB
+651,Calle 106,USAQUEN,4.692982,-74.056178,Estaciones de Transmilenio,#FDAF43
+652,Portal del Norte,USAQUEN,4.754621,-74.046035,Estaciones de Transmilenio,#FDAF43
+653,AV. El Dorado,TEUSAQUILLO,4.630663,-74.079866,Estaciones de Transmilenio,#FDAF43
+654,Pepe Sierra,SUBA,4.698125,-74.055298,Estaciones de Transmilenio,#FDAF43
+655,Mazurén,USAQUEN,4.734585,-74.049218,Estaciones de Transmilenio,#FDAF43
+656,Carrera 47,BARRIOS UNIDOS,4.678006,-74.073641,Estaciones de Transmilenio,#FDAF43
+657,Santa Isabel,PUENTE ARANDA,4.601667,-74.102611,Estaciones de Transmilenio,#FDAF43
+658,Calle 127,USAQUEN,4.704641,-74.054229,Estaciones de Transmilenio,#FDAF43
+659,General Santander,TUNJUELITO,4.593569,-74.129545,Estaciones de Transmilenio,#FDAF43
+660,AV. Cali,ENGATIVA,4.702486,-74.100288,Estaciones de Transmilenio,#FDAF43
+661,Calle 85,BARRIOS UNIDOS,4.672315,-74.05964,Estaciones de Transmilenio,#FDAF43
+662,Calle 142,USAQUEN,4.726851,-74.05051,Estaciones de Transmilenio,#FDAF43
+663,Venecia,KENNEDY,4.595567,-74.14265,Estaciones de Transmilenio,#FDAF43
+664,U. Nacional,TEUSAQUILLO,4.637119,-74.079321,Estaciones de Transmilenio,#FDAF43
+665,CAD,LOS MARTIRES,4.62341,-74.084167,Estaciones de Transmilenio,#FDAF43
+666,Virrey,TEUSAQUILLO,4.675994,-74.059012,Estaciones de Transmilenio,#FDAF43
+667,Carrera 53,BARRIOS UNIDOS,4.681821,-74.077401,Estaciones de Transmilenio,#FDAF43
+668,Carrera 90,ENGATIVA,4.704682,-74.104562,Estaciones de Transmilenio,#FDAF43
+669,NQS - Calle 75,BARRIOS UNIDOS,4.670156,-74.07131,Estaciones de Transmilenio,#FDAF43
+670,Simón Bolívar,BARRIOS UNIDOS,4.657291,-74.077663,Estaciones de Transmilenio,#FDAF43
+671,Portal de la 80,ENGATIVA,4.709829,-74.110506,Estaciones de Transmilenio,#FDAF43
+672,Marly,CHAPINERO,4.637557,-74.066769,Estaciones de Transmilenio,#FDAF43
+673,Calle 63,CHAPINERO,4.648404,-74.064862,Estaciones de Transmilenio,#FDAF43
+674,SENA,PUENTE ARANDA,4.597371,-74.110643,Estaciones de Transmilenio,#FDAF43
+675,Portal del Sur,BOSA,4.597013,-74.169398,Estaciones de Transmilenio,#FDAF43
+676,Ricaurte - NQS,PUENTE ARANDA,4.611686,-74.093869,Estaciones de Transmilenio,#FDAF43
+677,Alcalá,USAQUEN,4.721157,-74.051454,Estaciones de Transmilenio,#FDAF43
+678,Calle 72,BARRIOS UNIDOS,4.658239,-74.062069,Estaciones de Transmilenio,#FDAF43
+679,Calle 146,USAQUEN,4.730893,-74.049822,Estaciones de Transmilenio,#FDAF43
+680,AV. 68,ENGATIVA,4.685726,-74.080469,Estaciones de Transmilenio,#FDAF43
+681,Prado,USAQUEN,4.71456,-74.052567,Estaciones de Transmilenio,#FDAF43
+682,Banderas,KENNEDY,4.631301,-74.145769,Estaciones de Transmilenio,#FDAF43
+683,Minuto de Dios,ENGATIVA,4.696655,-74.091482,Estaciones de Transmilenio,#FDAF43
+684,La Campiña,SUBA,4.742543,-74.091056,Estaciones de Transmilenio,#FDAF43
+685,Calle 187,USAQUEN,4.76333,-74.044404,Estaciones de Transmilenio,#FDAF43
+686,Terminal,USAQUEN,4.768818,-74.043569,Estaciones de Transmilenio,#FDAF43
+687,Calle 45,TEUSAQUILLO,4.631452,-74.067869,Estaciones de Transmilenio,#FDAF43
+688,Paloquemao,PUENTE ARANDA,4.616916,-74.089545,Estaciones de Transmilenio,#FDAF43
+689,Salitre - El Greco,TEUSAQUILLO,4.650869,-74.101645,Estaciones de Transmilenio,#FDAF43
+690,Olaya,RAFAEL URIBE URIBE,4.578909,-74.107361,Estaciones de Transmilenio,#FDAF43
+691,Portal del Tunal,TUNJUELITO,4.569571,-74.13924,Estaciones de Transmilenio,#FDAF43
+692,Héroes,BARRIOS UNIDOS,4.668136,-74.060312,Estaciones de Transmilenio,#FDAF43
+693,Las Aguas,SANTA FE,4.60258,-74.068401,Estaciones de Transmilenio,#FDAF43
+694,Museo del Oro,SANTA FE,4.601161,-74.072898,Estaciones de Transmilenio,#FDAF43
+695,Polo,BARRIOS UNIDOS,4.670693,-74.064749,Estaciones de Transmilenio,#FDAF43
+696,Calle 76,BARRIOS UNIDOS,4.66303,-74.06126,Estaciones de Transmilenio,#FDAF43
+697,Calle 34,TEUSAQUILLO,4.621586,-74.069754,Estaciones de Transmilenio,#FDAF43
+698,Alquería,TUNJUELITO,4.594258,-74.134271,Estaciones de Transmilenio,#FDAF43
+699,Nariño,ANTONIO NARIÑO,4.586286,-74.093926,Estaciones de Transmilenio,#FDAF43
+700,Puentelargo,SUBA,4.693291,-74.067141,Estaciones de Transmilenio,#FDAF43
+701,Calle 100,BARRIOS UNIDOS,4.683947,-74.057696,Estaciones de Transmilenio,#FDAF43
+702,Biblioteca Tintal,KENNEDY,4.637899,-74.159345,Estaciones de Transmilenio,#FDAF43
+703,Suba - TV. 91,SUBA,4.738833,-74.086874,Estaciones de Transmilenio,#FDAF43
+704,Calle 40 S,RAFAEL URIBE URIBE,4.575854,-74.120094,Estaciones de Transmilenio,#FDAF43
+705,Centro Comercial Paseo Villa del Río - Madelena,CIUDAD BOLIVAR,4.596255,-74.156875,Estaciones de Transmilenio,#FDAF43
+706,Flores,CHAPINERO,4.654906,-74.063021,Estaciones de Transmilenio,#FDAF43
+707,Calle 57,TEUSAQUILLO,4.642982,-74.065822,Estaciones de Transmilenio,#FDAF43
+708,Modelia,FONTIBON,4.675044,-74.117117,Estaciones de Transmilenio,#FDAF43
+709,Calle 26,SANTA FE,4.616645,-74.072152,Estaciones de Transmilenio,#FDAF43
+710,Perdomo,CIUDAD BOLIVAR,4.595776,-74.164971,Estaciones de Transmilenio,#FDAF43
+711,AV. Chile,BARRIOS UNIDOS,4.666341,-74.074562,Estaciones de Transmilenio,#FDAF43
+712,Gobernación,TEUSAQUILLO,4.642845,-74.096514,Estaciones de Transmilenio,#FDAF43
+713,Restrepo,ANTONIO NARIÑO,4.581834,-74.10142,Estaciones de Transmilenio,#FDAF43
+714,El Tiempo - Maloka,FONTIBON,4.657081,-74.105625,Estaciones de Transmilenio,#FDAF43
+715,Hortúa,ANTONIO NARIÑO,4.59084,-74.090238,Estaciones de Transmilenio,#FDAF43
+716,CDS - Carrera 32,PUENTE ARANDA,4.616133,-74.093953,Estaciones de Transmilenio,#FDAF43
+717,AV. Jiménez - CL 13,SANTA FE,4.603048,-74.079109,Estaciones de Transmilenio,#FDAF43
+718,Patio Bonito,KENNEDY,4.633172,-74.164606,Estaciones de Transmilenio,#FDAF43
+719,Suba - Calle 116,BARRIOS UNIDOS,4.69924,-74.069839,Estaciones de Transmilenio,#FDAF43
+720,Normandía,ENGATIVA,4.669021,-74.11326,Estaciones de Transmilenio,#FDAF43
+721,Granja - Carrera 77,ENGATIVA,4.699148,-74.096016,Estaciones de Transmilenio,#FDAF43
+722,Portal de las Américas,KENNEDY,4.629381,-74.173058,Estaciones de Transmilenio,#FDAF43
+723,Recinto Ferial,TEUSAQUILLO,4.634314,-74.089694,Estaciones de Transmilenio,#FDAF43
+724,Quinta Paredes,TEUSAQUILLO,4.637522,-74.093104,Estaciones de Transmilenio,#FDAF43
+725,NQS - Calle 30 S,ANTONIO NARIÑO,4.594792,-74.117879,Estaciones de Transmilenio,#FDAF43
+726,Suba - AV. Boyacá,SUBA,4.721362,-74.074727,Estaciones de Transmilenio,#FDAF43
+727,Escuela Militar,BARRIOS UNIDOS,4.675456,-74.06966,Estaciones de Transmilenio,#FDAF43
+728,Zona Industrial,PUENTE ARANDA,4.620322,-74.098689,Estaciones de Transmilenio,#FDAF43
+729,Santa Lucía,RAFAEL URIBE URIBE,4.570964,-74.124695,Estaciones de Transmilenio,#FDAF43
+730,La Despensa,MUNICIPIOS ALEDAÑOS,4.594601,-74.188116,Estaciones de Transmilenio,#FDAF43
+731,Toberín,USAQUEN,4.746188,-74.047269,Estaciones de Transmilenio,#FDAF43
+732,San Martín,BARRIOS UNIDOS,4.676542,-74.067066,Estaciones de Transmilenio,#FDAF43
+733,La Castellana,BARRIOS UNIDOS,4.675619,-74.064448,Estaciones de Transmilenio,#FDAF43
+734,Comuneros,LOS MARTIRES,4.604246,-74.099857,Estaciones de Transmilenio,#FDAF43
+735,Calle 161,USAQUEN,4.741913,-74.047986,Estaciones de Transmilenio,#FDAF43
+736,Campín,TEUSAQUILLO,4.645396,-74.078699,Estaciones de Transmilenio,#FDAF43
+737,CAN,TEUSAQUILLO,4.646881,-74.099048,Estaciones de Transmilenio,#FDAF43
+738,Portal de Suba,SUBA,4.746815,-74.094279,Estaciones de Transmilenio,#FDAF43
+739,Fucha,ANTONIO NARIÑO,4.582964,-74.099398,Estaciones de Transmilenio,#FDAF43
+740,Guatoque - Veraguas,LOS MARTIRES,4.604179,-74.094927,Estaciones de Transmilenio,#FDAF43
+741,Tygua - San José,LOS MARTIRES,4.599783,-74.088764,Estaciones de Transmilenio,#FDAF43
+742,Rionegro,BARRIOS UNIDOS,4.680501,-74.064704,Estaciones de Transmilenio,#FDAF43
+743,Molinos,RAFAEL URIBE URIBE,4.557059,-74.121834,Estaciones de Transmilenio,#FDAF43
+744,AV. Américas - AV. Boyacá,KENNEDY,4.630113,-74.134225,Estaciones de Transmilenio,#FDAF43
+745,Terreros - Hospital C.V,MUNICIPIOS ALEDAÑOS,4.588977,-74.19953,Estaciones de Transmilenio,#FDAF43
+746,Leon XIII,MUNICIPIOS ALEDAÑOS,4.592179,-74.193138,Estaciones de Transmilenio,#FDAF43
+747,Ricaurte - CL 13,LOS MARTIRES,4.613015,-74.09048,Estaciones de Transmilenio,#FDAF43
+748,San Bernardo,SANTA FE,4.59019,-74.084319,Estaciones de Transmilenio,#FDAF43
+749,Portal El Dorado,ENGATIVA,4.681604,-74.121395,Estaciones de Transmilenio,#FDAF43
+750,Parque,TUNJUELITO,4.568336,-74.135418,Estaciones de Transmilenio,#FDAF43
+751,Quirigua,ENGATIVA,4.706744,-74.108726,Estaciones de Transmilenio,#FDAF43
+752,Calle 19,SANTA FE,4.607861,-74.076858,Estaciones de Transmilenio,#FDAF43
+753,Consuelo,TUNJUELITO,4.560225,-74.123869,Estaciones de Transmilenio,#FDAF43
+754,Portal de Usme,USME,4.531715,-74.119391,Estaciones de Transmilenio,#FDAF43
+755,Sevillana,TUNJUELITO,4.595096,-74.147408,Estaciones de Transmilenio,#FDAF43
+756,Suba - Calle 95,BARRIOS UNIDOS,4.684575,-74.063153,Estaciones de Transmilenio,#FDAF43
+757,San Mateo,MUNICIPIOS ALEDAÑOS,4.585983,-74.20546,Estaciones de Transmilenio,#FDAF43
+758,AV. Jiménez - Caracas,LOS MARTIRES,4.602874,-74.080428,Estaciones de Transmilenio,#FDAF43
+759,Calle 22,SANTA FE,4.611695,-74.074684,Estaciones de Transmilenio,#FDAF43
+760,Ciudad Universitaria,TEUSAQUILLO,4.63088,-74.083527,Estaciones de Transmilenio,#FDAF43
+761,San Fason Carrera 22,LOS MARTIRES,4.609818,-74.086712,Estaciones de Transmilenio,#FDAF43
+762,AV. 39,SANTA FE,4.626897,-74.068691,Estaciones de Transmilenio,#FDAF43
+763,Movistar Arena,TEUSAQUILLO,4.650039,-74.078346,Estaciones de Transmilenio,#FDAF43
+764,Suba - Calle 100,BARRIOS UNIDOS,4.690398,-74.065618,Estaciones de Transmilenio,#FDAF43
+765,Tercer Milenio,LOS MARTIRES,4.598127,-74.083838,Estaciones de Transmilenio,#FDAF43
+766,Pradera,PUENTE ARANDA,4.628532,-74.118673,Estaciones de Transmilenio,#FDAF43
+767,Quiroga,RAFAEL URIBE URIBE,4.576796,-74.114377,Estaciones de Transmilenio,#FDAF43
+768,De La Sabana,LOS MARTIRES,4.605431,-74.081892,Estaciones de Transmilenio,#FDAF43
+769,AV. Rojas,FONTIBON,4.661952,-74.10876,Estaciones de Transmilenio,#FDAF43
+770,Hospital,LOS MARTIRES,4.595046,-74.08622,Estaciones de Transmilenio,#FDAF43
+771,AV. Boyacá,ENGATIVA,4.693952,-74.087113,Estaciones de Transmilenio,#FDAF43
+772,Ferias,ENGATIVA,4.6909,-74.084584,Estaciones de Transmilenio,#FDAF43
+773,Gratamira,SUBA,4.727337,-74.074726,Estaciones de Transmilenio,#FDAF43
+774,Niza - Calle 127,SUBA,4.71193,-74.072282,Estaciones de Transmilenio,#FDAF43
+775,Socorro,RAFAEL URIBE URIBE,4.564658,-74.125573,Estaciones de Transmilenio,#FDAF43
+776,AV. 1 Mayo,SAN CRISTOBAL,4.576937,-74.093707,Estaciones de Transmilenio,#FDAF43
+777,Bicentenario,SANTA FE,4.594021,-74.081836,Estaciones de Transmilenio,#FDAF43
+778,Américas - Carrera 53A,PUENTE ARANDA,4.627886,-74.111581,Estaciones de Transmilenio,#FDAF43
+779,Mandalay,KENNEDY,4.630847,-74.1413,Estaciones de Transmilenio,#FDAF43
+780,Country Sur,RAFAEL URIBE URIBE,4.571414,-74.098631,Estaciones de Transmilenio,#FDAF43
+781,NQS - Calle 38A S,ANTONIO NARIÑO,4.593792,-74.123754,Estaciones de Transmilenio,#FDAF43
+782,Biblioteca,TUNJUELITO,4.570302,-74.130388,Estaciones de Transmilenio,#FDAF43
+783,21 Ángeles,SUBA,4.735434,-74.080854,Estaciones de Transmilenio,#FDAF43
+784,Centro Memoria,LOS MARTIRES,4.620466,-74.076313,Estaciones de Transmilenio,#FDAF43
+785,Marsella,KENNEDY,4.629686,-74.130163,Estaciones de Transmilenio,#FDAF43
+786,Carrera 43,PUENTE ARANDA,4.622805,-74.101417,Estaciones de Transmilenio,#FDAF43
+787,Las Nieves,SANTA FE,4.606061,-74.074319,Estaciones de Transmilenio,#FDAF43
+788,Museo Nacional,SANTA FE,4.615247,-74.069226,Estaciones de Transmilenio,#FDAF43
+789,San Diego,SANTA FE,4.610897,-74.071497,Estaciones de Transmilenio,#FDAF43
+790,Transversal 86,KENNEDY,4.6342,-74.152063,Estaciones de Transmilenio,#FDAF43
+791,Humedal Córdoba,SUBA,4.706537,-74.07114,Estaciones de Transmilenio,#FDAF43
+792,Concejo de Bogotá,TEUSAQUILLO,4.625983,-74.08028,Estaciones de Transmilenio,#FDAF43
+793,Universidades,SANTA FE,4.604643,-74.06731,Estaciones de Transmilenio,#FDAF43
+794,Portal 20 de Julio,SAN CRISTOBAL,4.565718,-74.097008,Estaciones de Transmilenio,#FDAF43
+795,Puente Aranda,PUENTE ARANDA,4.625669,-74.10464,Estaciones de Transmilenio,#FDAF43
+796,San Victorino,CANDELARIA,4.601018,-74.077406,Estaciones de Transmilenio,#FDAF43
+797,Ciudad Jardín,ANTONIO NARIÑO,4.581532,-74.090338,Estaciones de Transmilenio,#FDAF43
+798,Policarpa,ANTONIO NARIÑO,4.586257,-74.086921,Estaciones de Transmilenio,#FDAF43
+799,Bosa,CIUDAD BOLIVAR,4.596879,-74.181225,Estaciones de Transmilenio,#FDAF43
+
