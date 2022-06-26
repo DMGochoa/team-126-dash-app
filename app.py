@@ -51,6 +51,7 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades):
     # Default values when the user is seeing the entire bogota map figure.
     map_zoom = 9
     map_center = {"lat": 4.5500000, "lon": -74.1000000}
+    marker_size = 6
 
     # Handle map if user hasn't selected a specific localidad.
     all_localidades = [b for b in sorted(df['localidad'].unique())]
@@ -65,6 +66,7 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades):
             chosen_localidad_props['center_coordinates'].item())
         map_center = {"lat": chosen_localidad_center[0],
                       "lon": chosen_localidad_center[1]}
+        marker_size = 12
         chosen_localidades = [chosen_localidades]
 
         # We also display the specific KPI's for the selected localidad.
@@ -90,7 +92,8 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades):
 
     fig.add_scattermapbox(lat=filtered_df['latitude'],
                           lon=filtered_df['longitude'],
-                          marker=dict(color=filtered_df['color']),
+                          marker=dict(size=marker_size,
+                                      color=filtered_df['color']),
                           hovertemplate=filtered_df['type'] +
                           ": " + filtered_df['name']
                           )
