@@ -85,7 +85,7 @@ row_1 = dbc.Row(
         dbc.Col(dbc.Card(card_perfil(**andresCuellar),
                 color="primary", outline=True)),
         dbc.Col(dbc.Card(card_perfil(**albertoRamirez),
-                color="secondary", outline=True)),
+                color="primary", outline=True)),
     ],
     className="mb-4",
 )
@@ -93,18 +93,18 @@ row_1 = dbc.Row(
 row_2 = dbc.Row(
     [
         dbc.Col(dbc.Card(card_perfil(**carmenDelgado),
-                color="success", outline=True)),
+                color="primary", outline=True)),
         dbc.Col(dbc.Card(card_perfil(**juanDiaz),
-                color="warning", outline=True)),
+                color="primary", outline=True)),
     ],
     className="mb-4",
 )
 
 row_3 = dbc.Row(
     [
-        dbc.Col(dbc.Card(card_perfil(**juanHurtado), color="info", outline=True)),
+        dbc.Col(dbc.Card(card_perfil(**juanHurtado), color="primary", outline=True)),
         dbc.Col(dbc.Card(card_perfil(**diegoMoreno),
-                color="danger", outline=True)),
+                color="primary", outline=True)),
     ],
     className="mb-4",
 )
