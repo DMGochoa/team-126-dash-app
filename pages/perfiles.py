@@ -23,14 +23,14 @@ carmenDelgado = {
 }
 
 juanDiaz = {
-    'foto': '../img/Juan_Diaz.jpeg',
+    'foto': 'https://drive.google.com/uc?export=view&id=1wUyL20fsmTTmlQjGWIMp7sD3bGBX4p-F',
     'nombre': 'Juan Felipe Diaz',
     'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
     'contacto': 'juandiaz@team126.com'
 }
 
 juanHurtado = {
-    'foto': '../img/Juan_Hurtado.jpeg',
+    'foto': 'https://drive.google.com/uc?export=view&id=1PTvtwqMo7FLd4K-78mvVPvKneBY0rubH',
     'nombre': 'Juan Fernando Hurtado',
     'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
     'contacto': 'juanhurtado@team126.com'
