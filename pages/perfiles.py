@@ -9,7 +9,7 @@ andresCuellar = {
 }
 
 albertoRamirez = {
-    'foto': '../img/Alberto_Ramirez.jpeg',
+    'foto': 'https://drive.google.com/file/d/1bTIqtTg7wQ6rPs-ba5TDV93Sk0kzjx9_/view?usp=sharing',
     'nombre': 'Alberto Ramirez',
     'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
     'contacto': 'albertoramirez@team126.com'
