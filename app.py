@@ -13,10 +13,15 @@ from components.jumbotron import jumbotron
 # Pages
 from pages.tourist_form import radios_input
 from pages.perfiles import cards
+from pages.crime_map import crime_map
 
 
-app = Dash(__name__, external_stylesheets=[
-           dbc.themes.LUX], suppress_callback_exceptions=True)
+app = Dash(__name__,
+           external_stylesheets=[
+               dbc.themes.LUX], suppress_callback_exceptions=True,
+           meta_tags=[{"name": "viewport",
+                       "content": "width=device-width, initial-scale=1"}]
+           )
 
 app.title = "Turismo Bogotá"
 token = "pk.eyJ1Ijoiam9yY2hlY2x1bmllIiwiYSI6ImNsNHRiOWQzZDE5YmkzamxwM2k2YTZiNGUifQ.a8403FjDkiW0wAO_bO4lLg"
@@ -30,7 +35,6 @@ localidades_df = pd.read_csv("./data-cleaned/localidades_properties.csv")
 with open("./data-cleaned/poligonos-localidades-min.json") as response:
     bogota_geojson = json.load(response)
 crime = pd.read_csv("./data-cleaned/Delitos_x_localidad.csv")
-attractions = pd.read_csv("./data-cleaned/number_of_touristic_attractions.csv")
 
 app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
 
@@ -74,8 +78,8 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades):
         # We also display the specific KPI's for the selected localidad.
         kpi_crime = "{} delitos reportados en {}".format(
             chosen_localidad_props['kpi_crime'].item(), chosen_localidad_props['name'].item())
-        # kpi_number_of_touristic_attractions = chosen_localidad_props[
-        #     'kpi_number_of_touristic_attractions']
+        kpi_number_of_touristic_attractions = "{} atractivos turisticos en {}".format(
+            chosen_localidad_props['number_of_touristic_attractions'].item(), chosen_localidad_props['name'].item())
         # TODO: add KPI for mean hotel value once we have it.
     else:
         chosen_localidades = [chosen_localidades]
@@ -147,9 +151,10 @@ def render_page_content(pathname):
     elif pathname == "/tu-perfil":
         return radios_input
     elif pathname == "/delincuencia":
-        return html.P("Acá puede ir información y KPI's sobre delincuencia")
+        return html.Div(crime_map)
     elif pathname == "/sobre-nosotros":
-        return html.Div(cards) # html.P("Acá van los componentes de tarjeta de perfil con foto y bio de cada integrante")
+        # html.P("Acá van los componentes de tarjeta de perfil con foto y bio de cada integrante")
+        return html.Div(cards)
     # If the user tries to reach a different page, return a 404 message
     return jumbotron
 

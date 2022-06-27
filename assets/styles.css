@@ -49,3 +49,14 @@
     margin-right: 5px;
     margin-bottom: 1.5px;
 }
+
+@media (max-width: 450px) {
+  #page-content {
+    margin-left: 0!important;
+    margin-right: 0!important;
+  }
+
+  #sidebar {
+      display: none;
+  }
+}
