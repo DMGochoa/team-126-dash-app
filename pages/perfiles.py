@@ -2,7 +2,7 @@ import dash_bootstrap_components as dbc
 from dash import html
 
 andresCuellar={
-    'foto':'../img/Andres_Cuellar.jpeg',
+    'foto':'/img/Andres_Cuellar.jpeg',
     'nombre':'Andres Cuellar',
     'descripcion':'Después de tratar por dos años seguidos de entrar a DS4A por fin',
     'contacto':'andrescuellar@team126.com'
