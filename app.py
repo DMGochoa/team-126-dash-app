@@ -15,8 +15,12 @@ from pages.tourist_form import radios_input
 from pages.perfiles import cards
 
 
-app = Dash(__name__, external_stylesheets=[
-           dbc.themes.LUX], suppress_callback_exceptions=True)
+app = Dash(__name__,
+           external_stylesheets=[
+               dbc.themes.LUX], suppress_callback_exceptions=True,
+           meta_tags=[{"name": "viewport",
+                       "content": "width=device-width, initial-scale=1"}]
+           )
 
 app.title = "Turismo Bogotá"
 token = "pk.eyJ1Ijoiam9yY2hlY2x1bmllIiwiYSI6ImNsNHRiOWQzZDE5YmkzamxwM2k2YTZiNGUifQ.a8403FjDkiW0wAO_bO4lLg"
