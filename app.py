@@ -12,6 +12,8 @@ from components.jumbotron import jumbotron
 
 # Pages
 from pages.tourist_form import radios_input
+from pages.perfiles import cards
+
 
 app = Dash(__name__, external_stylesheets=[
            dbc.themes.LUX], suppress_callback_exceptions=True)
@@ -147,10 +149,10 @@ def render_page_content(pathname):
     elif pathname == "/delincuencia":
         return html.P("Acá puede ir información y KPI's sobre delincuencia")
     elif pathname == "/sobre-nosotros":
-        return html.P("Acá van los componentes de tarjeta de perfil con foto y bio de cada integrante")
+        return html.Div(cards) # html.P("Acá van los componentes de tarjeta de perfil con foto y bio de cada integrante")
     # If the user tries to reach a different page, return a 404 message
     return jumbotron
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=True, port=8050)
