@@ -16,7 +16,7 @@ albertoRamirez = {
 }
 
 carmenDelgado = {
-    'foto': '../img/Carmen_Delgado.jpeg',
+    'foto': 'Carmen_Delgado.jpeg',
     'nombre': 'Carmen Delgado',
     'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
     'contacto': 'carmendelgado@team126.com'
@@ -37,7 +37,7 @@ juanHurtado = {
 }
 
 diegoMoreno = {
-    'foto': '../img/Diego_Moreno.jpeg',
+    'foto': 'Diego_Moreno.jpeg',
     'nombre': 'Diego Alejandro Moreno',
     'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
     'contacto': 'diegomoreno@team126.com'
