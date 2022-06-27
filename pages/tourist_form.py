@@ -190,7 +190,8 @@ for item in SINGLE_CHOICE_QUESTIONS:
 
 
 questions.append(
-    dbc.Col(dbc.Button("Enviar", color="primary", disabled=True), width="auto"))
-questions.append(html.P(id="radioitems-checklist-output"))
+    dbc.Col(dbc.Button("Enviar", color="primary", disabled=True, id="submit_button"), width="auto"))
+questions.append(html.P(id="error_message", style={
+                 "marginTop": "0.5rem", "color": "red"}))
 
 radios_input = html.Form(questions)
