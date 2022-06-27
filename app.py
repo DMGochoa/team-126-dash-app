@@ -30,7 +30,6 @@ localidades_df = pd.read_csv("./data-cleaned/localidades_properties.csv")
 with open("./data-cleaned/poligonos-localidades-min.json") as response:
     bogota_geojson = json.load(response)
 crime = pd.read_csv("./data-cleaned/Delitos_x_localidad.csv")
-attractions = pd.read_csv("./data-cleaned/number_of_touristic_attractions.csv")
 
 app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
 
@@ -149,7 +148,8 @@ def render_page_content(pathname):
     elif pathname == "/delincuencia":
         return html.P("Acá puede ir información y KPI's sobre delincuencia")
     elif pathname == "/sobre-nosotros":
-        return html.Div(cards) # html.P("Acá van los componentes de tarjeta de perfil con foto y bio de cada integrante")
+        # html.P("Acá van los componentes de tarjeta de perfil con foto y bio de cada integrante")
+        return html.Div(cards)
     # If the user tries to reach a different page, return a 404 message
     return jumbotron
 
