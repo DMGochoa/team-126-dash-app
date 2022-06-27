@@ -13,6 +13,7 @@ from components.jumbotron import jumbotron
 # Pages
 from pages.tourist_form import radios_input
 from pages.perfiles import cards
+from pages.crime_map import crime_map
 
 
 app = Dash(__name__,
@@ -150,7 +151,7 @@ def render_page_content(pathname):
     elif pathname == "/tu-perfil":
         return radios_input
     elif pathname == "/delincuencia":
-        return html.P("Acá puede ir información y KPI's sobre delincuencia")
+        return html.Div(crime_map)
     elif pathname == "/sobre-nosotros":
         # html.P("Acá van los componentes de tarjeta de perfil con foto y bio de cada integrante")
         return html.Div(cards)
