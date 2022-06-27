@@ -13,11 +13,11 @@ SIDEBAR_STYLE = {
 
 sidebar = html.Div(
     [
-        html.H2("Team 126", className="display-4"),
+        html.Img(src="./assets/logo.png", width=250, height=100),
         html.Hr(),
         dbc.Nav(
             [
-                dbc.NavLink("Explora Bogotá", href="/", active="exact"),
+                dbc.NavLink("Explora localidades", href="/", active="exact"),
                 dbc.NavLink("Tú perfil de turista",
                             href="/tu-perfil", active="exact"),
                 dbc.NavLink("Delitos en Bogotá",
