@@ -73,8 +73,8 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades):
         # We also display the specific KPI's for the selected localidad.
         kpi_crime = "{} delitos reportados en {}".format(
             chosen_localidad_props['kpi_crime'].item(), chosen_localidad_props['name'].item())
-        # kpi_number_of_touristic_attractions = chosen_localidad_props[
-        #     'kpi_number_of_touristic_attractions']
+        kpi_number_of_touristic_attractions = "{} atractivos turisticos en {}".format(
+            chosen_localidad_props['number_of_touristic_attractions'].item(), chosen_localidad_props['name'].item())
         # TODO: add KPI for mean hotel value once we have it.
     else:
         chosen_localidades = [chosen_localidades]
