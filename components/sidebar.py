@@ -14,10 +14,10 @@ SIDEBAR_STYLE = {
 sidebar = html.Div(
     [
         # html.H2("Team 126", className="display-4"),
-        dbc.CardImg(
-                            src='https://drive.google.com/uc?export=view&id=1Nlm913gMywW1-Bvvc7PNRnc5ZV5OsI4a',
-                            className="img-fluid rounded-start",
-                        ),
+        # dbc.CardImg(
+        #                     src='https://drive.google.com/uc?export=view&id=1Nlm913gMywW1-Bvvc7PNRnc5ZV5OsI4a',
+        #                     className="img-fluid rounded-start",
+        #                 ),
 
         html.Img(src="./assets/logo.png", width=250, height=100),
         html.Hr(),
