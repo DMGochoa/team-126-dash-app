@@ -19,7 +19,7 @@ sidebar = html.Div(
         #                     className="img-fluid rounded-start",
         #                 ),
 
-        html.Img(src="./assets/logo.png", width=250, height=100),
+        html.Img(src="./assets/logo.png", width=280, height=100),
         html.Hr(),
         dbc.Nav(
             [
