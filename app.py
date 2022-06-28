@@ -160,7 +160,6 @@ def render_page_content(pathname):
     elif pathname == "/delincuencia":
         return html.Div(crime_map)
     elif pathname == "/sobre-nosotros":
-        # html.P("Acá van los componentes de tarjeta de perfil con foto y bio de cada integrante")
         return html.Div(cards)
     # If the user tries to reach a different page, return a 404 message
     return jumbotron
