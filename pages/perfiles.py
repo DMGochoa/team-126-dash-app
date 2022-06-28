@@ -32,8 +32,8 @@ juanDiaz = {
 juanHurtado = {
     'foto': 'https://drive.google.com/uc?export=view&id=1PTvtwqMo7FLd4K-78mvVPvKneBY0rubH',
     'nombre': 'Juan Fernando Hurtado',
-    'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
-    'contacto': 'juanhurtado@team126.com'
+    'descripcion': 'Ingeniero electrónico',
+    'contacto': 'juanf.hurtadov@gmail.com'
 }
 
 diegoMoreno = {
@@ -51,8 +51,8 @@ def card_perfil(foto, nombre, descripcion, contacto):
                 [
                     dbc.Col(
                         dbc.CardImg(
-                            src=foto
-                            # className="img-fluid rounded-start",
+                            src=foto,
+                            className="img-fluid rounded-start",
                         ),
                         className="col-md-4",
                     ),
