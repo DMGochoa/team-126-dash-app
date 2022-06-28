@@ -75,8 +75,16 @@ SINGLE_CHOICE_QUESTIONS = [{
         'INTERNACIONAL',
         'NACIONAL',
     ]),
-}, {
+},
+    {
     "id": "single-choice-question-4",
+    "question": "¿Tiene nacionalidad colombiana?",
+    "options": create_radio_options([
+        'NO',
+        'SI',
+    ]),
+}, {
+    "id": "single-choice-question-5",
     "question": "Sexo",
     "options": create_radio_options([
         'MUJER',
@@ -84,7 +92,7 @@ SINGLE_CHOICE_QUESTIONS = [{
         'NS/NR'
     ]),
 }, {
-    "id": "single-choice-question-5",
+    "id": "single-choice-question-6",
     "question": "¿En qué rango de edad está?",
     "options": create_radio_options([
         'MENOR DE 18',
@@ -94,7 +102,7 @@ SINGLE_CHOICE_QUESTIONS = [{
         'MAYOR A 60',
     ]),
 }, {
-    "id": "single-choice-question-6",
+    "id": "single-choice-question-7",
     "question": "¿Con quién viaja?",
     "options": create_radio_options([
         'SOLO',
@@ -105,7 +113,7 @@ SINGLE_CHOICE_QUESTIONS = [{
         'OTRO',
     ]),
 }, {
-    "id": "single-choice-question-7",
+    "id": "single-choice-question-8",
     "question": "¿Cuál es su nivel educativo?",
     "options": create_radio_options([
         'PROFESIONAL',
@@ -116,15 +124,15 @@ SINGLE_CHOICE_QUESTIONS = [{
         'PRIMARIA',
     ]),
 }, {
-    "id": "single-choice-question-8",
+    "id": "single-choice-question-9",
     "question": "¿Es su primera visita a Bogotá?",
     "options": create_radio_options([
-        'SI',
         'NO',
+        'SI',
     ]),
 
 }, {
-    "id": "single-choice-question-9",
+    "id": "single-choice-question-10",
     "question": "¿En dónde piensa alojarse? ",
     "options": create_radio_options([
         'HOTEL',
