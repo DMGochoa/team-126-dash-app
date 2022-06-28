@@ -125,7 +125,8 @@ def hide_dropdown(show_all_localidades):
 
 
 @app.callback(
-    Output("radioitems-checklist-output", "children"),
+    [Output("submit_button", "disabled"),
+     Output("error_message", "children")],
     [Input({'type': 'my-numeric-input', 'index': ALL}, 'value'),
      Input({'type': 'my-radio-input', 'index': ALL}, 'value')],
 )
@@ -133,12 +134,18 @@ def on_form_change(numerical_input_values, radio_button_values):
     """
     Handles form values being changed and validated to pass onto the model.
     """
-    for (i, value) in enumerate(numerical_input_values):
-        print(value)
-    for (i, value) in enumerate(radio_button_values):
-        print(value)
+    print(numerical_input_values + radio_button_values)
+    form_values = numerical_input_values + radio_button_values
+    error_message = ""
 
-    return ""
+    # Validate that the user has finished all the inputs on the form.
+    if (None in form_values or False in form_values):
+        error_message = """
+        Por favor completa todos los campos correctamente.
+        """
+        return True, error_message
+
+    return False, error_message
 
 
 @app.callback(Output("page-content", "children"), [Input("url", "pathname")])
@@ -153,7 +160,6 @@ def render_page_content(pathname):
     elif pathname == "/delincuencia":
         return html.Div(crime_map)
     elif pathname == "/sobre-nosotros":
-        # html.P("Acá van los componentes de tarjeta de perfil con foto y bio de cada integrante")
         return html.Div(cards)
     # If the user tries to reach a different page, return a 404 message
     return jumbotron

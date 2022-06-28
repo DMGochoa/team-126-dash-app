@@ -11,12 +11,12 @@ andresCuellar = {
 albertoRamirez = {
     'foto': 'https://drive.google.com/uc?export=view&id=1bTIqtTg7wQ6rPs-ba5TDV93Sk0kzjx9_',
     'nombre': 'Alberto Ramirez',
-    'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
-    'contacto': 'albertoramirez@team126.com'
+    'descripcion': 'Ingeniero de sistemas con especializaciones en analítica de la Universidad Nacional y sistemas de información de la Universidad Eafit, especialista en ingeligencia de negocios en Holcim NA',
+    'contacto': 'alvertorave@gmail.com - in/albertoramirez2'
 }
 
 carmenDelgado = {
-    'foto': '../img/Carmen_Delgado.jpeg',
+    'foto': 'Carmen_Delgado.jpeg',
     'nombre': 'Carmen Delgado',
     'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
     'contacto': 'carmendelgado@team126.com'
@@ -32,12 +32,12 @@ juanDiaz = {
 juanHurtado = {
     'foto': 'https://drive.google.com/uc?export=view&id=1PTvtwqMo7FLd4K-78mvVPvKneBY0rubH',
     'nombre': 'Juan Fernando Hurtado',
-    'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
-    'contacto': 'juanhurtado@team126.com'
+    'descripcion': 'Ingeniero electrónico',
+    'contacto': 'juanf.hurtadov@gmail.com'
 }
 
 diegoMoreno = {
-    'foto': '../img/Diego_Moreno.jpeg',
+    'foto': 'Diego_Moreno.jpeg',
     'nombre': 'Diego Alejandro Moreno',
     'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
     'contacto': 'diegomoreno@team126.com'
@@ -51,8 +51,8 @@ def card_perfil(foto, nombre, descripcion, contacto):
                 [
                     dbc.Col(
                         dbc.CardImg(
-                            src=foto
-                            # className="img-fluid rounded-start",
+                            src=foto,
+                            className="img-fluid rounded-start",
                         ),
                         className="col-md-4",
                     ),

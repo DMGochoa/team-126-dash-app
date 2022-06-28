@@ -22,10 +22,10 @@ def display():
 
 def figura():
         
-    sel_grp = pd.read_csv("./data-cleaned/Delitos_x_localidad.csv")
+    sel_grp = pd.read_csv("./data-cleaned/Delitos_x_localidad.csv", encoding='utf8')
     with open("./data-cleaned/poligonos-localidades-min.json") as response:
         loc = json.load(response)
-    fig = px.choropleth_mapbox(sel_grp, geojson=loc, color="Delito",
+    fig = px.choropleth_mapbox(sel_grp, geojson=loc, color="Delitos",
                                locations="Localidad", featureidkey="properties.Nombre de la localidad",
                                color_discrete_sequence=['blue'],
                                center={"lat": 4.5500000, "lon": -74.1000000},
