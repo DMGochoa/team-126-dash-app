@@ -15,6 +15,9 @@ from pages.tourist_form import radios_input
 from pages.perfiles import cards
 from pages.crime_map import crime_map
 
+# Model
+from components.modeluse import use_model
+
 
 app = Dash(__name__,
            external_stylesheets=[
@@ -128,13 +131,13 @@ def hide_dropdown(show_all_localidades):
     [Output("submit_button", "disabled"),
      Output("error_message", "children")],
     [Input({'type': 'my-numeric-input', 'index': ALL}, 'value'),
-     Input({'type': 'my-radio-input', 'index': ALL}, 'value')],
+     Input({'type': 'my-radio-input', 'index': ALL}, 'value'),
+     Input('submit_button', 'n_clicks')],
 )
-def on_form_change(numerical_input_values, radio_button_values):
+def on_form_change(numerical_input_values, radio_button_values, submit_button_n_clicks):
     """
     Handles form values being changed and validated to pass onto the model.
     """
-    print(numerical_input_values + radio_button_values)
     form_values = numerical_input_values + radio_button_values
     error_message = ""
 
@@ -144,6 +147,16 @@ def on_form_change(numerical_input_values, radio_button_values):
         Por favor completa todos los campos correctamente.
         """
         return True, error_message
+    elif (submit_button_n_clicks == 1):
+        error_message = """
+        Felicidades! el formulario esta cargando... {}
+        """.format(submit_button_n_clicks)
+
+        # Call the model on button click
+        print(form_values)
+        res = use_model(form_values)
+        print(res)
+        return False, error_message
 
     return False, error_message
 

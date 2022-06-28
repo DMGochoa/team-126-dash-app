@@ -194,4 +194,4 @@ questions.append(
 questions.append(html.P(id="error_message", style={
                  "marginTop": "0.5rem", "color": "red"}))
 
-radios_input = html.Form(questions)
+radios_input = html.Div(questions)
