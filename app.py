@@ -148,14 +148,13 @@ def on_form_change(numerical_input_values, radio_button_values, submit_button_n_
         """
         return True, error_message
     elif (submit_button_n_clicks == 1):
-        error_message = """
-        Felicidades! el formulario esta cargando... {}
-        """.format(submit_button_n_clicks)
-
         # Call the model on button click
         print(form_values)
         res = use_model(form_values)
         print(res)
+        error_message = """
+        Felicidades! el formulario esta cargando... {}
+        """.format(res)
         return False, error_message
 
     return False, error_message
