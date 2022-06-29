@@ -217,11 +217,12 @@ radios_input = dbc.Container([
                           style={"fontSize": "3rem"})
             ], className="tourist-form-text"),
             html.Div([
-                html.H1("¡Enterate de tú perfil de turista!",
+                html.H1("Tus resultados aquí...",
                         style={"color": "white"}),
                 html.P("""
-                    Responde las siguientes preguntas y encuentra recomendaciones 
-                    y perspectivas basadas en personas con un perfil similar al tuyo ⛱.
+                    Eres perfil blah blah blah, te puede interesar estos lugares y otras
+                    personas con un perfil similar tienden a gastar entre $1.500 y $1.800
+                    en sus viajes a Bogotá.
                 """)
             ], className="tourist-form-results")
         ], md=6, className="tourist-form-explanation"),
