@@ -60,3 +60,22 @@
       display: none;
   }
 }
+
+.tourist-form-explanation {
+    top: 0;
+    position: sticky;
+    height: 100%;
+}
+
+.tourist-form-text {
+    background-color: black;
+    color: white!important;
+    padding: 2rem;
+}
+
+.tourist-form-results {
+    background-color: #4bbf73;
+    color: white!important;
+    padding: 2rem;
+    margin-top: 1rem;
+}

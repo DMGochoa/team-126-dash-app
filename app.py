@@ -129,7 +129,8 @@ def hide_dropdown(show_all_localidades):
 
 @app.callback(
     [Output("submit_button", "disabled"),
-     Output("error_message", "children")],
+     Output("error_message", "children"),
+     Output("tourism-form-questions-count", "children")],
     [Input({'type': 'my-numeric-input', 'index': ALL}, 'value'),
      Input({'type': 'my-radio-input', 'index': ALL}, 'value'),
      Input('submit_button', 'n_clicks')],
@@ -139,26 +140,29 @@ def on_form_change(numerical_input_values, radio_button_values, submit_button_n_
     Handles form values being changed and validated to pass onto the model.
     """
     form_values = numerical_input_values + radio_button_values
+    non_none_values_count = sum(
+        x is not None for x in form_values)
+    questions_left_counter = "{}/15".format(non_none_values_count)
     error_message = ""
 
+    print(form_values)
+
     # Validate that the user has finished all the inputs on the form.
-    if (None in form_values or False in form_values):
+    if (None in form_values):
         error_message = """
         Por favor completa todos los campos correctamente.
         """
-        return True, error_message
+        return True, error_message, questions_left_counter
     elif (submit_button_n_clicks == 1):
-        error_message = """
-        Felicidades! el formulario esta cargando... {}
-        """.format(submit_button_n_clicks)
-
         # Call the model on button click
-        print(form_values)
         res = use_model(form_values)
         print(res)
-        return False, error_message
+        error_message = """
+        Felicidades! el formulario esta cargando... {}
+        """.format(res)
+        return False, error_message, questions_left_counter
 
-    return False, error_message
+    return False, error_message, questions_left_counter
 
 
 @app.callback(Output("page-content", "children"), [Input("url", "pathname")])

@@ -1,4 +1,4 @@
-from dash import dcc, html
+from dash import html
 import dash_bootstrap_components as dbc
 
 
@@ -75,8 +75,16 @@ SINGLE_CHOICE_QUESTIONS = [{
         'INTERNACIONAL',
         'NACIONAL',
     ]),
-}, {
+},
+    {
     "id": "single-choice-question-4",
+    "question": "¿Tiene nacionalidad colombiana?",
+    "options": create_radio_options([
+        'NO',
+        'SI',
+    ]),
+}, {
+    "id": "single-choice-question-5",
     "question": "Sexo",
     "options": create_radio_options([
         'MUJER',
@@ -84,7 +92,7 @@ SINGLE_CHOICE_QUESTIONS = [{
         'NS/NR'
     ]),
 }, {
-    "id": "single-choice-question-5",
+    "id": "single-choice-question-6",
     "question": "¿En qué rango de edad está?",
     "options": create_radio_options([
         'MENOR DE 18',
@@ -94,7 +102,7 @@ SINGLE_CHOICE_QUESTIONS = [{
         'MAYOR A 60',
     ]),
 }, {
-    "id": "single-choice-question-6",
+    "id": "single-choice-question-7",
     "question": "¿Con quién viaja?",
     "options": create_radio_options([
         'SOLO',
@@ -105,7 +113,7 @@ SINGLE_CHOICE_QUESTIONS = [{
         'OTRO',
     ]),
 }, {
-    "id": "single-choice-question-7",
+    "id": "single-choice-question-8",
     "question": "¿Cuál es su nivel educativo?",
     "options": create_radio_options([
         'PROFESIONAL',
@@ -116,15 +124,15 @@ SINGLE_CHOICE_QUESTIONS = [{
         'PRIMARIA',
     ]),
 }, {
-    "id": "single-choice-question-8",
+    "id": "single-choice-question-9",
     "question": "¿Es su primera visita a Bogotá?",
     "options": create_radio_options([
-        'SI',
         'NO',
+        'SI',
     ]),
 
 }, {
-    "id": "single-choice-question-9",
+    "id": "single-choice-question-10",
     "question": "¿En dónde piensa alojarse? ",
     "options": create_radio_options([
         'HOTEL',
@@ -141,7 +149,7 @@ SINGLE_CHOICE_QUESTIONS = [{
 def custom_radio_input(id, question, options):
     return html.Div(
         [
-            dbc.Label(question, width=2),
+            dbc.Label(question, width=4),
             dbc.Col(
                 dbc.RadioItems(
                     id={
@@ -150,9 +158,9 @@ def custom_radio_input(id, question, options):
 
                     },
                     options=options,
-                    value=False
+                    value=None
                 ),
-                width=10,
+                # width=10,
             ),
         ],
         className="mb-3",
@@ -162,7 +170,7 @@ def custom_radio_input(id, question, options):
 def custom_numerical_input(id, question, min, max):
     return html.Div(
         [
-            dbc.Label(question, width=2),
+            dbc.Label(question, width=4),
             dbc.Col([
                 dbc.Input(type="number", id={
                     'type': 'my-numeric-input',
@@ -171,7 +179,7 @@ def custom_numerical_input(id, question, min, max):
                 dbc.FormText(
                     "Valor debe estar entre {} y {}".format(min, max))
             ],
-                width=5,
+                width=10,
             ),
         ],
         className="mb-3",
@@ -194,4 +202,29 @@ questions.append(
 questions.append(html.P(id="error_message", style={
                  "marginTop": "0.5rem", "color": "red"}))
 
-radios_input = html.Div(questions)
+radios_input = dbc.Container([
+    dbc.Row([
+        dbc.Col(questions, md=6),
+        dbc.Col([
+            html.Div([
+                html.H1("¡Enterate de tú perfil de turista!",
+                        style={"color": "white"}),
+                html.P("""
+                    Responde las siguientes preguntas y encuentra recomendaciones 
+                    y perspectivas basadas en personas con un perfil similar al tuyo ⛱.
+                """),
+                html.Span("0/15", id="tourism-form-questions-count",
+                          style={"fontSize": "3rem"})
+            ], className="tourist-form-text"),
+            html.Div([
+                html.H1("Tus resultados aquí...",
+                        style={"color": "white"}),
+                html.P("""
+                    Eres perfil blah blah blah, te puede interesar estos lugares y otras
+                    personas con un perfil similar tienden a gastar entre $1.500 y $1.800
+                    en sus viajes a Bogotá.
+                """)
+            ], className="tourist-form-results")
+        ], md=6, className="tourist-form-explanation"),
+    ])
+])
