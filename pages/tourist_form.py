@@ -215,7 +215,15 @@ radios_input = dbc.Container([
                 """),
                 html.Span("0/15", id="tourism-form-questions-count",
                           style={"fontSize": "3rem"})
-            ])
+            ], className="tourist-form-text"),
+            html.Div([
+                html.H1("¡Enterate de tú perfil de turista!",
+                        style={"color": "white"}),
+                html.P("""
+                    Responde las siguientes preguntas y encuentra recomendaciones 
+                    y perspectivas basadas en personas con un perfil similar al tuyo ⛱.
+                """)
+            ], className="tourist-form-results")
         ], md=6, className="tourist-form-explanation"),
     ])
 ])
