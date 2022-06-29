@@ -1,4 +1,4 @@
-from dash import dcc, html
+from dash import html
 import dash_bootstrap_components as dbc
 
 
@@ -149,7 +149,7 @@ SINGLE_CHOICE_QUESTIONS = [{
 def custom_radio_input(id, question, options):
     return html.Div(
         [
-            dbc.Label(question, width=2),
+            dbc.Label(question, width=4),
             dbc.Col(
                 dbc.RadioItems(
                     id={
@@ -158,9 +158,9 @@ def custom_radio_input(id, question, options):
 
                     },
                     options=options,
-                    value=False
+                    value=None
                 ),
-                width=10,
+                # width=10,
             ),
         ],
         className="mb-3",
@@ -170,7 +170,7 @@ def custom_radio_input(id, question, options):
 def custom_numerical_input(id, question, min, max):
     return html.Div(
         [
-            dbc.Label(question, width=2),
+            dbc.Label(question, width=4),
             dbc.Col([
                 dbc.Input(type="number", id={
                     'type': 'my-numeric-input',
@@ -179,7 +179,7 @@ def custom_numerical_input(id, question, min, max):
                 dbc.FormText(
                     "Valor debe estar entre {} y {}".format(min, max))
             ],
-                width=5,
+                width=10,
             ),
         ],
         className="mb-3",
@@ -202,4 +202,20 @@ questions.append(
 questions.append(html.P(id="error_message", style={
                  "marginTop": "0.5rem", "color": "red"}))
 
-radios_input = html.Div(questions)
+radios_input = dbc.Container([
+    dbc.Row([
+        dbc.Col(questions, md=6),
+        dbc.Col([
+            html.Div([
+                html.H1("¡Enterate de tú perfil de turista!",
+                        style={"color": "white"}),
+                html.P("""
+                    Responde las siguientes preguntas y encuentra recomendaciones 
+                    y perspectivas basadas en personas con un perfil similar al tuyo ⛱.
+                """),
+                html.Span("0/15", id="tourism-form-questions-count",
+                          style={"fontSize": "3rem"})
+            ])
+        ], md=6, className="tourist-form-explanation"),
+    ])
+])
