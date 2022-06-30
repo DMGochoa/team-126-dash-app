@@ -17,4 +17,4 @@ Werkzeug==2.1.2
 zipp==3.8.0
 pandas
 dash_bootstrap_components
-scikit-learn=1.0.2
+scikit-learn==1.0.2
