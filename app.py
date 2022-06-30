@@ -90,11 +90,6 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades, pathname)
     else:
         chosen_localidades = [chosen_localidades]
 
-    print(pathname)
-    if ('/localidad/suba' in pathname):
-        chosen_localidades = ['SUBA']
-        print("SUCCESS")
-
     # Filter the dataframe to the selected localidad and scatter points.
     filtered_df = df[(df['localidad'].isin(chosen_localidades))
                      & (df['type'].isin(chosen_type))]
@@ -179,7 +174,7 @@ def render_page_content(pathname):
     Display different content based on the url
     """
     print(pathname)
-    if pathname == "/" or pathname == '/localidad/suba':
+    if pathname == "/":
         return main_view
     elif pathname == "/tu-perfil":
         return radios_input
