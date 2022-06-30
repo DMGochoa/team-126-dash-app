@@ -13,17 +13,17 @@ SIDEBAR_STYLE = {
 
 sidebar = html.Div(
     [
-        html.Img(src="./assets/logo.png", width=240, height=95),
+        html.Img(src="./assets/logo.png", width=240, height=95, className="rounded"),
         html.Hr(),
         dbc.Nav(
             [
-                dbc.NavLink("Explora localidades", href="/", active="exact"),
+                dbc.NavLink("Explora localidades", href="/", active="exact", className="rounded"),
                 dbc.NavLink("Tú perfil de turista",
-                            href="/tu-perfil", active="exact"),
+                            href="/tu-perfil", active="exact", className="rounded"),
                 dbc.NavLink("Delitos en Bogotá",
-                            href="/delincuencia", active="exact"),
+                            href="/delincuencia", active="exact", className="rounded"),
                 dbc.NavLink("Sobre nosotros",
-                            href="/sobre-nosotros", active="exact"),
+                            href="/sobre-nosotros", active="exact", className="rounded"),
             ],
             vertical=True,
             pills=True,

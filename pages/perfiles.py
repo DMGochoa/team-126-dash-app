@@ -53,7 +53,7 @@ def card_perfil(foto, nombre, descripcion, contacto):
                     dbc.Col(
                         dbc.CardImg(
                             src=foto,
-                            className="img-fluid rounded-start",
+                            className="img-fluid rounded-circle",
                         ),
                         className="col-md-4",
                     ),
@@ -72,10 +72,10 @@ def card_perfil(foto, nombre, descripcion, contacto):
                         className="col-md-8",
                     ),
                 ],
-                className="g-0 d-flex align-items-center",
+                className="g-0 d-flex align-items-center rounded",
             )
         ],
-        className="mb-3",
+        className="mb-3 rounded",
         style={"maxWidth": "540px"},
     )
     return card
@@ -96,9 +96,9 @@ row_0 = dbc.Row([
 row_1 = dbc.Row(
     [
         dbc.Col(dbc.Card(card_perfil(**andresCuellar),
-                color="primary", outline=True)),
+                color="primary", outline=True, className="rounded")),
         dbc.Col(dbc.Card(card_perfil(**albertoRamirez),
-                color="primary", outline=True)),
+                color="primary", outline=True, className="rounded")),
     ],
     className="mb-4",
 )
@@ -106,18 +106,19 @@ row_1 = dbc.Row(
 row_2 = dbc.Row(
     [
         dbc.Col(dbc.Card(card_perfil(**carmenDelgado),
-                color="primary", outline=True)),
+                color="primary", outline=True, className="rounded")),
         dbc.Col(dbc.Card(card_perfil(**juanDiaz),
-                color="primary", outline=True)),
+                color="primary", outline=True, className="rounded")),
     ],
     className="mb-4",
 )
 
 row_3 = dbc.Row(
     [
-        dbc.Col(dbc.Card(card_perfil(**juanHurtado), color="primary", outline=True)),
+        dbc.Col(dbc.Card(card_perfil(**juanHurtado), 
+                         color="primary", outline=True, className="rounded")),
         dbc.Col(dbc.Card(card_perfil(**diegoMoreno),
-                color="primary", outline=True)),
+                color="primary", outline=True, className="rounded")),
     ],
     className="mb-4",
 )

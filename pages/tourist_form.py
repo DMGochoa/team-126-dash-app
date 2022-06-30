@@ -175,7 +175,7 @@ def custom_numerical_input(id, question, min, max):
                 dbc.Input(type="number", id={
                     'type': 'my-numeric-input',
                     'index': id
-                }, min=min, max=max),
+                }, min=min, max=max, className="rounded"),
                 dbc.FormText(
                     "Valor debe estar entre {} y {}".format(min, max))
             ],
@@ -215,7 +215,7 @@ radios_input = dbc.Container([
                 """),
                 html.Span("0/15", id="tourism-form-questions-count",
                           style={"fontSize": "3rem"})
-            ], className="tourist-form-text"),
+            ], className="tourist-form-text rounded"),
             html.Div([
                 html.H1("Tus resultados aquí...",
                         style={"color": "white"}),
@@ -224,7 +224,7 @@ radios_input = dbc.Container([
                     personas con un perfil similar tienden a gastar entre $1.500 y $1.800
                     en sus viajes a Bogotá.
                 """)
-            ], className="tourist-form-results")
+            ], className="tourist-form-results rounded")
         ], md=6, className="tourist-form-explanation"),
     ])
 ])

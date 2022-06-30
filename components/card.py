@@ -10,5 +10,6 @@ def custom_card(id, title, color):
                 html.P(className="kpi-text", id=id),
             ]
         ),
-        color=color
+        color=color,
+        className="rounded"
     )
