@@ -50,11 +50,13 @@ app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
      Output("kpi_number_of_touristic_attractions", "children")],
     [Input("localidad", "value"),
      Input("type", "value"),
-     Input("all_localidades_checkbox", "value")])
-def display_map(chosen_localidades, chosen_type, show_all_localidades):
+     Input("all_localidades_checkbox", "value"),
+     Input("url", "pathname")
+     ])
+def display_map(chosen_localidades, chosen_type, show_all_localidades, pathname):
     # Default KPI's when seeing the entire bogota map figure.
     kpi_crime = "4500 delitos reportados en Bogotá"
-    kpi_mean_hotel_price = "$8043 precio promedio en Bogotá"
+    kpi_mean_hotel_price = "$174.142 precio promedio en Bogotá"
     kpi_number_of_touristic_attractions = "3289 atractivos turisticos en Bogotá"
 
     # Default values when the user is seeing the entire bogota map figure.
@@ -83,9 +85,15 @@ def display_map(chosen_localidades, chosen_type, show_all_localidades):
             chosen_localidad_props['kpi_crime'].item(), chosen_localidad_props['name'].item())
         kpi_number_of_touristic_attractions = "{} atractivos turisticos en {}".format(
             chosen_localidad_props['number_of_touristic_attractions'].item(), chosen_localidad_props['name'].item())
-        # TODO: add KPI for mean hotel value once we have it.
+        kpi_mean_hotel_price = "{} precio promedio en {}".format(
+            chosen_localidad_props['Hotel_mean_price'].item(), chosen_localidad_props['name'].item())
     else:
         chosen_localidades = [chosen_localidades]
+
+    print(pathname)
+    if ('/localidad/suba' in pathname):
+        chosen_localidades = ['SUBA']
+        print("SUCCESS")
 
     # Filter the dataframe to the selected localidad and scatter points.
     filtered_df = df[(df['localidad'].isin(chosen_localidades))
@@ -170,7 +178,8 @@ def render_page_content(pathname):
     """
     Display different content based on the url
     """
-    if pathname == "/":
+    print(pathname)
+    if pathname == "/" or pathname == '/localidad/suba':
         return main_view
     elif pathname == "/tu-perfil":
         return radios_input
