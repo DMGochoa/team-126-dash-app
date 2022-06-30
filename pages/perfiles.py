@@ -50,7 +50,8 @@ def card_perfil(foto, nombre, descripcion, contacto):
             dbc.Row(
                 [
                     dbc.Col(
-                        dbc.CardImg(
+                        html.Img(
+                        # dbc.CardImg(
                             src=foto,
                             className="img-fluid rounded-start",
                         ),
@@ -79,7 +80,9 @@ def card_perfil(foto, nombre, descripcion, contacto):
     )
     return card
 
-
+row_0 = dbc.Row(
+    
+)
 row_1 = dbc.Row(
     [
         dbc.Col(dbc.Card(card_perfil(**andresCuellar),
@@ -109,4 +112,8 @@ row_3 = dbc.Row(
     className="mb-4",
 )
 
-cards = html.Div([row_1, row_2, row_3])
+row_4=dbc.Row(
+    
+)
+
+cards = html.Div([row_1, row_2, row_3],row_4)
