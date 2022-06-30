@@ -51,7 +51,6 @@ def card_perfil(foto, nombre, descripcion, contacto):
             dbc.Row(
                 [
                     dbc.Col(
-                        # html.Img(
                         dbc.CardImg(
                             src=foto,
                             className="img-fluid rounded-start",
@@ -81,8 +80,18 @@ def card_perfil(foto, nombre, descripcion, contacto):
     )
     return card
 
-row_0 = dbc.Row(
-    
+row_0 = dbc.Row([
+        html.H1(
+            'Team 126',
+            style={"font-family":"Rockwell",
+                   "text-align":"center"}
+        ),
+        html.H2(
+            'DS4A',
+            style={"font-family":"Rockwell",
+                   "text-align":"center"}
+        )
+    ]
 )
 row_1 = dbc.Row(
     [
@@ -113,7 +122,38 @@ row_3 = dbc.Row(
     className="mb-4",
 )
 
-row_4=dbc.Row(
+RB=[
+    {
+    "autoria":"puede ser un autor individual, colectivo (grupo de personas) o una organización",
+    "fecha":"año de publicación del dataset o fecha en que fue accesible online",
+    "titulo":"denominación del dataset",
+    "edicion":"etapa del procesamiento de datos, indicando si son datos en bruto o refinados",
+    "version":"aumenta de número según cambian los datos, fruto de revisiones y actualizaciones",
+    "editor":"entidad responsable de producir y/o distribuir el dataset. El productor es la organización que patrocina la investigación; y el distribuidor es la organización que da accesibilidad al dataset para su descarga y uso.",
+    "tipo_de_recurso":"“database”, “dataset”",
+    "ubicacion":"URL persistente que permita acceder al conjunto o subconjunto de datos (DOI, Handle …)",
+    },
+]
+def refBiblio(posicion):
+    referencia=""
+    for key in RB[posicion]:
+        referencia=referencia+" "+RB[posicion][key]
+    referencia=referencia.strip()
+    return referencia
+
+row_4=dbc.Row([
+    html.H3(
+            'Referencias bibliográficas',
+            style={"font-family":"Arial",
+                   "text-align":"left"}
+        ),
+    html.P(
+        refBiblio(0),
+        style={"text-align":"justify"}   
+    )
+]
+              
+    
     
 )
 
