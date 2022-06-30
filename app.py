@@ -55,9 +55,9 @@ app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
      ])
 def display_map(chosen_localidades, chosen_type, show_all_localidades, pathname):
     # Default KPI's when seeing the entire bogota map figure.
-    kpi_crime = "4500 delitos reportados en Bogotá"
+    kpi_crime = "65.000 delitos reportados en Bogotá"
     kpi_mean_hotel_price = "$174.142 precio promedio en Bogotá"
-    kpi_number_of_touristic_attractions = "3289 atractivos turisticos en Bogotá"
+    kpi_number_of_touristic_attractions = "440 atractivos turisticos en Bogotá"
 
     # Default values when the user is seeing the entire bogota map figure.
     map_zoom = 9
