@@ -1,15 +1,16 @@
 import dash_bootstrap_components as dbc
 from dash import html
 
+# https://drive.google.com/uc?export=view&id=1nDjXooBHQpB8aR4sHg5iMQYU-2MKRCwC
 andresCuellar = {
-    'foto': 'https://drive.google.com/uc?export=view&id=1nDjXooBHQpB8aR4sHg5iMQYU-2MKRCwC',
+    'foto': './assets/img/Andres_Cuellar.jpeg',
     'nombre': 'Andres Cuellar',
     'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
     'contacto': 'andrescuellar@team126.com'
 }
-
+# https://drive.google.com/uc?export=view&id=1bTIqtTg7wQ6rPs-ba5TDV93Sk0kzjx9_
 albertoRamirez = {
-    'foto': 'https://drive.google.com/uc?export=view&id=1bTIqtTg7wQ6rPs-ba5TDV93Sk0kzjx9_',
+    'foto': './assets/img/Alberto_Ramirez.jpeg',
     'nombre': 'Alberto Ramirez',
     'descripcion': 'Ingeniero de sistemas con especializaciones en analítica de la Universidad Nacional y sistemas de información de la Universidad Eafit, especialista en ingeligencia de negocios en Holcim NA',
     'contacto': 'alvertorave@gmail.com - in/albertoramirez2'
@@ -21,16 +22,16 @@ carmenDelgado = {
     'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
     'contacto': 'carmendelgado@team126.com'
 }
-
+# https://drive.google.com/uc?export=view&id=1wUyL20fsmTTmlQjGWIMp7sD3bGBX4p-F
 juanDiaz = {
-    'foto': 'https://drive.google.com/uc?export=view&id=1wUyL20fsmTTmlQjGWIMp7sD3bGBX4p-F',
+    'foto': './assets/img/Juan_Felipe_Diaz.jpg',
     'nombre': 'Juan Felipe Diaz',
     'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
     'contacto': 'juandiaz@team126.com'
 }
-
+# https://drive.google.com/uc?export=view&id=1PTvtwqMo7FLd4K-78mvVPvKneBY0rubH
 juanHurtado = {
-    'foto': 'https://drive.google.com/uc?export=view&id=1PTvtwqMo7FLd4K-78mvVPvKneBY0rubH',
+    'foto': './assets/img/Juan_Hurtado.jpeg',
     'nombre': 'Juan Fernando Hurtado',
     'descripcion': 'Ingeniero electrónico',
     'contacto': 'juanf.hurtadov@gmail.com'
@@ -50,8 +51,8 @@ def card_perfil(foto, nombre, descripcion, contacto):
             dbc.Row(
                 [
                     dbc.Col(
-                        html.Img(
-                        # dbc.CardImg(
+                        # html.Img(
+                        dbc.CardImg(
                             src=foto,
                             className="img-fluid rounded-start",
                         ),
@@ -116,4 +117,4 @@ row_4=dbc.Row(
     
 )
 
-cards = html.Div([row_1, row_2, row_3],row_4)
+cards = html.Div([row_0,row_1, row_2, row_3,row_4]) #html.Div([row_0,row_1, row_2, row_3],row_4)
