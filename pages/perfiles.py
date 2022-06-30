@@ -124,14 +124,74 @@ row_3 = dbc.Row(
 
 RB=[
     {
-    "autoria":"puede ser un autor individual, colectivo (grupo de personas) o una organización",
-    "fecha":"año de publicación del dataset o fecha en que fue accesible online",
-    "titulo":"denominación del dataset",
-    "edicion":"etapa del procesamiento de datos, indicando si son datos en bruto o refinados",
-    "version":"aumenta de número según cambian los datos, fruto de revisiones y actualizaciones",
-    "editor":"entidad responsable de producir y/o distribuir el dataset. El productor es la organización que patrocina la investigación; y el distribuidor es la organización que da accesibilidad al dataset para su descarga y uso.",
-    "tipo_de_recurso":"“database”, “dataset”",
-    "ubicacion":"URL persistente que permita acceder al conjunto o subconjunto de datos (DOI, Handle …)",
+    "autoria":"Infraestructura de datos espaciales de Bogotá - IDECA,",
+    "fecha":"15-08-2017,",
+    "titulo":"poligonos-localidades,",
+    "edicion":"datos refinados,",
+    "version":"1.1,",
+    "editor":"Infraestructura de datos espaciales de Bogotá - IDECA,",
+    "tipo_de_recurso":"“database”, “dataset,”",
+    "ubicacion":"https://datosabiertos.bogota.gov.co/dataset/localidad-bogota-d-c",
+    },
+    {
+    "autoria":"Instituto Distrital de Turismo,",
+    "fecha":"31-12-2019,",
+    "titulo":"Inventario Turístico,",
+    "edicion":"datos refinados,",
+    "version":"1.0,",
+    "editor":"Instituto Distrital de Turismo,",
+    "tipo_de_recurso":"“database”, “dataset,”",
+    "ubicacion":"https://www.ideca.gov.co/recursos/mapas/inventario-turistico",
+    },
+    {
+    "autoria":"Alta Consejería Distrital de TIC,",
+    "fecha":"08-11-2019,",
+    "titulo":"Zonas Wifi gratis. Bogotá D.C.,",
+    "edicion":"datos refinados,",
+    "version":"1.0,",
+    "editor":"Alta Consejería Distrital de TIC,",
+    "tipo_de_recurso":"“database”, “dataset,”",
+    "ubicacion":"https://www.ideca.gov.co/recursos/mapas/zonas-wifi-gratis-bogota-dc",
+    },
+    {
+    "autoria":"Empresa Transporte Tercer Milenio,",
+    "fecha":"23-04-2019,",
+    "titulo":"Paradero SITP. Bogotá D.C,",
+    "edicion":"datos refinados,",
+    "version":"1.0,",
+    "editor":"Empresa Transporte Tercer Milenio,",
+    "tipo_de_recurso":"“database”, “dataset,”",
+    "ubicacion":"https://www.ideca.gov.co/recursos/mapas/paradero-sitp-bogota-dc-0",
+    },    
+    {
+    "autoria":"Empresa Transporte Tercer Milenio,",
+    "fecha":"13-05-2021,",
+    "titulo":"Estación de Transmilenio para Bogotá D.C.,",
+    "edicion":"datos refinados,",
+    "version":"1.0,",
+    "editor":"Empresa Transporte Tercer Milenio,",
+    "tipo_de_recurso":"“database”, “dataset,”",
+    "ubicacion":"https://www.ideca.gov.co/recursos/mapas/estacion-de-transmilenio-para-bogota-dc",
+    },
+    {
+    "autoria":"Secretaría Distrital de Seguridad, Convivencia y Justicia,",
+    "fecha":"13-06-2022,",
+    "titulo":"Delito de Alto Impacto. Bogotá D.C.,",
+    "edicion":"datos refinados,",
+    "version":"1.0,",
+    "editor":"Secretaría Distrital de Seguridad, Convivencia y Justicia,",
+    "tipo_de_recurso":"“database”, “dataset,”",
+    "ubicacion":"https://datosabiertos.bogota.gov.co/dataset/delito-de-alto-impacto-bogota-d-c",
+    },
+    {
+    "autoria":"Instituto Para La Economía Social – IPES,",
+    "fecha":"22-10-2020,",
+    "titulo":"Centros comerciales 2020,",
+    "edicion":"datos refinados,",
+    "version":"1.0,",
+    "editor":"Instituto Para La Economía Social – IPES,",
+    "tipo_de_recurso":"“database”, “dataset,”",
+    "ubicacion":"https://datosabiertos.bogota.gov.co/dataset/centros-comerciales/resource/8efe71cb-fb12-4d63-a449-6fc06fbde27b",
     },
 ]
 def refBiblio(posicion):
@@ -147,10 +207,13 @@ row_4=dbc.Row([
             style={"font-family":"Arial",
                    "text-align":"left"}
         ),
-    html.P(
-        refBiblio(0),
-        style={"text-align":"justify"}   
-    )
+    html.P(refBiblio(0), style={"text-align":"justify"}),
+    html.P(refBiblio(1), style={"text-align":"justify"}),
+    html.P(refBiblio(2), style={"text-align":"justify"}),
+    html.P(refBiblio(3), style={"text-align":"justify"}),
+    html.P(refBiblio(4), style={"text-align":"justify"}),
+    html.P(refBiblio(5), style={"text-align":"justify"}),
+    html.P(refBiblio(6), style={"text-align":"justify"}),
 ]
               
     
