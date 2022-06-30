@@ -39,8 +39,8 @@ juanHurtado = {
 diegoMoreno = {
     'foto': 'Diego_Moreno.jpeg',
     'nombre': 'Diego Alejandro Moreno',
-    'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
-    'contacto': 'diegomoreno@team126.com'
+    'descripcion': 'Ingeniero eléctrico con un gran interés en IA, próximamente estará ingresando a la maestría en ingeniería eléctrica con un enfoque en gestión y automatización.',
+    'contacto': 'diegomore1997@gmail.com' + ' ' + 'https://www.linkedin.com/in/diegoamg/'
 }
 
 

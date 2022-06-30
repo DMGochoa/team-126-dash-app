@@ -45,6 +45,17 @@
     width: 10px;
     height: 10px;
     border-radius: 10px;
+    background: #6ee314;
+    margin-right: 5px;
+    margin-bottom: 1.5px;
+}
+
+#type > label:nth-child(5):before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
     background: #EB0064;
     margin-right: 5px;
     margin-bottom: 1.5px;
@@ -64,8 +75,18 @@
 .tourist-form-explanation {
     top: 0;
     position: sticky;
-    background-color: black;
     height: 100%;
+}
+
+.tourist-form-text {
+    background-color: black;
     color: white!important;
     padding: 2rem;
+}
+
+.tourist-form-results {
+    background-color: #4bbf73;
+    color: white!important;
+    padding: 2rem;
+    margin-top: 1rem;
 }
