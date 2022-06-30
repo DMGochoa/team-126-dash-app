@@ -12,7 +12,7 @@ andresCuellar = {
 albertoRamirez = {
     'foto': './assets/img/Alberto_Ramirez.jpeg',
     'nombre': 'Alberto Ramirez',
-    'descripcion': 'Ingeniero de sistemas con especializaciones en analítica de la Universidad Nacional y sistemas de información de la Universidad Eafit, especialista en ingeligencia de negocios en Holcim NA',
+    'descripcion': 'Ingeniero de sistemas con especializaciones en analítica de la Universidad Nacional y sistemas de información de la Universidad Eafit, especialista en inteligencia de negocios en Holcim NA',
     'contacto': 'alvertorave@gmail.com - in/albertoramirez2'
 }
 
@@ -26,8 +26,8 @@ carmenDelgado = {
 juanDiaz = {
     'foto': './assets/img/Juan_Felipe_Diaz.jpg',
     'nombre': 'Juan Felipe Diaz',
-    'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
-    'contacto': 'juandiaz@team126.com'
+    'descripcion': 'Estudiante de ultimos semestres de ingeniería con interés de conocer de la ciencia y analítica de datos.',
+    'contacto': 'diazrochajuanfe@yahoo.com.mx - in/juanfelipediazr'
 }
 # https://drive.google.com/uc?export=view&id=1PTvtwqMo7FLd4K-78mvVPvKneBY0rubH
 juanHurtado = {
