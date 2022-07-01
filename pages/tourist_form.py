@@ -198,7 +198,7 @@ for item in SINGLE_CHOICE_QUESTIONS:
 
 
 questions.append(
-    dbc.Col(dbc.Button("Enviar", color="primary", disabled=True, id="submit_button"), width="auto"))
+    dbc.Col(dbc.Button("Enviar", disabled=True, id="submit_button"), width="auto"))
 questions.append(html.P(id="error_message", style={
                  "marginTop": "0.5rem", "color": "red"}))
 
@@ -214,8 +214,8 @@ radios_input = dbc.Container([
                     y perspectivas basadas en personas con un perfil similar al tuyo ⛱.
                 """),
                 html.Span("0/15", id="tourism-form-questions-count",
-                          style={"fontSize": "3rem"})
-            ], className="tourist-form-text rounded"),
+                          style={"fontSize": "3rem"}),
+            ], id="tourist-form-text", className="tourist-form-text rounded"),
             html.Div([
                 html.H1("Tus resultados aquí...",
                         style={"color": "white"}),
@@ -223,8 +223,10 @@ radios_input = dbc.Container([
                     Eres perfil blah blah blah, te puede interesar estos lugares y otras
                     personas con un perfil similar tienden a gastar entre $1.500 y $1.800
                     en sus viajes a Bogotá.
-                """)
-            ], className="tourist-form-results rounded")
+                """),
+                html.A(dbc.Button("Regresar", color="secondary"),
+                       href="/tu-perfil")
+            ], id="tourist-form-results", className="tourist-form-results rounded", style={"display": "none"})
         ], md=6, className="tourist-form-explanation"),
     ])
 ])
