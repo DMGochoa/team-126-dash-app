@@ -30,6 +30,7 @@ def figura():
                                locations="Localidad", featureidkey="properties.Nombre de la localidad",
                                color_discrete_sequence=['blue'],
                                center={"lat": 4.5500000, "lon": -74.1000000},
+                               color_continuous_scale="reds",
                                mapbox_style="carto-positron", zoom=9)
     fig.update_geos(fitbounds="locations", visible=False)
     fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
