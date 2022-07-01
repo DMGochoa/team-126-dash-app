@@ -223,7 +223,7 @@ radios_input = dbc.Container([
                     Eres perfil blah blah blah, te puede interesar estos lugares y otras
                     personas con un perfil similar tienden a gastar entre $1.500 y $1.800
                     en sus viajes a Bogotá.
-                """),
+                """, id="tourist-form-results-detail"),
                 html.A(dbc.Button("Regresar", color="secondary"),
                        href="/tu-perfil")
             ], id="tourist-form-results", className="tourist-form-results rounded", style={"display": "none"})

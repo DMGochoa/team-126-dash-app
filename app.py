@@ -1,4 +1,4 @@
-from dash import Dash, dcc, html, Input, Output, ALL
+from dash import Dash, dcc, html, Input, Output, no_update, ALL
 import pandas as pd
 import plotly.express as px
 import json
@@ -136,7 +136,8 @@ def hide_dropdown(show_all_localidades):
      Output("error_message", "children"),
      Output("tourism-form-questions-count", "children"),
      Output("tourist-form-results", "style"),
-     Output("tourist-form-text", "style")],
+     Output("tourist-form-text", "style"),
+     Output("tourist-form-results-detail", "children")],
     [Input({'type': 'my-numeric-input', 'index': ALL}, 'value'),
      Input({'type': 'my-radio-input', 'index': ALL}, 'value'),
      Input('submit_button', 'n_clicks')],
@@ -145,11 +146,14 @@ def on_form_change(numerical_input_values, radio_button_values, submit_button_n_
     """
     Handles form values being changed and validated to pass onto the model.
     """
-    error_message = ""
     form_values = numerical_input_values + radio_button_values
     non_none_values_count = sum(
         x is not None for x in form_values)
+
+    # Content
+    error_message = ""
     questions_left_counter = "{}/15".format(non_none_values_count)
+    results = "Default"
 
     # Styles
     show_component = {"display": "block"}
@@ -162,16 +166,16 @@ def on_form_change(numerical_input_values, radio_button_values, submit_button_n_
         error_message = """
         Por favor completa todos los campos correctamente.
         """
-        return True, show_component, error_message, questions_left_counter, hide_component, show_component
+        return True, no_update, error_message, questions_left_counter, no_update, no_update, no_update
     elif (submit_button_n_clicks == 1):
         # Call the model on button click
-        modelResults = use_model(form_values)
-        print(modelResults)
+        model_results = use_model(form_values)
+        print(model_results)
 
         # Hides the submit button and displays the results component.
-        return False, hide_component, error_message, questions_left_counter, show_component, hide_component
+        return False, hide_component, error_message, questions_left_counter, show_component, hide_component, model_results
 
-    return False, show_component, error_message, questions_left_counter, hide_component, show_component
+    return False, no_update, error_message, questions_left_counter, no_update, no_update, no_update
 
 
 @app.callback(Output("page-content", "children"), [Input("url", "pathname")])
