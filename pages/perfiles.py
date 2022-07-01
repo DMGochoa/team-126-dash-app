@@ -53,7 +53,8 @@ def card_perfil(foto, nombre, descripcion, contacto):
                     dbc.Col(
                         dbc.CardImg(
                             src=foto,
-                            className="img-fluid rounded-circle",
+                            className="img-fluid rounded",
+                            style={"width":200,"height":200,}
                         ),
                         className="col-md-4",
                     ),
@@ -63,6 +64,7 @@ def card_perfil(foto, nombre, descripcion, contacto):
                                 html.H4(nombre, className="card-title"),
                                 html.P(descripcion,
                                        className="card-text",
+                                       style={"text-align":"justify"},
                                        ),
                                 html.Small(contacto,
                                            className="card-text text-muted",
@@ -76,7 +78,8 @@ def card_perfil(foto, nombre, descripcion, contacto):
             )
         ],
         className="mb-3 rounded",
-        style={"maxWidth": "540px"},
+        # style={"maxWidth": "540px"},
+        style={"width":498,"height":420},
     )
     return card
 
@@ -96,9 +99,9 @@ row_0 = dbc.Row([
 row_1 = dbc.Row(
     [
         dbc.Col(dbc.Card(card_perfil(**andresCuellar),
-                color="primary", outline=True, className="rounded")),
+                color="primary", outline=True, className="rounded", style={"width":500,"height":420})),
         dbc.Col(dbc.Card(card_perfil(**albertoRamirez),
-                color="primary", outline=True, className="rounded")),
+                color="primary", outline=True, className="rounded", style={"width":500,"height":420})),
     ],
     className="mb-4",
 )
@@ -106,9 +109,9 @@ row_1 = dbc.Row(
 row_2 = dbc.Row(
     [
         dbc.Col(dbc.Card(card_perfil(**carmenDelgado),
-                color="primary", outline=True, className="rounded")),
+                color="primary", outline=True, className="rounded", style={"width":500,"height":420})),
         dbc.Col(dbc.Card(card_perfil(**juanDiaz),
-                color="primary", outline=True, className="rounded")),
+                color="primary", outline=True, className="rounded", style={"width":500,"height":420})),
     ],
     className="mb-4",
 )
@@ -116,9 +119,9 @@ row_2 = dbc.Row(
 row_3 = dbc.Row(
     [
         dbc.Col(dbc.Card(card_perfil(**juanHurtado), 
-                         color="primary", outline=True, className="rounded")),
+                color="primary", outline=True, className="rounded", style={"width":500,"height":420})),
         dbc.Col(dbc.Card(card_perfil(**diegoMoreno),
-                color="primary", outline=True, className="rounded")),
+                color="primary", outline=True, className="rounded", style={"width":500,"height":420})),
     ],
     className="mb-4",
 )
@@ -129,7 +132,7 @@ RB=[
     "fecha":"15-08-2017,",
     "titulo":"poligonos-localidades,",
     "edicion":"datos refinados,",
-    "version":"1.1,",
+    "version":"",
     "editor":"Infraestructura de datos espaciales de Bogotá - IDECA,",
     "tipo_de_recurso":"“database”, “dataset,”",
     "ubicacion":"https://datosabiertos.bogota.gov.co/dataset/localidad-bogota-d-c",
@@ -139,7 +142,7 @@ RB=[
     "fecha":"31-12-2019,",
     "titulo":"Inventario Turístico,",
     "edicion":"datos refinados,",
-    "version":"1.0,",
+    "version":"",
     "editor":"Instituto Distrital de Turismo,",
     "tipo_de_recurso":"“database”, “dataset,”",
     "ubicacion":"https://www.ideca.gov.co/recursos/mapas/inventario-turistico",
@@ -149,7 +152,7 @@ RB=[
     "fecha":"08-11-2019,",
     "titulo":"Zonas Wifi gratis. Bogotá D.C.,",
     "edicion":"datos refinados,",
-    "version":"1.0,",
+    "version":"",
     "editor":"Alta Consejería Distrital de TIC,",
     "tipo_de_recurso":"“database”, “dataset,”",
     "ubicacion":"https://www.ideca.gov.co/recursos/mapas/zonas-wifi-gratis-bogota-dc",
@@ -159,7 +162,7 @@ RB=[
     "fecha":"23-04-2019,",
     "titulo":"Paradero SITP. Bogotá D.C,",
     "edicion":"datos refinados,",
-    "version":"1.0,",
+    "version":"",
     "editor":"Empresa Transporte Tercer Milenio,",
     "tipo_de_recurso":"“database”, “dataset,”",
     "ubicacion":"https://www.ideca.gov.co/recursos/mapas/paradero-sitp-bogota-dc-0",
@@ -169,7 +172,7 @@ RB=[
     "fecha":"13-05-2021,",
     "titulo":"Estación de Transmilenio para Bogotá D.C.,",
     "edicion":"datos refinados,",
-    "version":"1.0,",
+    "version":"",
     "editor":"Empresa Transporte Tercer Milenio,",
     "tipo_de_recurso":"“database”, “dataset,”",
     "ubicacion":"https://www.ideca.gov.co/recursos/mapas/estacion-de-transmilenio-para-bogota-dc",
@@ -179,7 +182,7 @@ RB=[
     "fecha":"13-06-2022,",
     "titulo":"Delito de Alto Impacto. Bogotá D.C.,",
     "edicion":"datos refinados,",
-    "version":"1.0,",
+    "version":"",
     "editor":"Secretaría Distrital de Seguridad, Convivencia y Justicia,",
     "tipo_de_recurso":"“database”, “dataset,”",
     "ubicacion":"https://datosabiertos.bogota.gov.co/dataset/delito-de-alto-impacto-bogota-d-c",
@@ -189,10 +192,30 @@ RB=[
     "fecha":"22-10-2020,",
     "titulo":"Centros comerciales 2020,",
     "edicion":"datos refinados,",
-    "version":"1.0,",
+    "version":"",
     "editor":"Instituto Para La Economía Social – IPES,",
     "tipo_de_recurso":"“database”, “dataset,”",
     "ubicacion":"https://datosabiertos.bogota.gov.co/dataset/centros-comerciales/resource/8efe71cb-fb12-4d63-a449-6fc06fbde27b",
+    },
+    {
+    "autoria":"Instituto distrital de turismo,",
+    "fecha":"09-06-2022,",
+    "titulo":"Viajeros,",
+    "edicion":"datos refinados,",
+    "version":"",
+    "editor":"Instituto distrital de turismo,",
+    "tipo_de_recurso":"“database”, “dataset,”",
+    "ubicacion":"",
+    },
+    {
+    "autoria":"Instituto distrital de turismo,",
+    "fecha":"01-06-2022,",
+    "titulo":"precio hotel,",
+    "edicion":"datos refinados,",
+    "version":"",
+    "editor":"Instituto distrital de turismo,",
+    "tipo_de_recurso":"“database”, “dataset,”",
+    "ubicacion":"",
     },
 ]
 def refBiblio(posicion):
@@ -215,6 +238,8 @@ row_4=dbc.Row([
     html.P(refBiblio(4), style={"text-align":"justify"}),
     html.P(refBiblio(5), style={"text-align":"justify"}),
     html.P(refBiblio(6), style={"text-align":"justify"}),
+    html.P(refBiblio(7), style={"text-align":"justify"}),
+    html.P(refBiblio(8), style={"text-align":"justify"}),
 ]
               
     
