@@ -12,6 +12,7 @@ def display():
     layout = html.Div(
         [
             html.H4(["Crimenes por localidad"]),
+            html.P(["La información recopilada para el análisis de los crimenes comprende los años 2021 y 2022 para la ciudad de Bogotá y fue exportada del portal de la ",html.A("Secretaria Distrital de Seguridad, Convivencia y Justicia",href="https://scj.gov.co/es/oficina-oaiee/estadisticas-mapas", target="_blank") , " en la consulta Delitos de alto impacto"]),
             html.Div([
                 dcc.Graph(figure=figura())
             ])
@@ -35,16 +36,3 @@ def figura():
     return fig
 
 crime_map = display()
-
-# map_crime = html.Div([
-#     dcc.Graph(id="choropleth-map"),
-#     dcc.Checklist(id='type',
-#                   options=[{'label': str(b), 'value': b}
-#                            for b in sorted(df['type'].unique())],
-#                   value=[b for b in sorted(df['type'].unique())],
-#                   inline=True,
-#                   labelStyle={"margin": "1rem 1rem 0 0"},
-#                   inputStyle={"margin-right": "0.25rem"}
-#                   ),
-
-# ], style=MARGIN_TOP)
