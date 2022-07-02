@@ -1,20 +1,44 @@
 import dash_bootstrap_components as dbc
 from dash import html
 
-# https://drive.google.com/uc?export=view&id=1nDjXooBHQpB8aR4sHg5iMQYU-2MKRCwC
-andresCuellar = {
-    'foto': './assets/img/Andres_Cuellar.jpeg',
-    'nombre': 'Andres Cuellar',
-    'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
-    'contacto': 'andrescuellar@team126.com'
-}
-# https://drive.google.com/uc?export=view&id=1bTIqtTg7wQ6rPs-ba5TDV93Sk0kzjx9_
-albertoRamirez = {
-    'foto': './assets/img/Alberto_Ramirez.jpeg',
-    'nombre': 'Alberto Ramirez',
-    'descripcion': 'Ingeniero de sistemas con especializaciones en analítica de la Universidad Nacional y sistemas de información de la Universidad Eafit, especialista en inteligencia de negocios en Holcim NA',
-    'contacto': 'alvertorave@gmail.com - in/albertoramirez2'
-}
+team_members = [
+    {
+        'foto': './assets/img/Andres_Cuellar.jpeg',
+        'nombre': 'Andres Cuellar',
+        'descripcion': 'Ingeniero de sistemas. Software engineer @ Uber. Apasionado por aprender.',
+        'linkedin_url': 'https://www.linkedin.com/in/andrescuco/'
+    },
+    {
+        'foto': './assets/img/Alberto_Ramirez.jpeg',
+        'nombre': 'Alberto Ramirez',
+        'descripcion': 'Ingeniero de sistemas con especializaciones en analítica de la Universidad Nacional y sistemas de información de la Universidad Eafit, especialista en inteligencia de negocios en Holcim NA',
+        'linkedin_url': 'https://www.linkedin.com/in/albertoramirez2/'
+    },
+    {
+        'foto': './assets/img/placeholder-image.png',
+        'nombre': 'Carmen Delgado',
+        'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
+        'linkedin_url': 'https://www.linkedin.com/in/andrescuco/'
+    },
+    {
+        'foto': './assets/img/Juan_Felipe_Diaz.jpg',
+        'nombre': 'Juan Felipe Diaz',
+        'descripcion': 'Estudiante de ultimos semestres de ingeniería con interés de conocer de la ciencia y analítica de datos.',
+        'linkedin_url': 'https://www.linkedin.com/in/juanfelipediazr/'
+    },
+    {
+        'foto': './assets/img/Juan_Hurtado.jpeg',
+        'nombre': 'Juan Fernando Hurtado',
+        'descripcion': 'Ingeniero electrónico',
+        'linkedin_url': 'https://www.linkedin.com/in/andrescuco/'
+    },
+    {
+        'foto': './assets/img/placeholder-image.png',
+        'nombre': 'Diego Alejandro Moreno',
+        'descripcion': 'Ingeniero eléctrico con un gran interés en IA, próximamente estará ingresando a la maestría en ingeniería eléctrica con un enfoque en gestión y automatización.',
+        'linkedin_url': 'https://www.linkedin.com/in/diegoamg/'
+    },
+]
 
 carmenDelgado = {
     'foto': 'Carmen_Delgado.jpeg',
@@ -44,31 +68,119 @@ diegoMoreno = {
     'contacto': 'diegomore1997@gmail.com' + ' ' + 'https://www.linkedin.com/in/diegoamg/'
 }
 
+RB = [
+    {
+        "autoria": "Infraestructura de datos espaciales de Bogotá - IDECA,",
+        "fecha": "15-08-2017,",
+        "titulo": "poligonos-localidades,",
+        "edicion": "datos refinados,",
+        "version": "",
+        "editor": "Infraestructura de datos espaciales de Bogotá - IDECA,",
+        "tipo_de_recurso": "“database”, “dataset,”",
+        "ubicacion": "https://datosabiertos.bogota.gov.co/dataset/localidad-bogota-d-c",
+    },
+    {
+        "autoria": "Instituto Distrital de Turismo,",
+        "fecha": "31-12-2019,",
+        "titulo": "Inventario Turístico,",
+        "edicion": "datos refinados,",
+        "version": "",
+        "editor": "Instituto Distrital de Turismo,",
+        "tipo_de_recurso": "“database”, “dataset,”",
+        "ubicacion": "https://www.ideca.gov.co/recursos/mapas/inventario-turistico",
+    },
+    {
+        "autoria": "Alta Consejería Distrital de TIC,",
+        "fecha": "08-11-2019,",
+        "titulo": "Zonas Wifi gratis. Bogotá D.C.,",
+        "edicion": "datos refinados,",
+        "version": "",
+        "editor": "Alta Consejería Distrital de TIC,",
+        "tipo_de_recurso": "“database”, “dataset,”",
+        "ubicacion": "https://www.ideca.gov.co/recursos/mapas/zonas-wifi-gratis-bogota-dc",
+    },
+    {
+        "autoria": "Empresa Transporte Tercer Milenio,",
+        "fecha": "23-04-2019,",
+        "titulo": "Paradero SITP. Bogotá D.C,",
+        "edicion": "datos refinados,",
+        "version": "",
+        "editor": "Empresa Transporte Tercer Milenio,",
+        "tipo_de_recurso": "“database”, “dataset,”",
+        "ubicacion": "https://www.ideca.gov.co/recursos/mapas/paradero-sitp-bogota-dc-0",
+    },
+    {
+        "autoria": "Empresa Transporte Tercer Milenio,",
+        "fecha": "13-05-2021,",
+        "titulo": "Estación de Transmilenio para Bogotá D.C.,",
+        "edicion": "datos refinados,",
+        "version": "",
+        "editor": "Empresa Transporte Tercer Milenio,",
+        "tipo_de_recurso": "“database”, “dataset,”",
+        "ubicacion": "https://www.ideca.gov.co/recursos/mapas/estacion-de-transmilenio-para-bogota-dc",
+    },
+    {
+        "autoria": "Secretaría Distrital de Seguridad, Convivencia y Justicia,",
+        "fecha": "13-06-2022,",
+        "titulo": "Delito de Alto Impacto. Bogotá D.C.,",
+        "edicion": "datos refinados,",
+        "version": "",
+        "editor": "Secretaría Distrital de Seguridad, Convivencia y Justicia,",
+        "tipo_de_recurso": "“database”, “dataset,”",
+        "ubicacion": "https://datosabiertos.bogota.gov.co/dataset/delito-de-alto-impacto-bogota-d-c",
+    },
+    {
+        "autoria": "Instituto Para La Economía Social – IPES,",
+        "fecha": "22-10-2020,",
+        "titulo": "Centros comerciales 2020,",
+        "edicion": "datos refinados,",
+        "version": "",
+        "editor": "Instituto Para La Economía Social – IPES,",
+        "tipo_de_recurso": "“database”, “dataset,”",
+        "ubicacion": "https://datosabiertos.bogota.gov.co/dataset/centros-comerciales/resource/8efe71cb-fb12-4d63-a449-6fc06fbde27b",
+    },
+    {
+        "autoria": "Instituto distrital de turismo,",
+        "fecha": "09-06-2022,",
+        "titulo": "Viajeros,",
+        "edicion": "datos refinados,",
+        "version": "",
+        "editor": "Instituto distrital de turismo,",
+        "tipo_de_recurso": "“database”, “dataset,”",
+        "ubicacion": "",
+    },
+    {
+        "autoria": "Instituto distrital de turismo,",
+        "fecha": "01-06-2022,",
+        "titulo": "precio hotel,",
+        "edicion": "datos refinados,",
+        "version": "",
+        "editor": "Instituto distrital de turismo,",
+        "tipo_de_recurso": "“database”, “dataset,”",
+        "ubicacion": "",
+    },
+]
 
-def card_perfil(foto, nombre, descripcion, contacto):
-    card = dbc.Card(
+
+def profile_card(foto, nombre, descripcion, linkedin_url):
+    return dbc.Card(
         [
             dbc.Row(
                 [
                     dbc.Col(
                         dbc.CardImg(
                             src=foto,
-                            className="img-fluid rounded",
-                            style={"width":200,"height":200,}
+                            className="profile-card-img img-fluid rounded",
                         ),
                         className="col-md-4",
                     ),
                     dbc.Col(
                         dbc.CardBody(
                             [
-                                html.H4(nombre, className="card-title"),
-                                html.P(descripcion,
-                                       className="card-text",
-                                       style={"text-align":"justify"},
-                                       ),
-                                html.Small(contacto,
-                                           className="card-text text-muted",
-                                           ),
+                                html.H5(nombre, className="card-title"),
+                                html.P(descripcion, className="card-text"),
+                                html.A(html.I(className="bi bi-linkedin"),
+                                       href=linkedin_url, target="__blank")
                             ]
                         ),
                         className="col-md-8",
@@ -78,172 +190,50 @@ def card_perfil(foto, nombre, descripcion, contacto):
             )
         ],
         className="mb-3 rounded",
-        # style={"maxWidth": "540px"},
-        style={"width":498,"height":420},
+        style={"maxWidth": "540px"},
     )
-    return card
 
-row_0 = dbc.Row([
-        html.H1(
-            'Team 126',
-            style={"font-family":"Rockwell",
-                   "text-align":"center"}
-        ),
-        html.H2(
-            'DS4A',
-            style={"font-family":"Rockwell",
-                   "text-align":"center"}
-        )
-    ]
-)
-row_1 = dbc.Row(
-    [
-        dbc.Col(dbc.Card(card_perfil(**andresCuellar),
-                color="primary", outline=True, className="rounded", style={"width":500,"height":420})),
-        dbc.Col(dbc.Card(card_perfil(**albertoRamirez),
-                color="primary", outline=True, className="rounded", style={"width":500,"height":420})),
-    ],
-    className="mb-4",
-)
 
-row_2 = dbc.Row(
-    [
-        dbc.Col(dbc.Card(card_perfil(**carmenDelgado),
-                color="primary", outline=True, className="rounded", style={"width":500,"height":420})),
-        dbc.Col(dbc.Card(card_perfil(**juanDiaz),
-                color="primary", outline=True, className="rounded", style={"width":500,"height":420})),
-    ],
-    className="mb-4",
-)
-
-row_3 = dbc.Row(
-    [
-        dbc.Col(dbc.Card(card_perfil(**juanHurtado), 
-                color="primary", outline=True, className="rounded", style={"width":500,"height":420})),
-        dbc.Col(dbc.Card(card_perfil(**diegoMoreno),
-                color="primary", outline=True, className="rounded", style={"width":500,"height":420})),
-    ],
-    className="mb-4",
-)
-
-RB=[
-    {
-    "autoria":"Infraestructura de datos espaciales de Bogotá - IDECA,",
-    "fecha":"15-08-2017,",
-    "titulo":"poligonos-localidades,",
-    "edicion":"datos refinados,",
-    "version":"",
-    "editor":"Infraestructura de datos espaciales de Bogotá - IDECA,",
-    "tipo_de_recurso":"“database”, “dataset,”",
-    "ubicacion":"https://datosabiertos.bogota.gov.co/dataset/localidad-bogota-d-c",
-    },
-    {
-    "autoria":"Instituto Distrital de Turismo,",
-    "fecha":"31-12-2019,",
-    "titulo":"Inventario Turístico,",
-    "edicion":"datos refinados,",
-    "version":"",
-    "editor":"Instituto Distrital de Turismo,",
-    "tipo_de_recurso":"“database”, “dataset,”",
-    "ubicacion":"https://www.ideca.gov.co/recursos/mapas/inventario-turistico",
-    },
-    {
-    "autoria":"Alta Consejería Distrital de TIC,",
-    "fecha":"08-11-2019,",
-    "titulo":"Zonas Wifi gratis. Bogotá D.C.,",
-    "edicion":"datos refinados,",
-    "version":"",
-    "editor":"Alta Consejería Distrital de TIC,",
-    "tipo_de_recurso":"“database”, “dataset,”",
-    "ubicacion":"https://www.ideca.gov.co/recursos/mapas/zonas-wifi-gratis-bogota-dc",
-    },
-    {
-    "autoria":"Empresa Transporte Tercer Milenio,",
-    "fecha":"23-04-2019,",
-    "titulo":"Paradero SITP. Bogotá D.C,",
-    "edicion":"datos refinados,",
-    "version":"",
-    "editor":"Empresa Transporte Tercer Milenio,",
-    "tipo_de_recurso":"“database”, “dataset,”",
-    "ubicacion":"https://www.ideca.gov.co/recursos/mapas/paradero-sitp-bogota-dc-0",
-    },    
-    {
-    "autoria":"Empresa Transporte Tercer Milenio,",
-    "fecha":"13-05-2021,",
-    "titulo":"Estación de Transmilenio para Bogotá D.C.,",
-    "edicion":"datos refinados,",
-    "version":"",
-    "editor":"Empresa Transporte Tercer Milenio,",
-    "tipo_de_recurso":"“database”, “dataset,”",
-    "ubicacion":"https://www.ideca.gov.co/recursos/mapas/estacion-de-transmilenio-para-bogota-dc",
-    },
-    {
-    "autoria":"Secretaría Distrital de Seguridad, Convivencia y Justicia,",
-    "fecha":"13-06-2022,",
-    "titulo":"Delito de Alto Impacto. Bogotá D.C.,",
-    "edicion":"datos refinados,",
-    "version":"",
-    "editor":"Secretaría Distrital de Seguridad, Convivencia y Justicia,",
-    "tipo_de_recurso":"“database”, “dataset,”",
-    "ubicacion":"https://datosabiertos.bogota.gov.co/dataset/delito-de-alto-impacto-bogota-d-c",
-    },
-    {
-    "autoria":"Instituto Para La Economía Social – IPES,",
-    "fecha":"22-10-2020,",
-    "titulo":"Centros comerciales 2020,",
-    "edicion":"datos refinados,",
-    "version":"",
-    "editor":"Instituto Para La Economía Social – IPES,",
-    "tipo_de_recurso":"“database”, “dataset,”",
-    "ubicacion":"https://datosabiertos.bogota.gov.co/dataset/centros-comerciales/resource/8efe71cb-fb12-4d63-a449-6fc06fbde27b",
-    },
-    {
-    "autoria":"Instituto distrital de turismo,",
-    "fecha":"09-06-2022,",
-    "titulo":"Viajeros,",
-    "edicion":"datos refinados,",
-    "version":"",
-    "editor":"Instituto distrital de turismo,",
-    "tipo_de_recurso":"“database”, “dataset,”",
-    "ubicacion":"",
-    },
-    {
-    "autoria":"Instituto distrital de turismo,",
-    "fecha":"01-06-2022,",
-    "titulo":"precio hotel,",
-    "edicion":"datos refinados,",
-    "version":"",
-    "editor":"Instituto distrital de turismo,",
-    "tipo_de_recurso":"“database”, “dataset,”",
-    "ubicacion":"",
-    },
-]
-def refBiblio(posicion):
-    referencia=""
+def build_source(posicion):
+    referencia = "‣"
     for key in RB[posicion]:
-        referencia=referencia+" "+RB[posicion][key]
-    referencia=referencia.strip()
+        referencia = referencia+" "+RB[posicion][key]
+    referencia = referencia.strip()
     return referencia
 
-row_4=dbc.Row([
-    html.H3(
-            'Referencias bibliográficas',
-            style={"font-family":"Arial",
-                   "text-align":"left"}
-        ),
-    html.P(refBiblio(0), style={"text-align":"justify"}),
-    html.P(refBiblio(1), style={"text-align":"justify"}),
-    html.P(refBiblio(2), style={"text-align":"justify"}),
-    html.P(refBiblio(3), style={"text-align":"justify"}),
-    html.P(refBiblio(4), style={"text-align":"justify"}),
-    html.P(refBiblio(5), style={"text-align":"justify"}),
-    html.P(refBiblio(6), style={"text-align":"justify"}),
-    html.P(refBiblio(7), style={"text-align":"justify"}),
-    html.P(refBiblio(8), style={"text-align":"justify"}),
-]
-              
-    
-    
-)
 
-cards = html.Div([row_0,row_1, row_2, row_3,row_4]) #html.Div([row_0,row_1, row_2, row_3],row_4)
+row_0 = dbc.Row([
+    html.H2('🧑‍🔬 Equipo 126 — DS4A')
+], className='profiles-sources-title rounded')
+
+member_cards = []
+
+for member in team_members:
+    member_cards.append(dbc.Row(
+        [
+            dbc.Col(profile_card(member['foto'], member['nombre'],
+                    member['descripcion'], member['linkedin_url']), className="rounded"),
+        ],
+    ))
+
+references = html.Div([
+    html.H4('📚 Referencias bibliográficas'),
+    html.Hr(),
+    html.P(build_source(0)),
+    html.P(build_source(1)),
+    html.P(build_source(2)),
+    html.P(build_source(3)),
+    html.P(build_source(4)),
+    html.P(build_source(5)),
+    html.P(build_source(6)),
+    html.P(build_source(7)),
+    html.P(build_source(8)),
+], className="references-container rounded")
+
+row_1 = dbc.Row([
+    dbc.Col(member_cards, className="md-4"),
+    dbc.Col(references),
+], style={"marginTop": "1.5rem"})
+
+cards = html.Div(
+    [row_0, row_1])

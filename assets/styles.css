@@ -90,3 +90,36 @@
     padding: 2rem;
     margin-top: 1rem;
 }
+
+/* 'Sobre nosotros' */
+
+.profiles-sources-title {
+    background: black;
+    padding: 1rem;
+}
+
+.profiles-sources-title h2 {
+    margin: 0;
+    color: white !important;
+}
+
+.profile-card-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.bi-linkedin {
+   font-size: 1.5rem;
+   color: #0077B5;
+}
+
+.references-container {
+    color: white;
+    background-color: #209bcf;
+    padding: 2rem;
+}
+
+.references-container h4 {
+    color: white!important;
+}
