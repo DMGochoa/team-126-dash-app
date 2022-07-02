@@ -21,7 +21,7 @@ def display():
                                 "Explora las localidades con más número de delitos."),
                         ], className="crime-graph-info rounded"),
                         html.Div([
-                            html.P(["🗣️️ Fuente: la información recopilada para el análisis de los crimenes comprende los años 2021 y 2022 para la ciudad de Bogotá y fue exportada del portal de la ",
+                            html.P(["🗣️️ La información recopilada para el análisis de los crimenes comprende los años 2021 y 2022 para la ciudad de Bogotá y fue exportada del portal de la ",
                                     html.A(
                                         "Secretaria Distrital de Seguridad, Convivencia y Justicia", href="https://scj.gov.co/es/oficina-oaiee/estadisticas-mapas", target="_blank"), " en la consulta Delitos de alto impacto."]),
                         ], style={"padding": "1rem"}),
@@ -33,7 +33,7 @@ def display():
                 html.Div([
                     html.H4(["🕒 Crimen por rango de horas"]),
                     html.P(
-                        "Explora las localidades con mayor crimen y cuando estos crimenes ocurren durante el día 🌅🌇🌌")
+                        "Explora las localidades con mayor crimen y cuando estos crimenes ocurren durante el día. 🌅🌇🌌")
                 ], className="crime-graph-info crime-by-time-of-day rounded"),
                 dbc.Col(dcc.Graph(figure=barras())),
             ], style={"marginTop": "2rem"}),
