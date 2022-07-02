@@ -36,9 +36,9 @@ juanHurtado = {
     'descripcion': 'Ingeniero electrónico',
     'contacto': 'juanf.hurtadov@gmail.com'
 }
-
+#https://drive.google.com/file/d/1MzqpS21klr225yWk0YgZ6wPgibIEcUE6/view?usp=sharing
 diegoMoreno = {
-    'foto': 'Diego_Moreno.jpeg',
+    'foto': './assets/img/Diego_Moreno.jpg',
     'nombre': 'Diego Alejandro Moreno',
     'descripcion': 'Ingeniero eléctrico con un gran interés en IA, próximamente estará ingresando a la maestría en ingeniería eléctrica con un enfoque en gestión y automatización.',
     'contacto': 'diegomore1997@gmail.com' + ' ' + 'https://www.linkedin.com/in/diegoamg/'
