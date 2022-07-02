@@ -91,9 +91,37 @@
     margin-top: 1rem;
 }
 
+/* 'Delitos en Bogotá' */
+
+.crime-graph-info {
+    color: white !important;
+    background: linear-gradient(203deg, rgba(252,45,38,1) 0%, rgba(226,45,38,0.85) 35%, rgba(103,0,14,1) 100%);
+    padding: 2rem;
+    height: 100%;
+}
+
+.crime-by-time-of-day {
+    color: black;
+    background: linear-gradient(90deg, rgba(232,129,127,1) 0%, rgba(141,82,115,1) 35%, rgba(49,31,98,1) 100%);
+    padding: 1.5rem;
+}
+
+.crime-graph-info p {
+    margin: 0;
+}
+
+.crime-graph-info a {
+    color: white !important;
+}
+
+.crime-graph-info h4 {
+    color: white !important;
+}
+
 /* 'Sobre nosotros' */
 
 .profiles-sources-title {
+    color: white !important;
     background: black;
     padding: 1rem;
 }
