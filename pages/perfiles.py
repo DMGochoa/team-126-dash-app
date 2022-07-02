@@ -17,8 +17,8 @@ team_members = [
     {
         'foto': './assets/img/placeholder-image.png',
         'nombre': 'Carmen Delgado',
-        'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
-        'linkedin_url': 'https://www.linkedin.com/in/andrescuco/'
+        'descripcion': 'Graduada de Economia con maestria. Con experiencia en formulación, seguimiento y evaluación de politicas públicas.',
+        'linkedin_url': 'https://www.linkedin.com/in/carmen-delgado-reyes-4a07b847'
     },
     {
         'foto': './assets/img/Juan_Felipe_Diaz.jpg',
@@ -33,13 +33,12 @@ team_members = [
         'linkedin_url': 'https://www.linkedin.com/in/juanfernandohurtadovasquez/'
     },
     {
-        'foto': './assets/img/placeholder-image.png',
+        'foto': './assets/img/Diego_Moreno.jpg',
         'nombre': 'Diego Alejandro Moreno',
         'descripcion': 'Ingeniero eléctrico con un gran interés en IA, próximamente estará ingresando a la maestría en ingeniería eléctrica con un enfoque en gestión y automatización.',
         'linkedin_url': 'https://www.linkedin.com/in/diegoamg/'
     },
 ]
-
 
 RB = [
     {
