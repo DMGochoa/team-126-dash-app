@@ -17,8 +17,8 @@ team_members = [
     {
         'foto': './assets/img/placeholder-image.png',
         'nombre': 'Carmen Delgado',
-        'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
-        'linkedin_url': 'https://www.linkedin.com/in/andrescuco/'
+        'descripcion': 'Graduada de Economia con maestria. Con experiencia en formulación, seguimiento y evaluación de politicas públicas.',
+        'linkedin_url': 'https://www.linkedin.com/in/carmen-delgado-reyes-4a07b847'
     },
     {
         'foto': './assets/img/Juan_Felipe_Diaz.jpg',
