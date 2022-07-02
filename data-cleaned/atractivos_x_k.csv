@@ -39,3 +39,11 @@ GRUPOS,Value,Count
 7,cuales Centros comerciales: CENTRO MAYOR,16
 7,cuales Centros comerciales: ANDINO,14
 7,cuales Centros comerciales: SANTA FE,14
+0,Suelen llevar de 27 a 187 dolares,"[27, 187]"
+1,Suelen llevar de 27 a 481 dolares,"[27, 481]"
+2,Suelen llevar de 50 a 321 dolares,"[50, 321]"
+3,Suelen llevar de 200 a 1500 dolares,"[200, 1500]"
+4,Suelen llevar de 67 a 427 dolares,"[67, 427]"
+5,Suelen llevar de 67 a 481 dolares,"[67, 481]"
+6,Suelen llevar de 107 a 1500 dolares,"[107, 1500]"
+7,Suelen llevar de 30 a 267 dolares,"[30, 267]"
