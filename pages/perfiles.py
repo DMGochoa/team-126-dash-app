@@ -33,40 +33,12 @@ team_members = [
         'linkedin_url': 'https://www.linkedin.com/in/andrescuco/'
     },
     {
-        'foto': './assets/img/placeholder-image.png',
+        'foto': './assets/img/Diego_Moreno.jpg',
         'nombre': 'Diego Alejandro Moreno',
         'descripcion': 'Ingeniero eléctrico con un gran interés en IA, próximamente estará ingresando a la maestría en ingeniería eléctrica con un enfoque en gestión y automatización.',
         'linkedin_url': 'https://www.linkedin.com/in/diegoamg/'
     },
 ]
-
-carmenDelgado = {
-    'foto': 'Carmen_Delgado.jpeg',
-    'nombre': 'Carmen Delgado',
-    'descripcion': 'Después de tratar por dos años seguidos de entrar a DS4A por fin',
-    'contacto': 'carmendelgado@team126.com'
-}
-# https://drive.google.com/uc?export=view&id=1wUyL20fsmTTmlQjGWIMp7sD3bGBX4p-F
-juanDiaz = {
-    'foto': './assets/img/Juan_Felipe_Diaz.jpg',
-    'nombre': 'Juan Felipe Diaz',
-    'descripcion': 'Estudiante de ultimos semestres de ingeniería con interés de conocer de la ciencia y analítica de datos.',
-    'contacto': 'diazrochajuanfe@yahoo.com.mx - in/juanfelipediazr'
-}
-# https://drive.google.com/uc?export=view&id=1PTvtwqMo7FLd4K-78mvVPvKneBY0rubH
-juanHurtado = {
-    'foto': './assets/img/Juan_Hurtado.jpeg',
-    'nombre': 'Juan Fernando Hurtado',
-    'descripcion': 'Ingeniero electrónico',
-    'contacto': 'juanf.hurtadov@gmail.com'
-}
-#https://drive.google.com/file/d/1MzqpS21klr225yWk0YgZ6wPgibIEcUE6/view?usp=sharing
-diegoMoreno = {
-    'foto': './assets/img/Diego_Moreno.jpg',
-    'nombre': 'Diego Alejandro Moreno',
-    'descripcion': 'Ingeniero eléctrico con un gran interés en IA, próximamente estará ingresando a la maestría en ingeniería eléctrica con un enfoque en gestión y automatización.',
-    'contacto': 'diegomore1997@gmail.com' + ' ' + 'https://www.linkedin.com/in/diegoamg/'
-}
 
 RB = [
     {
