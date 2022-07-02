@@ -21,7 +21,7 @@ from components.modeluse import use_model
 
 app = Dash(__name__,
            external_stylesheets=[
-               dbc.themes.LUX], suppress_callback_exceptions=True,
+               dbc.themes.LUX, dbc.icons.BOOTSTRAP], suppress_callback_exceptions=True,
            meta_tags=[{"name": "viewport",
                        "content": "width=device-width, initial-scale=1"}]
            )
