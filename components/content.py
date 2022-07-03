@@ -6,6 +6,8 @@ import dash_bootstrap_components as dbc
 from components.card import custom_card
 
 df = pd.read_csv("./data-cleaned/scattermap_points.csv")
+localidad_list = sorted(df['localidad'].unique())
+localidad_list.remove('MUNICIPIOS ALEDAÑOS')
 
 CONTENT_STYLE = {
     "margin-left": "18rem",
@@ -45,7 +47,7 @@ map_controls = html.Div([
                                   ),
                     dcc.Dropdown(id='localidad',
                                  options=[{'label': str(b), 'value': b}
-                                          for b in sorted(df['localidad'].unique())],
+                                          for b in localidad_list],
                                  placeholder="Selecciona una localidad",
                                  style={"display": "none"}
                                  ),
