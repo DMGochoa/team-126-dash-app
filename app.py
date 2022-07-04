@@ -162,8 +162,13 @@ def on_form_change(numerical_input_values, radio_button_values, submit_button_n_
         """
         return True, no_update, error_message, questions_left_counter, no_update, no_update, no_update
     elif (submit_button_n_clicks == 1):
+        results_df = pd.read_csv('./data-cleaned/atractivos_x_k.csv')
+
         # Call the model on button click
-        model_results = use_model(form_values)
+        result_group = use_model(form_values)
+        model_results = results_df[results_df['GRUPOS']
+                                   == result_group]['Value'].to_list()
+        print(model_results)
 
         # Hides the submit button and displays the results component
         return False, hide_component, error_message, questions_left_counter, show_component, hide_component, model_results
