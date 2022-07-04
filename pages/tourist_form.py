@@ -217,13 +217,13 @@ radios_input = dbc.Container([
                           style={"fontSize": "3rem"}),
             ], id="tourist-form-text", className="tourist-form-text rounded"),
             html.Div([
-                html.H1("Tus resultados aquí...",
+                html.H1("¡Tus resultados estan aquí!",
                         style={"color": "white"}),
                 html.P("""
-                    Eres perfil blah blah blah, te puede interesar estos lugares y otras
-                    personas con un perfil similar tienden a gastar entre $1.500 y $1.800
-                    en sus viajes a Bogotá.
-                """, id="tourist-form-results-detail"),
+                    Tus recomendaciones basadas en tu perfil de turista son:
+                """),
+                html.P(id="tourist-form-results-detail",
+                       style={"marginLeft": "1.25rem"}),
                 html.A(dbc.Button("Regresar", color="secondary"),
                        href="/tu-perfil")
             ], id="tourist-form-results", className="tourist-form-results rounded", style={"display": "none"})

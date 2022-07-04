@@ -1,0 +1,49 @@
+group,recommendation_type,recommendation,count
+0,🛍️ Centro Comercial, GRAN ESTACION,39
+0,🛍️ Centro Comercial, ANDINO,30
+0,🛍️ Centro Comercial, CENTRO MAYOR,22
+0,📍 Zona, CENTRO,22
+0,🛍️ Centro Comercial, TITAN,18
+1,🛍️ Centro Comercial, GRAN ESTACION,47
+1,🛍️ Centro Comercial, ANDINO,29
+1,📍 Zona, CANDELARIA,27
+1,📍 Zona, CENTRO,22
+1,🍽️ Restaurante, CREPES,11
+2,🛍️ Centro Comercial, CENTRO MAYOR,31
+2,📍 Zona, CENTRO,30
+2,⛪ Iglesia, MONSERRATE,30
+2,🛍️ Centro Comercial, GRAN ESTACION,25
+2,📍 Zona, CANDELARIA,21
+3,⛪ Iglesia, MONSERRATE,36
+3,🛍️ Centro Comercial, ANDINO,31
+3,🏛️ Museo, ORO,31
+3,📍 Zona, CANDELARIA,25
+3,🛍️ Centro Comercial, GRAN ESTACION,20
+4,🛍️ Centro Comercial, ANDINO,47
+4,📍 Zona, CANDELARIA,44
+4,⛪ Iglesia, MONSERRATE,37
+4,🛍️ Centro Comercial, GRAN ESTACION,36
+4,🍽️ Restaurante, CREPES,29
+5,🛍️ Centro Comercial, GRAN ESTACION,46
+5,⛪ Iglesia, MONSERRATE,41
+5,🛍️ Centro Comercial, ANDINO,37
+5,📍 Zona, CANDELARIA,33
+5,🛍️ Centro Comercial, SANTA FE,27
+6,🛍️ Centro Comercial, ANDINO,23
+6,🏛️ Museo, ORO,22
+6,⛪ Iglesia, MONSERRATE,13
+6,🛍️ Centro Comercial, GRAN ESTACION,11
+6,🗺️ Región, VILLA DE LEYVA,11
+7,🛍️ Centro Comercial, GRAN ESTACION,27
+7,📍 Zona, CENTRO,19
+7,🛍️ Centro Comercial, CENTRO MAYOR,16
+7,🛍️ Centro Comercial, ANDINO,14
+7,🛍️ Centro Comercial, SANTA FE,14
+0,💰 Presupuesto:, Personas con un perfil similar suelen llevar de $27 a $187 dolares,"[27, 187]"
+1,💰 Presupuesto:, Personas con un perfil similar suelen llevar de $27 a $481 dolares,"[27, 481]"
+2,💰 Presupuesto:, Personas con un perfil similar suelen llevar de $50 a $321 dolares,"[50, 321]"
+3,💰 Presupuesto:, Personas con un perfil similar suelen llevar de $200 a $1500 dolares,"[200, 1500]"
+4,💰 Presupuesto:, Personas con un perfil similar suelen llevar de $67 a $427 dolares,"[67, 427]"
+5,💰 Presupuesto:, Personas con un perfil similar suelen llevar de $67 a $481 dolares,"[67, 481]"
+6,💰 Presupuesto:, Personas con un perfil similar suelen llevar de $107 a $1500 dolares,"[107, 1500]"
+7,💰 Presupuesto:, Personas con un perfil similar suelen llevar de $30 a $267 dolares,"[30, 267]"
