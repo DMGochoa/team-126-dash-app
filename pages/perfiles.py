@@ -15,7 +15,7 @@ team_members = [
         'linkedin_url': 'https://www.linkedin.com/in/albertoramirez2/'
     },
     {
-        'foto': './assets/img/placeholder-image.png',
+        'foto': './assets/img/Carmen_Delgado.jpeg',
         'nombre': 'Carmen Delgado',
         'descripcion': 'Graduada de Economia con maestria. Con experiencia en formulación, seguimiento y evaluación de politicas públicas.',
         'linkedin_url': 'https://www.linkedin.com/in/carmen-delgado-reyes-4a07b847'
