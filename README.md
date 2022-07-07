@@ -11,6 +11,15 @@ tools to explore Bogotá's localities as a tourist.
 
 ### Screenshots
 
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/36432023/177794269-2fbfdf95-9419-4a1d-8c8b-e422fccfe600.png">
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/36432023/177794318-6892b1c9-334a-4f56-b774-e36fd5088658.png">
+<img width="1552" alt="image" src="https://user-images.githubusercontent.com/36432023/177794420-b58ac21c-7602-4ceb-bb2f-acf2f885473e.png">
+
+![screencapture-127-0-0-1-8050-delincuencia-2022-07-07-09_10_57](https://user-images.githubusercontent.com/36432023/177794631-33aec4ba-ba77-4f31-b176-9308b9df3296.png)
+
+![screencapture-127-0-0-1-8050-sobre-nosotros-2022-07-07-09_11_51](https://user-images.githubusercontent.com/36432023/177794768-07c98a94-1849-4d3a-8284-530810670349.png)
+
+
 ### Features
 
 On each page we display different views that can be used to explore Bogotá
@@ -30,6 +39,8 @@ and information sources.
 We have two data folders, `data` and `data-cleaned` which contain the
 raw information that will be exported and consumed in our application
 mainly on the `app.py` file.
+
+<img width="1147" alt="image" src="https://user-images.githubusercontent.com/36432023/177792413-a9cb3f2f-1111-4dea-b6a9-64e148bdb14a.png">
 
 Our `app.py` file is the heart of the application, it has the majority of
 the callbacks supported and is a place where we import our components and
