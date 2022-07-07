@@ -29,7 +29,7 @@ team_members = [
     {
         'foto': './assets/img/Juan_Hurtado.jpeg',
         'nombre': 'Juan Fernando Hurtado',
-        'descripcion': 'Ingeniero electrónico',
+        'descripcion': 'Ingeniero electrónico.',
         'linkedin_url': 'https://www.linkedin.com/in/juanfernandohurtadovasquez/'
     },
     {
