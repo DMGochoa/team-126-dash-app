@@ -1,6 +1,7 @@
 This web app is part of the deliverables of the final project of the team 126
 at the Data Science for All program from Correlation One. It features different
-tools to explore Bogotá's localities as a tourist.
+tools to explore Bogotá's localities as a tourist. The web app is accessible through the url
+https://explora-bogota.herokuapp.com/
 
 ### How to run the app locally
 
@@ -18,7 +19,6 @@ tools to explore Bogotá's localities as a tourist.
 ![screencapture-127-0-0-1-8050-delincuencia-2022-07-07-09_10_57](https://user-images.githubusercontent.com/36432023/177794631-33aec4ba-ba77-4f31-b176-9308b9df3296.png)
 
 ![screencapture-127-0-0-1-8050-sobre-nosotros-2022-07-07-09_11_51](https://user-images.githubusercontent.com/36432023/177794768-07c98a94-1849-4d3a-8284-530810670349.png)
-
 
 ### Features
 
