@@ -39,10 +39,22 @@ sidebar = html.Div(
             html.Img(src="./assets/logo-idt-completo.png",
                      width=230, height=72),
             style={"display": "flex", "justifyContent": "center"}
-            # html.Img(src="./assets/logo-idt.jpg", width=160, height=210),
-            # style={"display": "flex", "justifyContent": "center"}
         ),
     ],
     id="sidebar",
     style=SIDEBAR_STYLE
+)
+
+navbar = dbc.NavbarSimple(
+    children=[
+        dbc.NavItem(dbc.NavLink("Explora localidades", href="/")),
+        dbc.NavItem(dbc.NavLink("Tú perfil de turista", href="/tu-perfil")),
+        dbc.NavItem(dbc.NavLink("Delitos en Bogotá", href="/delincuencia")),
+        dbc.NavItem(dbc.NavLink("Sobre nosotros", href="/sobre-nosotros")),
+    ],
+    id="navbar",
+    brand="Explora Bogotá",
+    brand_href="/",
+    color="primary",
+    dark=True,
 )

@@ -8,6 +8,7 @@ import dash_bootstrap_components as dbc
 from components.content import content
 from components.content import main_view
 from components.sidebar import sidebar
+from components.sidebar import navbar
 from components.jumbotron import jumbotron
 
 # Pages
@@ -39,7 +40,7 @@ with open("./data-cleaned/poligonos-localidades-min.json") as response:
     bogota_geojson = json.load(response)
 crime = pd.read_csv("./data-cleaned/Delitos_x_localidad.csv")
 
-app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
+app.layout = html.Div([dcc.Location(id="url"), navbar, sidebar, content])
 
 
 # Builds logic that's on the main page

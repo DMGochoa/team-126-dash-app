@@ -160,7 +160,6 @@ def custom_radio_input(id, question, options):
                     options=options,
                     value=None
                 ),
-                # width=10,
             ),
         ],
         className="mb-3",
